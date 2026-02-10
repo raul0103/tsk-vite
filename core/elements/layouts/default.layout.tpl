@@ -9,9 +9,8 @@
     {block 'description'}
         {include "file:elements/meta-description.tpl"}
     {/block}
-    <link rel="stylesheet" href="{$_modx->config['template_path']}css/vendors.css?v={'file_version' | config}">
-    <link rel="stylesheet" href="{$_modx->config['template_path']}css/main.css?v={'file_version' | config}">
 
+    <link rel="stylesheet" href="/dist/main.css">
 
     {if $_modx->context.key == 'web'}
         {set $site_context = 'knauf'}
@@ -213,9 +212,14 @@
         <script>window.SHOW_FORTWHEEL = false</script>
     {/if}
     <script src="{$_modx->config['template_path']}js/jquery-3.7.1.min.js"></script>
-    <script defer src="{$_modx->config['template_path']}js/runtime.js?v={'file_version' | config}"></script>
-    <script defer src="{$_modx->config['template_path']}js/vendors.js?v={'file_version' | config}"></script>
-    <script defer src="{$_modx->config['template_path']}js/main.js?v={'file_version' | config}"></script>
+
+    {if 'APP_ENV' | config === 'development'}
+        <script type="module" src="http://localhost:5173/@vite/client"></script>
+        <script type="module" src="http://localhost:5173/_src-vite/js/main.js"></script>
+    {else}
+        <script type="module" src="/dist/main.js"></script>
+    {/if}
+
     {if $_modx->context.key in list ['rasprodazha']}
     <script defer src="{$_modx->config['template_path']}js/createPdf.js?v={'file_version' | config}"></script>
     {/if}
