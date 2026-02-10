@@ -1,0 +1,719 @@
+[
+    {
+        "name": "Ондулин и шифер",
+        "id" : "assort-ondulin",
+        "svg_id" : "assort-ondulin",
+        "idx": 100,
+        "links":[
+            
+        ],
+        "groups":[
+            {
+                "name": "Ондулин",
+                "type": 1,
+                "uri": "/ondulin/",
+                "img": null,
+                "items":[
+                        {
+                            "name": "Черепица Ондулин",
+                            "uri" : "/cherepica-ondulin/",
+                            "img" : "/assets/template/img/assort/krovlya/Menu item_602.jpg",
+                            "links" : []
+                        },{
+                            "name": "Ондулин Смарт",
+                            "uri" : "/cherepica-ondulin-smart/",
+                            "img" : "/assets/template/img/assort/krovlya/Menu item_601.jpg",
+                            "links" : []
+                        },{
+                            "name": "Ондутисс",
+                            "uri" : "/ondutiss/",
+                            "img" : "/assets/template/img/assort/krovlya/Menu item_604.jpg",
+                            "links" : []
+                        },{
+                            "name": "Комплектующие для Ондулина",
+                            "uri" : "/komplektuyushhie-dlya-ondulina/",
+                            "img" : "/assets/template/img/assort/krovlya/Menu item_603.jpg",
+                            "links" : []
+                        }
+                ]
+            },{
+                "name": "Шифер",
+                "type": 1,
+                "uri": "/shifer/",
+                "img": null,
+                "items":[
+                    {
+                        "name": "Шифер плоский",
+                        "uri" : "/shifer-ploskij/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_605.jpg",
+                        "links" : []
+                    },{
+                        "name": "Шифер для грядок",
+                        "uri" : "/shifer-dlya-gryadok/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_606.jpg",
+                        "links" : []
+                    },{
+                        "name": "Шифер волновой",
+                        "uri" : "/shifer/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_607.jpg",
+                        "links" : []
+                    },{
+                        "name": "Шифер 8-волновой",
+                        "uri" : "/shifer-8-voln/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_608.jpg",
+                        "links" : []
+                    },{
+                        "name": "Шифер 7-волновой",
+                        "uri" : "/shifer-7-voln/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_609.jpg",
+                        "links" : []
+                    }
+                ]
+            }
+        ]
+    },{
+        "name": "Металлочерепица",
+        "idx": 110,
+        "id" : "assort-cerepica",
+        "svg_id" : "assort-cerepica",
+        "links":[
+            {"name":"Металлочерепица","uri":"/metallocherepica/"}
+        ],
+        "groups":[
+            {
+                "name": "Металлочерепица Grand Line",
+                "type": 1,
+                "uri" : "/metallocherepitsya-grand-line/",
+                "img" : "/assets/template/img/assort/krovlya/grandline.jpg",
+                "items" :[
+                    {
+                        "name": "Classic",
+                        "uri" : "/metallocherepitsya-grand-line-classic/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_01.jpg",
+                        "links" : []
+                    },{
+                        "name": "Kamea",
+                        "uri" : "/metallocherepitsya-grand-line-kamea/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_03.jpg",
+                        "links" : []
+                    },{
+                        "name": "Kredo",
+                        "uri" : "/metallocherepitsya-grand-line-kredo/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_07.jpg",
+                        "links" : []
+                    },{
+                        "name": "Kvinta plus",
+                        "uri" : "/metallocherepitsya-grand-line-kvinta-plus/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_05.jpg",
+                        "links" : []
+                    },{
+                        "name": "Kvinta Uno",
+                        "uri" : "/metallocherepitsya-grand-line-kvinta-uno/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_06.jpg",
+                        "links" : []
+                    },{
+                        "name": "Modern",
+                        "uri" : "/metallocherepitsya-grand-line-modern/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_02.jpg",
+                        "links" : []
+                    },{
+                        "name": "Монтеррей",
+                        "uri" : "/prodazha-metallocherepicy-monterrej-grand-line/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_04.jpg",
+                        "links" : []
+                    }
+                ]
+            },{
+                "name": "Металлочерепица Металл-Профиль",
+                "type": 1,
+                "uri" : "/metallocherepica-metall-profil/",
+                "img" : "/assets/template/img/assort/krovlya/metallprofil.jpg",
+                "items" :[
+                    {
+                        "name": "Ламонтерра",
+                        "uri" : "/metallocherepica-lamonterra/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_08.jpg",
+                        "links" : []
+                    },{
+                        "name": "Ламонтерра X",
+                        "uri" : "/metallocherepica-lamonterra-x/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_09.jpg",
+                        "links" : []
+                    },{
+                        "name": "Ламонтерра XL",
+                        "uri" : "/metallocherepica-lamonterra-xl/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_10.jpg",
+                        "links" : []
+                    },{
+                        "name": "Монтекристо",
+                        "uri" : "/metallocherepica-montekristo/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_11.jpg",
+                        "links" : []
+                    },{
+                        "name": "Монтерроса",
+                        "uri" : "/metallocherepica-monterrosa/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_12.jpg",
+                        "links" : []
+                    },{
+                        "name": "Трамонтана",
+                        "uri" : "/metallocherepica-tramontana/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_13.jpg",
+                        "links" : []
+                    }
+                ]
+            }
+        ]
+    },{
+        "name": "Гибкая черепица",
+        "idx": 120,
+        "id" : "assort-bit-krovlya",
+        "svg_id" : "assort-bit-krovlya",
+        "links":[
+            {"name":"Мягкая кровля","uri":"/myagkaya-cherepica/"}
+        ],
+        "groups":[
+            {
+                "name": null,
+                "type": 1,
+                "uri" : null,
+                "img" : "/assets/template/img/assort/krovlya/gibkaya-cerepica.jpg",
+                "items" :[
+                    {
+                        "name": "CertainTeed",
+                        "uri" : "/myagkaya-cherepica-certainteed/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_104.jpg",
+                        "links" : []
+                    },{
+                        "name": "Docke",
+                        "uri" : "/docke-pie-gibkaya-cherepica/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_101.jpg",
+                        "links" : []
+                    },{
+                        "name": "Катепал",
+                        "uri" : "/myagkaya-cherepica-katepal/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_103.jpg",
+                        "links" : []
+                    },{
+                        "name": "Икопал",
+                        "uri" : "/myagkaya-cherepica-icopal/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_105.jpg",
+                        "links" : []
+                    },{
+                        "name": "Tegola",
+                        "uri" : "/myagkaya-cherepica-tegola/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_106.jpg",
+                        "links" : []
+                    },{
+                        "name": "Технониколь Шинглас",
+                        "uri" : "/myagkaya-cherepica-tehnonikol-shinglas/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_102.jpg",
+                        "links" : []
+                    }
+                ]
+            },{
+                "name": null,
+                "type": 1,
+                "uri" : null,
+                "img" : "/assets/template/img/assort/krovlya/gibkaya-cerepica.jpg",
+                "items" :[
+                    {
+                        "name": "Комплектующие",
+                        "uri" : "/komplektuyushhie/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_107.jpg",
+                        "links" : []
+                    }
+                ]
+            }
+        ]
+    },{
+        "id" : "assort-rulon-krovlya",
+        "name": "Рулонная кровля",
+        "idx": 130,
+        "svg_id" : "assort-rulon-krovlya",
+        "links":[
+            {"name":"Рулонная кровля","uri":"/rulonnaya-krovlya/"},
+            {"name":"Наплавляемая кровля","uri":"/rulonnaya-krovlya-tehnonikol/"},
+            {"name":"ПВХ мембраны","uri":"/pvh-membrany/"},
+            {"name":"Сланцевая кровля","uri":"/slanczevaya-krovlya/"},
+            {"name":"Рулонная черепица","uri":"/rulonnaya-chepepicza/"}
+        ],
+        "groups":[
+            {
+                "name": null,
+                "type": 1,
+                "uri" : null,
+                "img" : null,
+                "items" :[
+                    {
+                        "name": "Рулонная кровля Технониколь",
+                        "uri" : " https://krovlyasp.ru/rulonnaya-krovlya-tehnonikol/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_102.jpg",
+                        "links" : []
+                    },
+                    {
+                        "name": "Рулонная кровля Брит",
+                        "uri" : "https://krovlyasp.ru/rulonnaya-krovlya-brit/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_511.jpg",
+                        "links" : []
+                    },{
+                        "name": "Ленты стыковочные",
+                        "uri" : "/lentyi-styikovochnyie/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_513.jpg",
+                        "links" : []
+                    },{
+                        "name": "Герметик",
+                        "uri" : "/krovelniy-germetik-brit/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_512.jpg",
+                        "links" : []
+                    },{
+                        "name": "Мастики",
+                        "uri" : "/krovelnaya-mastiki/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_512.jpg",
+                        "links" : []
+                    },{
+                        "name": "Рубероид",
+                        "uri" : "/ruberoid/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_501.jpg",
+                        "links" : []
+                    },{
+                        "name": "Гидроизол",
+                        "uri" : "/gidroizol/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_504.jpg",
+                        "links" : []
+                    },{
+                        "name": "Стеклоизол",
+                        "uri" : "/stekloizol/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_505.jpg",
+                        "links" : []
+                    },{
+                        "name": "Техноэласт",
+                        "uri" : "/tehnoelast/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_520.jpg",
+                        "links" : []
+                    },{
+                        "name": "Унифлекс",
+                        "uri" : "/unifleks/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_521.jpg",
+                        "links" : []
+                    },{
+                        "name": "Линокром",
+                        "uri" : "/linokrom/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_526.jpg",
+                        "links" : []
+                    },{
+                        "name": "Биполь",
+                        "uri" : "/bipol/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_522.jpg",
+                        "links" : []
+                    },{
+                        "name": "Бикрост",
+                        "uri" : "/bikrost/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_523.jpg",
+                        "links" : []
+                    },{
+                        "name": "Бикроэласт",
+                        "uri" : "/bikroelast/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_524.jpg",
+                        "links" : []
+                    },{
+                        "name": "Экофлекс",
+                        "uri" : "/ekofleks/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_525.jpg",
+                        "links" : []
+                    }
+                ]
+            }
+        ]
+    },{
+        "id" : "assort-natur-cerepica",
+        "name": "Цементно-песчаная черепица",
+        "idx": 140,
+        "svg_id" : "assort-natur-cerepica",
+        "links":[
+            {"name":"Цементно-песчаная черепица","uri":"/cementno-peschanaya-cherepica/"}
+        ],
+        "groups":[
+            {
+                "name": null,
+                "type": 1,
+                "uri" : null,
+                "img" : "/assets/template/img/assort/krovlya/cementpesccerepica.jpg",
+                "items" :[
+                    {
+                        "name": "Цементно-песчаная черепица Kriastak",
+                        "uri" : "/cementno-peschanaya-cherepica-kriastak/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_201.jpg",
+                        "links" : []
+                    },{
+                        "name": "Цементно-песчаная черепица Braas",
+                        "uri" : "/cementno-peschanaya-cherepica-braas/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_204.jpg",
+                        "links" : []
+                    },{
+                        "name": "Комплектующие для ЦПЧ",
+                        "uri" : "/komplektuyushhie-dlya-cpch/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_202.jpg",
+                        "links" : []
+                    }
+                ]
+            }
+        ]
+    },{
+        "id" : "assort-ceramocherepica",
+        "svg_id" : "assort-ceramocherepica",
+        "idx": 150,
+        "name" : "Натуральная керамическая черепица",
+        "links":[
+            {"name":"Натуральная керамическая черепица","uri":"/keramicheskaya-cherepica/"}
+        ],
+        "groups":[
+            {
+                "name": null,
+                "type": 1,
+                "uri" : null,
+                "img" : null,
+                "items" :[
+                    {
+                        "name": "Керамическая черепица Braas",
+                        "uri" : "/keramicheskaya-cherepica-braas/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_204.jpg",
+                        "links" : []
+                    },{
+                        "name": "Комплектующие для керамической черепицы Braas",
+                        "uri" : "/komplektuyushhie-dlya-keramicheskoj-cherepicy-braas/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_205.jpg",
+                        "links" : []
+                    }
+                ]
+            }
+        ]
+    },{
+        "id" : "assort-cerepica1",
+        "svg_id" : "assort-cerepica1",
+        "idx": 160,
+        "name": "Фиброцементная черепица",
+        "links":[
+            {"name":"Фиброцементная черепица","uri":"/fibroczementnaya-cherepicza/"}
+        ],
+        "groups":[
+            {
+                "name": null,
+                "type": 1,
+                "uri" : null,
+                "img" : null,
+                "items" :[
+                    {
+                        "name": "Фиброцементная черепица",
+                        "uri" : "/fibroczementnaya-cherepicza/",
+                        "img" : "/assets/template/img/assort/krovlya/fibrocementnaya-cherepica.png",
+                        "links" : []
+                    }
+                ]
+            }
+        ]
+    },{
+        "name" : "Фальцевая кровля",
+        "id" : "assort-falc-krovlya",
+        "svg_id" : "assort-falc-krovlya",
+        "idx": 170,
+        "links":[
+            {"name":"Фальцевая кровля","uri":"/falcevaya-krovlya/"}
+        ],
+        "groups":[
+            {
+                "name": null,
+                "type": 1,
+                "uri" : null,
+                "img" : "/assets/template/img/assort/krovlya/falcevaya-krovlya.jpg",
+                "items" :[
+                    {
+                        "name": "Кликфальц",
+                        "uri" : "/falcevaya-krovlya/?collection=%D0%9A%D0%BB%D0%B8%D0%BA%D1%84%D0%B0%D0%BB%D1%8C%D1%86",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_401.jpg",
+                        "links" : []
+                    },{
+                        "name": "Кликфальц Line",
+                        "uri" : "/falcevaya-krovlya/?collection=%D0%9A%D0%BB%D0%B8%D0%BA%D1%84%D0%B0%D0%BB%D1%8C%D1%86%20Line",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_403.jpg",
+                        "links" : []
+                    },{
+                        "name": "Кликфальц mini",
+                        "uri" : "/falcevaya-krovlya/?collection=%D0%9A%D0%BB%D0%B8%D0%BA%D1%84%D0%B0%D0%BB%D1%8C%D1%86%20mini",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_407.jpg",
+                        "links" : []
+                    },{
+                        "name": "Кликфальц Pro",
+                        "uri" : "/falcevaya-krovlya/?collection=%D0%9A%D0%BB%D0%B8%D0%BA%D1%84%D0%B0%D0%BB%D1%8C%D1%86%20Pro",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_404.jpg",
+                        "links" : []
+                    },{
+                        "name": "Кликфальц Pro Gofr",
+                        "uri" : "/falcevaya-krovlya/?collection=%D0%9A%D0%BB%D0%B8%D0%BA%D1%84%D0%B0%D0%BB%D1%8C%D1%86%20Pro%20Gofr",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_408.jpg",
+                        "links" : []
+                    },{
+                        "name": "Кликфальц Pro Line",
+                        "uri" : "/falcevaya-krovlya/?collection=%D0%9A%D0%BB%D0%B8%D0%BA%D1%84%D0%B0%D0%BB%D1%8C%D1%86%20Pro%20Line",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_405.jpg",
+                        "links" : []
+                    },{
+                        "name": "Фальц двойной стоячий",
+                        "uri" : "/falcevaya-krovlya/?collection=%D0%A4%D0%B0%D0%BB%D1%8C%D1%86%20%D0%B4%D0%B2%D0%BE%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%81%D1%82%D0%BE%D1%8F%D1%87%D0%B8%D0%B9",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_402.jpg",
+                        "links" : []
+                    },{
+                        "name": "Фальц двойной стоячий Line",
+                        "uri" : "/falcevaya-krovlya/?collection=%D0%A4%D0%B0%D0%BB%D1%8C%D1%86%20%D0%B4%D0%B2%D0%BE%D0%B9%D0%BD%D0%BE%D0%B9%20%D1%81%D1%82%D0%BE%D1%8F%D1%87%D0%B8%D0%B9%20Line",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_406.jpg",
+                        "links" : []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id" : "assort-bit-krovlya1",
+        "name" : "Сланцевая кровля",
+        "svg_id" : "assort-bit-krovlya1",
+        "idx": 180,
+        "links":[
+            {"name":"Сланцевая кровля","uri":"/slanczevaya-krovlya/"}
+        ],
+        "groups":[
+            {
+                "name": null,
+                "type": 1,
+                "uri" : null,
+                "img" : "/assets/template/img/assort/krovlya/falcevaya-krovlya.jpg",
+                "items" :[
+                    {
+                        "name": "Cupa pizarras",
+                        "uri" : "/slanczevaya-krovlya-cupa-pizarras/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_901.jpg",
+                        "links" : []
+                    },{
+                        "name": "Rathscheck",
+                        "uri" : "/slanczevaya-krovlya-rathscheck/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_902.jpg",
+                        "links" : []
+                    }
+                ]
+            }
+        ]
+    },{
+        "id" : "assort-proflist",
+        "name" : "Профнастил и штакетник",
+        "svg_id" : "assort-proflist",
+        "idx": 190,
+        "links":[
+            {"name":"Профнастил","uri":"/proflist/"},
+            {"name":"Штакетник","uri":"/shtaketnik/"}
+        ],
+        "groups":[
+            {
+                "name": null,
+                "type": 2,
+                "uri" : null,
+                "img" : null,
+                "items" :[
+                    {
+                        "name": "Профилированный лист для кровли",
+                        "uri" : "/proflist-dlya-krovli/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_301.jpg",
+                        "links" : [
+                            {
+                                "name": "Профнастил для кровли Grand Line",
+                                "uri" : "/proflist-grand-line/"
+                            },{
+                                "name": "Профнастил для кровли Металл-Профиль",
+                                "uri" : "/proflist-metall-profil/"
+                            }
+                        ]
+                    },{
+                        "name": "Профилированный лист для забора",
+                        "uri" : "/profilirovannyy-list-dlya-zabora/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_302.jpg",
+                        "links" : [
+                            {
+                                "name": "Профнастил для забора Grand Line",
+                                "uri" : "/profilirovannyy-list-dlya-zabora-grand-layn/"
+                            },{
+                                "name": "Профнастил для забора Металл-Профиль",
+                                "uri" : "/profilirovannyj-list-dlya-zabora-metall-profil/"
+                            }
+                        ]
+                    },{
+                        "name": "Штакетник Grand Line",
+                        "uri" : "/shtaketnik-grand-line/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_303.jpg",
+                        "links" : []
+                    },{
+                        "name": "Штакетник Металл-Профиль",
+                        "uri" : "/shtaketnik-metall-profil/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_304.jpg",
+                        "links" : []
+                    }
+                ]
+            }
+        ]
+    },{
+        "id" : "assort-vodostoch",
+        "name" : "Водосточные системы",
+        "svg_id" : "assort-vodostoch",
+        "idx": 200,
+        "links":[
+            {"name":"Водостоки","uri":"/vodostochnaya-sistema/"}
+        ],
+        "groups":[
+            {
+                "name": null,
+                "type": 2,
+                "uri" : null,
+                "img" : null,
+                "items" :[
+                    {
+                        "name": "ПВХ водосточные системы",
+                        "uri" : "/pvh-plastikovye-vodostochnye-sistemy/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_701.jpg",
+                        "links" : [
+                            {
+                                "name": "Braas",
+                                "uri" : "/vodostochnaya-sistema/?material=%D0%9F%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D0%BA&proizvoditel=Braas"
+                            },{
+                                "name": "Docke",
+                                "uri" : "/vodostochnaya-sistema/?material=%D0%9F%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D0%BA&proizvoditel=Docke"
+                            },{
+                                "name": "Grand Line",
+                                "uri" : "/vodostochnaya-sistema/?material=%D0%9F%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D0%BA&proizvoditel=Grand%20Line"
+                            },{
+                                "name": "Альта-Профиль",
+                                "uri" : "/vodostochnaya-sistema/?material=%D0%9F%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D0%BA&proizvoditel=%D0%90%D0%BB%D1%8C%D1%82%D0%B0-%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C"
+                            }
+                        ]
+                    },{
+                        "name": "Металлические водосточные системы",
+                        "uri" : "/metallicheskie-vodostoki/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_702.jpg",
+                        "links" : [
+                            {
+                                "name": "Aquasystem",
+                                "uri" : "/vodostochnaya-sistema/?material=%D0%9C%D0%B5%D1%82%D0%B0%D0%BB%D0%BB&proizvoditel=Aquasystem"
+                            },{
+                                "name": "Braas",
+                                "uri" : "/vodostochnaya-sistema/?material=%D0%9C%D0%B5%D1%82%D0%B0%D0%BB%D0%BB&proizvoditel=Braas"
+                            },{
+                                "name": "Docke",
+                                "uri" : "/vodostochnaya-sistema/?material=%D0%9C%D0%B5%D1%82%D0%B0%D0%BB%D0%BB&proizvoditel=Docke"
+                            },{
+                                "name": "Grand Line",
+                                "uri" : "/vodostochnaya-sistema/?material=%D0%9C%D0%B5%D1%82%D0%B0%D0%BB%D0%BB&proizvoditel=Grand%20Line"
+                            },{
+                                "name": "Альта-Профиль",
+                                "uri" : "/vodostochnaya-sistema/?material=%D0%9C%D0%B5%D1%82%D0%B0%D0%BB%D0%BB&proizvoditel=%D0%90%D0%BB%D1%8C%D1%82%D0%B0-%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },{
+        "id" : "assort-sofity",
+        "name" : "Софиты",
+        "svg_id" : "assort-sofity",
+        "idx": 210,
+        "links":[
+            {"name":"Софиты","uri":"/sofity/"}
+        ],
+        "groups":[
+            {
+                "name": null,
+                "type": 1,
+                "uri" : null,
+                "img" : null,
+                "items" : [
+                    {
+                        "name": "ПВХ софиты",
+                        "uri" : "/pvh-sofity/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_801.jpg",
+                        "links" : []
+                    },{
+                        "name": "Металлические софиты",
+                        "uri" : "/metallicheskie-sofity/",
+                        "img" : "/assets/template/img/assort/krovlya/Menu item_802.jpg",
+                        "links" : []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id" : "assort-dobor",
+        "name" : "Доборные элементы",
+        "svg_id" : "assort-dobor",
+        "idx": 220,
+        "links":[
+            {"name":"Доборные элементы","uri":"/dobornye-elementy/"}
+        ],
+        "groups":[
+            {
+                "name": null,
+                "type": 3,
+                "uri" : null,
+                "img" : null,
+                "items" :[
+                    {"name": "J-Профиль", "uri" : "/j-profil/"},
+                    {"name": "Доборные элементы для мягкой кровли", "uri" : "/dobornye-elementy-dlya-myagkoy-krovli/"},
+                    {"name": "Доборные элементы фальц", "uri" : "/dobornyie-elementyi-falc/"},
+                    {"name": "Ендовы для кровли", "uri" : "/endova/"},
+                    {"name": "Заглушки", "uri" : "/zaglushki/"},
+                    {"name": "Карнизные планки", "uri" : "/karniznye-planki/"},
+                    {"name": "Коньковые элементы для кровли", "uri" : "/konkovye-elementy/"},
+                    {"name": "Лобовые планки", "uri" : "/lobovye-planki/"},
+                    {"name": "Мансардные планки", "uri" : "/mansardnye-planki/"},
+                    {"name": "Планка капельник", "uri" : "/planka-kapelnik/"},
+                    {"name": "Планки примыкания", "uri" : "/planki-primykaniya/"},
+                    {"name": "Планки снегозадержания", "uri" : "/planki-snegozaderzhaniya/"},
+                    {"name": "Торцевые планки", "uri" : "/torcevye-planki/"},
+                    {"name": "Тройники", "uri" : "/troyniki/"},
+                    {"name": "Четверники", "uri" : "/chetverniki/"}
+                ]
+            }
+        ]
+    },{
+        "id" : "assort-soputtovary",
+        "name" : "Комплектующие",
+        "svg_id" : "assort-soputtovary",
+        "idx": 230,
+        "links":[
+            {"name":"Комплектующие","uri":"/komplektuyushhie/"}
+        ],
+        "groups":[
+            {
+                "name": null,
+                "type": 3,
+                "uri" : null,
+                "img" : null,
+                "items" :[
+                    {"name": "Мастики и краски", "uri" : "/mastiki-kraski/"},
+                    {"name": "Герметики", "uri" : "/germetiki-v-sankt-peterburge/"},
+                    {"name": "Геосинтетические материалы", "uri" : "/geosinteticheskie-materialy/"},
+                    
+                    {"name": "Антисептик и огнебиозащита древесины", "uri" : "/antiseptik-i-ognebiozashhita-drevesinyi/"},
+                    {"name": "Моющие средства для очистки кровли", "uri" : "/moyushchie-sredstva-dlya-ochistki-krovli/"},
+                    {"name": "Плоский лист", "uri" : "/ploskiy-list-v-sankt-peterburge/"},
+                    {"name": "Битумный клей", "uri" : "/bitumnyj-klej/"},
+                    {"name": "Козырьки из поликарбоната", "uri" : "/kozyrki-iz-polikarbonata/"},
+                    
+                    
+                    {"name": "Флюгеры", "uri" : "/flyugery-v-sankt-peterburge/"},
+                    {"name": "Строительный крепёж", "uri" : "/stroitelnyy-krepyozh-v-sankt-peterburge/"},
+                    {"name": "Проходки и вентиляция", "uri" : "/prohodki-i-ventilyaciya-v-sankt-peterburge/"},
+                    {"name": "Элементы безопасности кровли", "uri" : "/ehlementy-bezopasnosti-krovli-v-sankt-peterburge/"},
+                    {"name": "Коньковый торцевой элемент", "uri" : "/konkovyj-torcevoj-ehlement-v-sankt-peterburge/"},
+                    {"name": "Металлические доборные элементы", "uri" : "/metallicheskie-dobornye-ehlementy-v-sankt-peterburge/"},
+                    {"name": "Устройство примыканий", "uri" : "/ustrojstvo-primykanij/"}
+                ]
+            }
+        ]
+    }
+]

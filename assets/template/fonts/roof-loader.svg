@@ -1,0 +1,51 @@
+
+<svg id="loader-roof" width="456" height="456" viewBox="0 0 456 456" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#loader-roof-clip)" style="transform-origin: center; transform-box: fill-box;">
+
+        <path d="M327.991 182.229C324.639 182.229 321.539 184.009 319.85 186.904L260.166 289.134C258.464 292.049 258.45 295.653 260.132 298.581C261.812 301.509 264.931 303.315 268.307 303.315H387.676C391.052 303.315 394.17 301.509 395.851 298.581C397.533 295.653 397.519 292.05 395.817 289.134L336.134 186.904C334.443 184.009 331.344 182.229 327.991 182.229ZM284.726 284.46L327.991 210.353L371.255 284.46H284.726Z" fill="#AA000F" />
+
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M225.83 320.129H446.573C451.781 320.129 456.003 324.35 456.003 329.556C456.003 334.762 451.783 338.983 446.576 338.983H209.412H163.426C163.416 338.983 163.407 338.984 163.397 338.984C163.387 338.984 163.378 338.983 163.368 338.983H118.258C118.255 338.983 118.253 338.983 118.251 338.983C118.248 338.983 118.246 338.983 118.243 338.984C118.238 338.984 118.234 338.984 118.229 338.984C118.219 338.984 118.21 338.983 118.2 338.983H9.42708C6.05095 338.983 2.93249 337.177 1.25197 334.249C-0.429809 331.321 -0.415983 327.717 1.28591 324.802L119.868 121.69C121.557 118.795 124.657 117.016 128.009 117.016H327.99C328.377 117.016 328.755 117.046 329.129 117.091C329.194 117.099 329.259 117.11 329.324 117.12C329.358 117.126 329.391 117.131 329.425 117.136C329.714 117.18 329.997 117.237 330.276 117.306L330.321 117.317C330.398 117.336 330.476 117.354 330.553 117.376C330.897 117.473 331.234 117.586 331.561 117.72L331.602 117.735C331.953 117.879 332.291 118.049 332.619 118.234C332.661 118.258 332.702 118.283 332.743 118.309C332.77 118.326 332.798 118.343 332.825 118.359C333.076 118.51 333.317 118.67 333.552 118.842C333.636 118.902 333.72 118.964 333.802 119.028C334.058 119.229 334.306 119.442 334.54 119.668C334.554 119.682 334.569 119.695 334.584 119.707C334.602 119.723 334.619 119.738 334.635 119.754C334.897 120.015 335.139 120.292 335.369 120.582C335.406 120.629 335.442 120.677 335.477 120.726L335.5 120.756L335.534 120.803C335.716 121.048 335.887 121.299 336.046 121.561C336.059 121.583 336.074 121.604 336.089 121.625C336.104 121.646 336.119 121.668 336.132 121.69L423.366 271.112C425.992 275.608 424.475 281.381 419.979 284.006C415.485 286.63 409.71 285.114 407.085 280.617L327.991 145.141L225.83 320.129ZM179.786 320.129H203.998L311.572 135.87H241.699H219.893H198.078H176.27H133.42L25.8464 320.129H112.811H134.618H157.979H179.786Z" fill="#AA000F" />
+
+        <rect id="loader-roof-line-1" x="169" y="117" width="18" fill-opacity="0" height="240" rx="9" transform="rotate(30 169 117)" fill="#AA000F">
+            <animate id="loaderRoofAnimStep4" attributeName="fill-opacity" from="0" to="1" dur="0.7s" begin="loaderRoofAnimStep3.end" additive="replace" fill="freeze"/>
+            <animate attributeName="fill-opacity" from="1" to="0" dur="0.01s" begin="loaderRoofAnimStep10.end" repeatCount="1"  additive="replace" fill="freeze"/>
+        </rect>
+
+        <rect id="loader-roof-line-2" x="205" y="117" width="18" fill-opacity="0" height="240" rx="9" transform="rotate(30 205 117)" fill="#AA000F">
+            <animate id="loaderRoofAnimStep5" attributeName="fill-opacity" from="0" to="1" dur="0.7s" begin="loaderRoofAnimStep4.end" additive="replace" fill="freeze"/>
+            <animate attributeName="fill-opacity" from="1" to="0" dur="0.01s" begin="loaderRoofAnimStep10.end" repeatCount="1"  additive="replace" fill="freeze"/>
+        </rect>
+
+        <rect id="loader-roof-line-3" x="241" y="117" width="18" fill-opacity="0" height="240" rx="9" transform="rotate(30 241 117)" fill="#AA000F">
+            <animate id="loaderRoofAnimStep6" attributeName="fill-opacity" from="0" to="1" dur="0.7s" begin="loaderRoofAnimStep5.end" additive="replace" fill="freeze"/>
+            <animate attributeName="fill-opacity" from="1" to="0" dur="0.01s" begin="loaderRoofAnimStep10.end" repeatCount="1"  additive="replace" fill="freeze"/>
+        </rect>
+
+        <rect id="loader-roof-line-4" x="277" y="117" width="18" fill-opacity="0" height="240" rx="9" transform="rotate(30 277 117)" fill="#AA000F">
+            <animate id="loaderRoofAnimStep7" attributeName="fill-opacity" from="0" to="1" dur="0.7s" begin="loaderRoofAnimStep6.end" additive="replace" fill="freeze"/>
+            <animate attributeName="fill-opacity" from="1" to="0" dur="0.01s" begin="loaderRoofAnimStep10.end"  additive="replace" fill="freeze"/>
+        </rect>
+
+        <animate id="loaderRoofAnimStep0" attributeType="CSS" attributeName="opacity" from="0" to="0" dur="0" repeatCount="1" fill="freeze" />
+
+        <animate id="loaderRoofAnimStep1" attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.25s" restart="whenNotActive" repeatCount="indefinite" fill="freeze" begin="loaderRoofAnimStep10.end + 0.25s; 0.25s" end="loaderRoofAnimStep10.end + 0.5s; 0.5s"/>
+
+        <animateTransform id="loaderRoofAnimStep2" attributeName="transform" type="translate" dur="0.75s" from="0, 30" to="0, 0" repeatCount="1" fill="freeze" begin="loaderRoofAnimStep1.begin"/>
+
+        <animateTransform id="loaderRoofAnimStep3" attributeName="transform" dur="0.4s" type="scale" from="1" to="0.9" additive="sum" repeatCount="1" begin="loaderRoofAnimStep2.end + 0.3s" fill="freeze"/>
+
+        <animateTransform id="loaderRoofAnimStep8" attributeName="transform" dur="0.4s" type="scale" from="0.9" to="1" additive="replace" repeatCount="1" begin="loaderRoofAnimStep7.end" fill="freeze"/>
+
+        <animateTransform id="loaderRoofAnimStep9" attributeName="transform" type="translate" dur="0.75s" from="0, 0" to="0, 30" repeatCount="1" additive="replace" fill="freeze" begin="loaderRoofAnimStep8.end + 0.3s"/>
+
+        <animate id="loaderRoofAnimStep10" attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.25s" repeatCount="1" additive="replace" fill="freeze" begin="loaderRoofAnimStep9.begin + 0.3s" />
+
+    </g>
+
+    <defs>
+        <clipPath id="loader-roof-clip">
+            <rect width="456" height="456" fill="white" />
+        </clipPath>
+    </defs>
+
+</svg>

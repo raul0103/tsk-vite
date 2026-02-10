@@ -1,0 +1,117 @@
+%css-arrow {
+    content: "";
+    width: 6px;
+    height: 6px;
+    display: block;
+    border: solid;
+    border-width: 0 3px 3px 0;
+    position: absolute;
+    border-radius: 1px;
+    @include set_colors_1(border-color);
+}
+
+.other-products {
+  &__title {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__slider{
+    position: relative;
+
+    .listing__products-item-left {
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%;
+    }
+
+    .listing__products-item-photo {
+        grid-column: span 3;
+        margin: 5px 0 10px;
+        max-width: unset;
+        order: 2;
+        width: 100%;
+    }
+
+    .listing__products-item-title {
+        grid-column: span 3;
+        margin-bottom: 20px;
+        order: 4;
+    }
+
+    .listing__products-item-avail {
+        order: 2;
+    }
+
+    .listing__products-item-rate {
+      grid-column: span 1;
+      margin-right: 0;
+      order: 2;
+    }
+
+    .listing__products-item-art {
+        grid-column: span 2;
+        margin-bottom: 10px;
+    }
+
+    .pop-slide {
+      height: auto;
+    }
+  }
+
+  &__swiper-buttons {
+    width: 96px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    right: 15px;
+    top: -52px;
+    @media screen and (max-width: 580px) {
+      position: static;
+      right: auto;
+      margin-bottom: 28px;
+      align-self: flex-start;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid;
+      border-radius: 4px;
+      position: static;
+      margin-top: 0;
+      transition: .3s;
+      @include set_colors_1(border-color);
+      &:hover {
+        @include set_colors_1(background-color);
+        &::after {
+          border-color: #fff;
+          @at-root .isover & {
+            border-color: #323232;
+          }
+        }
+      }
+      &::after {
+        @extend %css-arrow;
+        width: 7px;
+        height: 7px;
+        transition: .3s;
+      }
+    }
+    .swiper-button-prev {
+      margin-right: 16px;
+      &::after {
+        transform: rotate(130deg);
+        margin-left: 5px;
+      }
+    }
+    .swiper-button-next {
+      &::after {
+        transform: rotate(310deg);
+        margin-right: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,1008 @@
+
+.card-product-mv78{
+    .product-card__content{
+        @media screen and (max-width: 768px) {
+            border: unset;
+            padding: 0;
+        }
+    }
+
+    .product-card-mv78__header
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 12px;
+        
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+}
+// =============================================
+// Основной контейнер карточки товара MV78
+// =============================================
+.product-card-mv78 {
+    width: 100%;
+
+    &__body {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        gap: 24px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (max-width: 400px) {
+            gap: 12px;
+        }
+    }
+
+    &__left {
+        width: 100%;
+    }
+
+    &__right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+
+        @media (max-width: 400px) {
+            align-items: stretch;
+            gap: 6px;
+        }
+    }
+
+    .product-card__discount-block_icon_fire {
+        max-width: unset;
+        width: 100%;
+    }   
+
+    .bordered-block{
+        padding: 6px;
+        border: unset;
+    }
+}
+
+// =============================================
+// Галерея товара MV78
+// =============================================
+.product-gallery-mv78 {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important; // Превьюшки слева, основное изображение справа
+    align-items: flex-start;
+    gap: 25px;
+
+    @media (max-width: 768px) {
+        gap: 0; // Убираем gap на мобильной версии
+    }
+
+    @media (max-width: 400px) {
+        gap: 0;
+    }
+
+    &__thumbs {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        order: 1; // Принудительно первый порядок
+        align-self: stretch; // Растягиваем на всю высоту основного изображения
+        flex-shrink: 0; // НЕ сжимаем превьюшки
+        min-width: 80px; // Минимальная ширина
+        max-width: 80px; // Максимальная ширина
+        position: relative; // Фиксируем позицию
+
+        @media (max-width: 768px) {
+            display: none; // Скрываем превьюшки на мобильной версии
+        }
+        
+        &-slider {
+            width: 80px !important;
+            height: 100%; // Высота на весь контейнер
+            overflow: visible; // Показываем все превьюшки
+            
+            .swiper-wrapper {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 9px;
+                transform: none !important; // Отключаем transform от Swiper!
+                transition: none !important; // Отключаем transition
+            }
+        }
+    }
+
+    &__thumb-slide {
+        width: 80px !important;
+        height: 80px;
+        flex-shrink: 0;
+        cursor: pointer;
+        opacity: 0.6;
+        transition: opacity 0.3s ease, border-color 0.3s ease;
+        border-radius: 5px;
+        overflow: hidden;
+        border: 2px solid transparent;
+        
+        &.active {
+            opacity: 1;
+            border-color: #4F70AD;
+        }
+        
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__thumb-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__main {
+        flex: 1;
+        order: 2; // Принудительно второй порядок (справа)
+        max-width: calc(100% - 105px); // Ограничиваем ширину (100% - 80px превьюшки - 25px gap)
+        overflow: hidden; // Скрываем переполнение
+        
+        @media (max-width: 768px) {
+            max-width: 100%; // На мобильной версии занимает 100% ширины
+            width: 100%;
+        }
+
+        @media (max-width: 400px) {
+            max-width: 100%;
+            width: 100%;
+        }
+        
+        &-slider {
+            width: 100% !important;
+            height: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+            
+            // Важные стили для Swiper
+            .swiper-wrapper {
+                display: flex;
+                align-items: flex-start;
+                transition-timing-function: ease-in-out;
+            }
+        }
+    }
+
+    &__slide {
+        width: 100% !important;
+        height: auto;
+        flex-shrink: 0 !important; // Важно! Предотвращает сжатие слайда
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    &__img {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain; // Изменено с cover на contain
+        border: unset;
+        border-radius: 5px;
+        margin: 0 auto; // Центрируем изображение
+    }
+
+    // Модификатор для одного изображения
+    // Если одно изображение - убираем превьюшки, основное изображение на всю ширину
+    &_single {
+        .product-gallery-mv78__thumbs {
+            display: none;
+        }
+        
+        .product-gallery-mv78__main {
+            width: 100%;
+        }
+        
+        .product-gallery-mv78__img {
+            min-height: 400px;
+            max-height: 600px;
+            object-fit: contain;
+
+            @media (max-width: 400px) {
+                min-height: 250px;
+                max-height: 400px;
+            }
+        }
+    }
+
+   
+   
+}
+
+// =============================================
+// Блок корзины и цены MV78
+// =============================================
+.product-cart-mv78 {
+    width: 400px;
+
+    @media (max-width: 400px) {
+        width: 100%;
+    }
+
+    &__price-block {
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 0px -1px 40.2px 0px rgba(243, 244, 247, 1), 
+                    0px 4px 4.2px 0px rgba(230, 236, 249, 0.25);
+        border-radius: 5px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        @media screen and (max-width: 768px) {
+            gap: 5px;
+        }
+
+        @media screen and (max-width: 400px) {
+            padding: 12px;
+            gap: 8px;
+        }
+    }
+
+    &__thickness-art {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 19px;
+        flex-wrap: wrap;
+
+        @media (max-width: 400px) {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 8px;
+        }
+    }
+
+    &__thickness {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+        flex: 1;
+        flex-wrap: nowrap;
+        max-width: 100%;
+    }
+
+    &__label {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.3;
+        color: #000000;
+        white-space: nowrap;
+
+        @media (max-width: 400px) {
+            font-size: 12px;
+        }
+    }
+
+    &__thickness-options {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    &__thickness-btn {
+        padding: 4px 7px;
+        border-radius: 5px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        color: #000000;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        white-space: nowrap;
+
+        @media (max-width: 400px) {
+            padding: 3px 6px;
+            font-size: 12px;
+        }
+
+        &.active {
+            background: #F4F8FF;
+            color: #4F70AD;
+            cursor: default;
+        }
+
+        &:not(.active):hover {
+            background: #F4F8FF;
+            color: #4F70AD;
+        }
+
+        // Если это ссылка (перелинковка)
+        &[href] {
+            cursor: pointer;
+            
+            &:hover {
+                background: #E8F1FF;
+            }
+        }
+    }
+
+    &__article {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #B1B2B3;
+        text-align: right;
+        white-space: nowrap;
+
+        @media (max-width: 400px) {
+            font-size: 10px;
+            text-align: left;
+        }
+    }
+
+    &__price-switcher {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__price-options {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__price-btn {
+        padding: 4px;
+        border-radius: 5px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        color: #000000;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+
+        @media (max-width: 400px) {
+            padding: 3px;
+            font-size: 12px;
+        }
+
+        &.active {
+            background: #F4F8FF;
+            color: #4F70AD;
+        }
+
+        &:hover {
+            background: #F4F8FF;
+        }
+    }
+
+    &__price-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 300px;
+
+        @media (max-width: 400px) {
+            width: 100%;
+        }
+    }
+
+    &__price-wrap {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__price {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.2;
+        color: #000000;
+
+        @media (max-width: 400px) {
+            font-size: 20px;
+        }
+    }
+
+    &__package {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #B1B2B3;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 4px;
+        }
+    }
+
+    &__cart-controls {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+
+        // Стили для стандартных элементов корзины
+        .js-product__controls {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+
+        .custom-counter {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+
+            @media (max-width: 400px) {
+                height: 44px;
+            }
+
+            &__btn {
+                width: 31px;
+                height: 50px;
+
+                @media (max-width: 400px) {
+                    width: 28px;
+                    height: 44px;
+                    font-size: 20px;
+                }
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 1.2;
+                color: #B1B2B3;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                user-select: none;
+
+                &:hover {
+                    background: #f9f9f9;
+                }
+
+                &_dir_less {
+                    border-radius: 2px 0 0 2px;
+                    border-right: none;
+                }
+
+                &_dir_more {
+                    border-radius: 0 2px 2px 0;
+                    border-left: none;
+                }
+            }
+
+            &__amount {
+                height: 50px;
+                width: 100%;
+                max-width: 80px;
+                text-align: center;
+                border: 1px solid #EAEAEA;
+                border-left: none;
+                border-right: none;
+                font-family: 'Lato', sans-serif;
+                font-weight: 700;
+                font-size: 13.3px;
+                line-height: 1.2;
+                text-transform: uppercase;
+                color: #3C3C3B;
+                padding: 17px 3px;
+                outline: none;
+
+                @media (max-width: 400px) {
+                    height: 44px;
+                    max-width: 70px;
+                    font-size: 12px;
+                    padding: 14px 2px;
+                }
+            }
+        }
+
+        .js-product__to-cart,
+        .js-product__btn-in-cart {
+            flex: 1;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #4F70AD;
+            border-radius: 6px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+
+            @media (max-width: 400px) {
+                height: 44px;
+                font-size: 12px;
+            }
+
+            &:hover {
+                background: darken(#4F70AD, 5%);
+            }
+        }
+
+        .js-product__controls_action_change {
+            display: none;
+        }
+
+        .js-product__ms2-elems {
+            display: none;
+        }
+    }
+
+    &__one-click-btn {
+        width: 100%;
+        max-width: 100%;
+        height: 50px;
+        border: 1px solid #000000;
+        border-radius: 6px;
+        background: #FFFFFF;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: #190101;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 0px; 
+        }
+
+        @media screen and (max-width: 400px) {
+            height: 44px;
+            font-size: 12px;
+        }
+
+        &:hover {
+            background: #f9f9f9;
+        }
+    }
+}
+
+// =============================================
+// Блок складов MV78
+// =============================================
+.product-warehouses-mv78 {
+    width: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4.2px 0px rgba(230, 236, 249, 0.25), 
+                0px -1px 40.2px 0px rgba(243, 244, 247, 1);
+    border-radius: 5px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 240px;
+
+    @media (max-width: 400px) {
+        width: 100%;
+        padding: 10px;
+        gap: 6px;
+        height: auto;
+        min-height: 200px;
+    }
+
+    &__delivery {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__delivery-icon {
+        width: 16px;
+        height: 16px;
+        color: #000000;
+    }
+
+    &__delivery-text {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        color: #000000;
+
+        @media (max-width: 400px) {
+            font-size: 12px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border-radius: 5px;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        height: 34px;
+    }
+
+    &__check-icon {
+        width: 27px;
+        height: 34px;
+    }
+
+    &__header-text {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+        color: #000000;
+        width: 164px;
+
+        @media (max-width: 400px) {
+            font-size: 12px;
+            width: auto;
+            flex: 1;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        @media (max-width: 400px) {
+            gap: 15px;
+        }
+    }
+
+    &__names {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    &__warehouse {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+    }
+
+    &__warehouse-icon {
+        width: 17px;
+        height: 17px;
+    }
+
+    &__warehouse-name {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+        color: #000000;
+
+        @media (max-width: 400px) {
+            font-size: 12px;
+        }
+    }
+
+    &__quantities {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    &__quantity {
+        font-family: 'Lato', sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 1.2;
+        color: #000000;
+
+        @media (max-width: 400px) {
+            font-size: 12px;
+        }
+    }
+
+    &__delivery-calc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        border-top: 1px dashed #757575;
+        padding-top: 7px;
+        margin-top: 0;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__delivery-calc-icon {
+        width: 13px;
+        height: 13px;
+    }
+
+    &__delivery-calc-text {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #B1B2B3;
+
+        @media (max-width: 400px) {
+            font-size: 10px;
+        }
+    }
+}
+
+// =============================================
+// Блок "Нашли дешевле?" MV78
+// =============================================
+.product-sale-mv78 {
+    width: 400px;
+    height: 56px;
+    background: #FFFCF5;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 400px) {
+        width: 100%;
+        height: auto;
+        min-height: 50px;
+        padding: 10px 0;
+    }
+
+    &__icon {
+        position: absolute;
+        left: 23px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 28px;
+        height: 31px;
+
+        @media (max-width: 400px) {
+            left: 12px;
+            width: 24px;
+            height: 26px;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        left: 64px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #000000;
+
+        @media (max-width: 400px) {
+            left: 44px;
+            font-size: 12px;
+            right: 80px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    &__link {
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #4F70AD;
+        cursor: pointer;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+
+        @media (max-width: 400px) {
+            right: 12px;
+            font-size: 12px;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+// =============================================
+// Блок действий в шапке MV78 (сравнение, избранное, поделиться)
+// =============================================
+.mv78-header-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+
+    @media (max-width: 400px) {
+        gap: 8px;
+    }
+
+    &__btn {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        position: relative;
+        flex-shrink: 0;
+
+        @media (max-width: 400px) {
+            width: 28px;
+            height: 28px;
+        }
+
+        // Убираем текст из ::after, который добавляют глобальные стили
+        &::after {
+            content: none !important;
+            display: none !important;
+        }
+
+        &:hover {
+            opacity: 0.7;
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+
+        svg {
+            width: 32px;
+            height: 32px;
+            display: block;
+            pointer-events: none;
+
+            @media (max-width: 400px) {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        &.active {
+            svg path {
+                fill: #4F70AD;
+                stroke: #4F70AD;
+            }
+
+            // Убираем текст из ::after для активного состояния
+            &::after {
+                content: none !important;
+                display: none !important;
+            }
+        }
+    }
+
+    &__btn_favorite.active {
+        svg path {
+            fill: #4F70AD;
+        }
+    }
+
+    &__share {
+        display: flex;
+        align-items: center;
+        min-width: 32px;
+        height: 32px;
+
+        @media (max-width: 400px) {
+            min-width: 28px;
+            height: 28px;
+        }
+
+        .ya-share2 {
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+            width: auto;
+            min-width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 400px) {
+                min-width: 28px;
+                height: 28px;
+            }
+
+            &__icon_more {
+                min-width: 32px;
+                min-height: 32px;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: visible;
+
+                @media (max-width: 400px) {
+                    min-width: 28px;
+                    min-height: 28px;
+                    width: 28px;
+                    height: 28px;
+                }
+
+                svg {
+                    width: 32px;
+                    height: 32px;
+
+                    @media (max-width: 400px) {
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+            }
+
+            &__link-text {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.reviews-popup
+  $r: 48px
+  position: fixed
+  z-index: 6
+  left: 0
+  bottom: 0
+  background: $black
+  width: 167px
+  text-align: center
+  opacity: 0
+  pointer-events: none
+  border-radius: $r $r $r 0
+  &--fade-in
+    animation: 0.3s cubic-bezier(0.4, 0, 1, 1) 0s 1 normal both reviews-popup-fadeIn
+    pointer-events: all
+  &--fade-out
+    animation: 0.3s cubic-bezier(0.4, 0, 1, 1) 0s 1 normal both reviews-popup-fadeOut
+    pointer-events: none
+  @media (max-width: 768px)
+    $r: 39px
+    bottom: 56px
+    width: 100px
+    border-radius: $r $r $r 0
+
+  &__close
+    top: -20px
+    right: -20px
+    width: 33px
+    height: 33px
+    position: absolute
+    svg
+      fill: $black
+
+  &__title
+    font: 800 32px/1.2 $main-font
+    @media (max-width: 768px)
+      font-size: 18px
+
+  &__rate
+    margin: -3px auto 4px
+    display: flex
+    justify-content: center
+    gap: 3px
+
+  &__rate-item
+    width: 13px
+    height: 12px
+    background: url('/assets/template/tpl-imgs/review-icons/star-empty.svg') no-repeat
+    background-size: auto 100%
+    @media (max-width: 768px)
+      width: 8px
+      background-size: auto 8px
+
+    &.active
+      background: url('/assets/template/tpl-imgs/review-icons/star.svg') no-repeat
+      background-size: auto 100%
+      @media (max-width: 768px)
+        background-size: auto 8px
+
+  &__count
+    font: 600 10px/0.83 $main-font
+    margin: 0 0 15px
+    @media (max-width: 768px)
+      margin: 0 0 10px
+
+  &__text
+    font: 600 10px/1.2 $main-font
+    @media (max-width: 768px)
+      padding: 0 8px
+
+    img
+      vertical-align: middle
+
+a.reviews-popup__link
+  $r: 48px
+  display: block
+  color: $light
+  padding: 36px 0 27px
+  border-radius: $r $r $r 0
+  &:hover,&:focus
+    color: $light
+  @media (max-width: 768px)
+    padding: 10px 0 10px
+
+@keyframes reviews-popup-fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes reviews-popup-fadeOut
+  from
+    opacity: 1
+  to
+    opacity: 0

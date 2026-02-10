@@ -1,0 +1,1 @@
+<li><a href="{$uri}" fast-search-result-text>{$menutitle}</a></li>

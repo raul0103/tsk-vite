@@ -1,0 +1,426 @@
+[
+    {
+        "name": "Виниловый сайдинг",
+        "id": "assort-ondulin",
+        "svg_id": "vinil-side",
+        "links": [],
+        "groups": [
+            {
+                "name": "Виниловый сайдинг",
+                "type": 1,
+                "uri": "\/vinilovyj-sajding\/",
+                "img": "",
+                "items": [
+                    {
+                        "uri": "\/vinilovyj-sajding-docke\/",
+                        "name": "Docke",
+                        "img": "/assets/template/tpl-imgs/docke.jpg",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/vinilovyj-sajding-alta-profil\/",
+                        "name": "Альта-Профиль",
+                        "img": "/assets/template/tpl-imgs/alta.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/vinilovyj-sajding-grand-line\/",
+                        "name": "Grand Line",
+                        "img": "/assets/template/tpl-imgs/grand-line.jpg",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/vinilovyy-sayding-yu-plast\/",
+                        "name": "Ю-Пласт",
+                        "img": "/assets/template/tpl-imgs/yuplast.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "/vinilovyj-sajding-nordside/",
+                        "name": "NordSide",
+                        "img": "/assets/template/tpl-imgs/nordside.jpeg",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/vinilovyj-sajding-mitten\/",
+                        "name": "Mitten",
+                        "img": "/assets/template/tpl-imgs/mitten.jpg",
+                        "links": []
+                    },
+                    {
+                        "uri": "/vinilovyj-sajding-vox/",
+                        "name": "VOX",
+                        "img": "/assets/template/tpl-imgs/vox.jpg",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/vinilovyy-sayding-fineber\/",
+                        "name": "FineBer",
+                        "img": "/assets/template/tpl-imgs/FineBer.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "/vinilovyj-sajding-vinylon/",
+                        "name": "VINYLON",
+                        "img": "/assets/template/tpl-imgs/vanylon.jpg",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/komplektuyushhie-dlya-vinilovogo-sajdinga\/",
+                        "name": "Комплектующие для винилового сайдинга",
+                        "img": "/assets/images/products/76747/small/8eafa748c2375d51fe1ad951bc65e51f.jpg",
+                        "links": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Металлический сайдинг",
+        "id": "assort-ondulin",
+        "svg_id": "metall-side",
+        "links": [],
+        "groups": [
+            {
+                "name": "Металлический сайдинг",
+                "type": 1,
+                "uri": "\/metallicheskij-sajding\/",
+                "img": "",
+                "items": [
+                    {
+                        "uri": "\/metallicheskij-sajding-aquasystem\/",
+                        "name": "Аквасистем",
+                        "img": "/assets/template/tpl-imgs/Аквасистем.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/metallicheskij-sajding-grand-line\/",
+                        "name": "Grand Line",
+                        "img": "/assets/template/tpl-imgs/grand-line.jpg",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/metallicheskij-sajding-metallprofil\/",
+                        "name": "Металл-Профиль",
+                        "img": "/assets/template/tpl-imgs/metallprofil.jpg",
+                        "links": []
+                    },
+                    {
+                        "uri": "https:\/\/www-fasad.ru\/komplektuyushhie-dlya-metallicheskogo-sajdinga\/",
+                        "name": "Комплектующие для металлического сайдинга",
+                        "img": "",
+                        "links": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Вспененный сайдинг",
+        "id": "assort-ondulin",
+        "svg_id": "vspen-side",
+        "links": [],
+        "groups": [
+            {
+                "name": "Вспененный сайдинг",
+                "type": 1,
+                "uri": "\/vspenennyij-sajding\/",
+                "img": "",
+                "items": []
+            }
+        ]
+    },
+    {
+        "name": "Фиброцементный сайдинг",
+        "id": "assort-ondulin",
+        "svg_id": "fibro-side",
+        "links": [],
+        "groups": [
+            {
+                "name": "Фиброцементный сайдинг",
+                "type": 1,
+                "uri": "\/fibrocementnyj-sajding\/",
+                "img": "",
+                "items": [
+                    {
+                        "uri": "\/fibrocementnyj-sajding-cedral\/",
+                        "name": "Кедрал",
+                        "img": "/assets/template/tpl-imgs/Cedral.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/fibrocementnyj-sajding-dekover\/",
+                        "name": "Дековер",
+                        "img": "/assets/template/tpl-imgs/Decover.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "/fibrocementnyj-sajding-kanion/",
+                        "name": "Каньон",
+                        "img": "/assets/template/tpl-imgs/logo_header.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/fibrocementnyj-sajding-beteko\/",
+                        "name": "БЕТЭКО",
+                        "img": "/assets/template/tpl-imgs/beteko.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "/fibrocementnyj-sajding-fcs-group/",
+                        "name": "FCS Group",
+                        "img": "/assets/template/tpl-imgs/_fcs-group.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/fibrocementnyj-sajding-fibratek\/",
+                        "name": "Фибратек",
+                        "img": "/assets/template/tpl-imgs/Фибратек.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/fibrocementnyj-sajding-sm-bord\/",
+                        "name": "СМ Борд",
+                        "img": "/assets/template/tpl-imgs/CM BORD.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/fibrocementnyj-sajding-latonit\/",
+                        "name": "LATONIT",
+                        "img": "/assets/template/tpl-imgs/logorus.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "/fibrocementnyj-sajding-asahi/",
+                        "name": "Asahi",
+                        "img": "/assets/template/tpl-imgs/Asahi_Logo.jpeg",
+                        "links": []
+                    },
+                    {
+                        "uri": "/komplektuyushhie-dlya-fibroczementnogo-sajdinga/",
+                        "name": "Комплектующие для фиброцементного сайдинга",
+                        "img": "/assets/images/products/47223/small/070-original.jpg",
+                        "links": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Акриловый сайдинг",
+        "id": "assort-ondulin",
+        "svg_id": "akril-side",
+        "links": [],
+        "groups": [
+            {
+                "name": "Акриловый сайдинг",
+                "type": 1,
+                "uri": "\/akrilovyij-sajding\/",
+                "img": "",
+                "items": [
+                    {
+                        "uri": "/sofityi-alta-profil/",
+                        "name": "Альта-Профиль",
+                        "img": "/assets/cache_image/assets/template/tpl-imgs/alta_100x69_c72.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/akrilovyij-sajding-tecos\/",
+                        "name": "Tecos",
+                        "img": "/assets/template/img/brands/Tecos.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/akrilovyij-sajding-fineber\/",
+                        "name": "FineBer",
+                        "img": "/assets/template/img/brands/FineBer.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/akrilovyij-sajding-grand-line\/",
+                        "name": "Grand-Line",
+                        "img": "/assets/template/img/brands/grand-line.jpg",
+                        "links": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Формованный сайдинг",
+        "id": "assort-ondulin",
+        "svg_id": "formov-side",
+        "links": [],
+        "groups": [
+            {
+                "name": "Формованный сайдинг",
+                "type": 1,
+                "uri": "\/formovannyij-sajding\/",
+                "img": "/assets/cache_image/assets/template/tpl-imgs/metallprofil_100x69_175.jpg",
+                "items": []
+            }
+        ]
+    },
+    {
+        "name": "Софиты",
+        "id": "assort-ondulin",
+        "svg_id": "sofit",
+        "links": [],
+        "groups": [
+            {
+                "name": "Софиты",
+                "type": 1,
+                "uri": "\/sofityi\/",
+                "img": "",
+                "items": [
+                    {
+                        "uri": "\/alta-profil\/",
+                        "name": "Альта-Профиль",
+                        "img": "/assets/cache_image/assets/template/tpl-imgs/alta_100x69_c72.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/sofit-metall-profil\/",
+                        "name": "Металл Профиль",
+                        "img": "/assets/cache_image/assets/template/tpl-imgs/metallprofil_100x69_175.jpg",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/sofityi-deke\/",
+                        "name": "Docke",
+                        "img": "/assets/cache_image/assets/template/tpl-imgs/docke_100x69_175.jpg",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/sofityi-grand-lajn\/",
+                        "name": "Grand-Line",
+                        "img": "/assets/cache_image/assets/template/tpl-imgs/grand-line_100x69_175.jpg",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/sofityi-yu-plast\/",
+                        "name": "Ю-Пласт",
+                        "img": "/assets/cache_image/assets/template/tpl-imgs/yuplast_100x69_c72.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/sofityi-texnonikol\/",
+                        "name": "ТехноНИКОЛЬ",
+                        "img": "/assets/cache_image/assets/template/tpl-imgs/tn_100x69_175.jpg",
+                        "links": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Фасадные пластиковые панели",
+        "id": "assort-ondulin",
+        "svg_id": "plast-panel",
+        "links": [],
+        "groups": [
+            {
+                "name": "Фасадные пластиковые панели",
+                "type": 1,
+                "uri": "\/fasadnye-plastikovye-paneli\/",
+                "img": "",
+                "items": [
+                    {
+                        "uri": "\/fasadnye-paneli-docke\/",
+                        "name": "Docke",
+                        "img": "/assets/template/tpl-imgs/docke.jpg",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/fasadnye-paneli-alta-profil\/",
+                        "name": "Альта-Профиль",
+                        "img": "/assets/template/tpl-imgs/alta.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/fasadnye-paneli-vox\/",
+                        "name": "Vox",
+                        "img": "/assets/template/tpl-imgs/vox.jpg",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/fasadnye-paneli-u-plast\/",
+                        "name": "Ю-пласт",
+                        "img": "/assets/template/tpl-imgs/yuplast.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/fasadnye-paneli-vilostone\/",
+                        "name": "Vilostone (Вилостоун)",
+                        "img": "/assets/template/tpl-imgs/Vilo.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/fasadnye-paneli-fineber\/",
+                        "name": "Fineber",
+                        "img": "/assets/template/tpl-imgs/FineBer.png",
+                        "links": []
+                    },
+                    {
+                        "uri": "\/fasadnye-paneli-grand-line\/",
+                        "name": "Grand Line",
+                        "img": "/assets/template/tpl-imgs/grand-line.jpg",
+                        "links": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Фасадная штукатурка",
+        "id": "assort-ondulin",
+        "svg_id": "fasad-shtuk",
+        "links": [],
+        "groups": [
+            {
+                "name": "Фасадная штукатурка",
+                "type": 1,
+                "uri": "\/fasadnaya-shtukaturka\/",
+                "img": "",
+                "items": [
+                    {
+                        "uri": "\/fasadnaya-shtukaturka-baumit\/",
+                        "name": "Baumit",
+                        "img": "/assets/template/tpl-imgs/Baumit.png",
+                        "links": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Фасадная плитка Технониколь Hauberk",
+        "id": "assort-ondulin",
+        "svg_id": "fasad-plit",
+        "links": [],
+        "groups": [
+            {
+                "name": "Фасадная плитка Технониколь Hauberk",
+                "type": 1,
+                "uri": "\/fasadnaya-plitka-hauberk\/",
+                "img": "",
+                "items": []
+            }
+        ]
+    },
+    {
+        "name": "Фасадные термопанели",
+        "id": "assort-ondulin",
+        "svg_id": "fasad-termo",
+        "links": [],
+        "groups": [
+            {
+                "name": "Фасадные термопанели",
+                "type": 1,
+                "uri": "\/fasadnye-termopaneli\/",
+                "img": "",
+                "items": []
+            }
+        ]
+    }
+]

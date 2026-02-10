@@ -1,0 +1,1 @@
+<meta name="description" content="{$_modx->resource.description}{if $pagination_value>''}, страница {$pagination_value}{/if}">

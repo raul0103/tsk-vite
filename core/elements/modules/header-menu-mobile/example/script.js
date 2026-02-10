@@ -1,0 +1,113 @@
+/**
+ * [HeaderMenuMobile] Класс для упраления мобильным меню
+ *
+ * У HTML элементов должны быть следующие обязательыне data аттрибуты
+ * data-hmm-menu - Мобильное Меню
+ * data-hmm-menu-open - Кнопка для открытия мобильного меню
+ * data-hmm-tab - Таб с переданным в него ID
+ * data-hmm-tab-open - Кнопка для открытия таба, с переданным ID таба
+ * data-hmm-tab-back - Кнопка назад. Откроет прошлый активный таб
+ */
+
+class HeaderMenuMobile {
+  constructor() {
+    this.store = {
+      story: [], // История активных табов, используется для дальнейшего перехода "назад"
+      current: null, // Текущая активная вкладка
+    };
+
+    this.initOpenMenuBtn();
+    this.initCurrentTab();
+    this.initBackButtons();
+    this.initOpenButtons();
+  }
+
+  initOpenMenuBtn() {
+    let btn = document.querySelector("[data-hmm-menu-open]");
+    let menu = document.querySelector("[data-hmm-menu]");
+    let body = document.querySelector("body");
+
+    if (!btn || !menu) {
+      console.warn("[HeaderMenuMobile] Не найден - data-hmm-menu-open");
+      return;
+    }
+
+    // Открытие
+    btn.addEventListener("click", (e) => {
+      btn.classList.toggle("opened");
+      menu.classList.toggle("opened");
+      body.classList.toggle("freeze-page");
+    });
+
+    // Закрытие меню
+    document.addEventListener("click", (e) => {
+      if (
+        !menu.contains(e.target) &&
+        !btn.contains(e.target) &&
+        e.target !== btn
+      ) {
+        btn.classList.remove("opened");
+        menu.classList.remove("opened");
+        body.classList.remove("freeze-page");
+      }
+    });
+  }
+
+  // Определяем активную вкладку
+  initCurrentTab() {
+    this.store.current = document.querySelector(".active[data-hmm-tab]");
+    if (!this.store.current) {
+      this.store.current = document.querySelector("[data-hmm-tab='main']");
+      if (this.store.current) this.store.current.classList.add("active");
+    }
+  }
+
+  // Метод для привязки событий к кнопкам "Назад"
+  initBackButtons() {
+    document.querySelectorAll("[data-hmm-tab-back]").forEach((button) => {
+      button.addEventListener("click", () => {
+        if (this.store.current) {
+          this.store.current.classList.remove("active");
+        }
+        // Закрыли последнюю активную вкладку
+        let past_active = this.store.story.pop();
+        if (past_active) {
+          this.addActiveClass(past_active);
+          this.store.current = past_active;
+        }
+      });
+    });
+  }
+
+  // Метод для привязки событий к кнопкам "Открыть"
+  initOpenButtons() {
+    document.querySelectorAll("[data-hmm-tab-open]").forEach((button) => {
+      let tab_id = button.dataset["hmmTabOpen"];
+      button.addEventListener("click", () => {
+        // Закрыли текущий открытый таб
+        if (this.store.current) {
+          this.store.current.classList.remove("active");
+          this.store.story.push(this.store.current);
+        }
+
+        // Открыли новую вкладку
+        this.store.current = document.querySelector(
+          `[data-hmm-tab="${tab_id}"]`
+        );
+
+        if (this.store.current) {
+          this.addActiveClass(this.store.current);
+        }
+      });
+    });
+  }
+
+  // Метод для добавления класса "active" с задержкой
+  addActiveClass(elem) {
+    setTimeout(() => {
+      elem.classList.add("active");
+    }, 200);
+  }
+}
+
+new HeaderMenuMobile();

@@ -1,0 +1,52 @@
+.catalog-horizontal-banner {
+  width: 100%;
+  grid-column: 1 / -1;
+  grid-row: 3;
+  position: relative;
+  img {
+    max-width: 100%;
+    min-width: 320px;
+  }
+  &__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__button {
+    position: absolute;
+    display: flex;
+    width: 323px;
+    height: 47px;
+    left: 40px;
+    bottom: 40px;
+    color: $krovlya-alt-1;
+    background: $krovlya-white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
+
+    @include until-768 {
+      width: 35%;
+      height: 16%;
+      bottom: 22px;
+    }
+
+    @include until-460 {
+      height: 28px;
+      min-width: 134px;
+      right: 40px;
+      width: 20%;
+      left: 13px;
+      bottom: 15px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

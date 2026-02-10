@@ -1,0 +1,30 @@
+.customer-photos {
+  display: grid;
+  border-top: 1px solid #eaeaea;
+  padding-top: 24px;
+
+  .swiper {
+    overflow: hidden;
+    position: relative;
+    &-slide {
+      width: max-content;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      background: #fff;
+      border-radius: 6px;
+      padding: 20px;
+      font-size: 12px;
+      border: 1px solid #eee;
+      z-index: 1;
+      top: 50%;
+
+      &:after {
+        font-size: 18px;
+        color: #111;
+        font-weight: 800;
+      }
+    }
+  }
+}
