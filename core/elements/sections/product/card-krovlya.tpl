@@ -288,7 +288,7 @@
                         <div class="resultSum-m2"><span class="title">ИТОГО: </span><span class="value"> </span><span class="prefix">м2</span></div>
                         <div class="resultSum-rub"><span class="value"> </span><span class="prefix"> руб</span></div>
                     </div>
-                    <span class="js-product__price" data-default="{$defaultPrice}" style="display:none!important"></span>
+                    <span class="js-product__price" data-default="{$defaultPrice}" style="display:none !important"></span>
                 </div>
 
                 <div class="product-card__info-simple action">

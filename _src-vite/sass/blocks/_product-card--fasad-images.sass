@@ -1,0 +1,464 @@
+@use "@/sass/mixins-context" as *
+
+// Стили для карточки товара фасада с изображениями (новый дизайн по Figma)
+.product-card--fasad-images
+    // Верхняя панель с действиями
+    .product-card__action.product-card-action
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        max-width: 349px
+
+        margin-bottom: 16px
+
+        @media screen and (max-width: 768px)
+            width: 100%
+
+        .ya-share2 svg
+            fill: #767676
+
+        svg.svg.icon-heart, svg.svg.icon-compare
+            stroke: #767676
+
+        .product-card__btn-compare, .product-card__btn-fav, .ya-share2__link-text
+            color: #767676
+
+    .product-card__delivery
+        border: unset
+        padding: 0
+        margin: 0
+
+        .product-card__delivery-link
+            background: unset
+            padding: 0
+
+    // Обертка для двух колонок на десктопе
+    .product-card__layout-wrapper
+        display: flex
+        gap: 12px
+        margin-bottom: 20px
+        
+        @media screen and (max-width: 1046px)
+            flex-direction: column
+
+    // Основной контейнер с белым фоном и тенью
+    .product-card__main-container
+        display: flex
+        gap: 12px
+        background: #FFFFFF
+        border: 1px solid #D7E0ED
+        border-radius: 6px
+        padding: 13px
+        box-shadow: 0px 4px 6.8px 0px rgba(215, 224, 237, 0.59)
+        flex: 0 0 720px
+        max-width: 720px
+        width: 100%
+
+        @media screen and (max-width: 1046px)
+            flex: 1 1 auto
+            max-width: 100%
+
+        @media screen and (max-width: 768px)
+            flex-direction: column
+            gap: 16px
+
+    // Левая часть - блок с изображениями
+    .product-card__images-section
+        display: flex
+        flex-direction: column
+        gap: 8px
+        flex: 1
+        max-width: 369px
+        position: relative
+
+        @media screen and (max-width: 768px)
+            max-width: 100%
+    .product-card__mobile-slider
+        @media screen and (max-width: 768px)
+            display: none
+    // Основное изображение
+    .product-card__main-image
+        position: relative
+        width: 100%
+        height: 306px
+        border-radius: 6px
+        overflow: hidden
+        background: #FFFFFF
+
+        @media screen and (max-width: 768px)
+            height: 250px
+
+        .product-card__img-link
+            display: block
+            width: 100%
+            height: 100%
+
+        .product-card__img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            background: #fff
+
+        .product-card__discount
+            left: auto
+            position: absolute
+            top: 10px
+            z-index: 3
+            width: max-content
+            right: 0
+
+        .product-card__brand
+            position: absolute
+            top: 10px
+            right: 10px
+            z-index: 2
+
+    // Миниатюры галереи
+    .product-card__gallery-thumbnails
+        width: 100%
+        overflow: hidden
+        position: relative
+
+        @media screen and (max-width: 768px)
+            position: static
+
+    .product-card__gallery-slider
+        width: 100%
+        overflow: visible
+        margin: 0  !important
+        position: static  !important
+
+        @media screen and (max-width: 768px)
+            position: absolute  !important
+            top: 0
+            left: 0
+            width: auto
+            max-height: 250px
+
+        .swiper-wrapper
+            display: flex  !important
+            flex-direction: row  !important
+            // gap управляется через spaceBetween в JS
+
+            @media screen and (max-width: 768px)
+                flex-direction: column  !important
+
+    .product-card__gallery-btns-wrap.swiper-buttons
+        display: none  !important
+
+    .product-card__gallery-item
+        flex-shrink: 0
+        width: 68px  !important
+        height: 52px  !important
+        border-radius: 6px
+        border: 1px solid #EBEBEB
+        overflow: hidden
+        cursor: pointer
+        transition: border-color 0.2s
+        display: block
+
+        @media screen and (max-width: 768px)
+            width: 52px  !important
+            height: 38px  !important
+            margin-bottom: 8px
+
+            &:last-child
+                margin-bottom: 0
+
+        &:hover
+            border-color: #DEB262
+
+        &.active
+            border-color: #DEB262
+
+    .product-card__gallery-item-img
+        width: 100%
+        height: 100%
+        object-fit: contain
+
+    // Основное изображение на мобильных с padding слева для миниатюр
+    .product-card__main-image
+        @media screen and (max-width: 768px)
+            padding-left: 60px
+
+    // Правая часть - выбор цвета и опции
+    .product-card__options-section
+        display: flex
+        flex-direction: column
+        gap: 10px
+        flex: 0 0 305px
+        max-width: 305px
+
+        @media screen and (max-width: 768px)
+            max-width: 100%
+            flex: 1
+
+    // Склады в правой части (когда нет цветов)
+    .product-card__warehouses-in-options
+        .warehouse
+            margin-top: 0
+
+    // Показывать склады в правой части только на десктопе
+    .product-card__warehouses-desktop-only
+        @media screen and (max-width: 1046px)
+            display: none  !important
+
+    // Показывать склады внизу на мобильных, скрывать на десктопе (когда нет цветов)
+    .product-card__warehouses-mobile-visible
+        display: none
+
+        @media screen and (max-width: 1046px)
+            display: block
+
+    // Блок выбора цвета (только на десктопе)
+    .product-card__color-selection
+        display: flex
+        flex-direction: column
+        gap: 7px
+
+        @media screen and (max-width: 1046px)
+            display: none
+
+    .product-card__color-label
+        font-family: 'Lato', sans-serif
+        font-weight: 400
+        font-size: 16px
+        line-height: 1.2
+        color: #767676
+
+    .product-card__color-grid
+        display: flex
+        flex-direction: column
+        gap: 6px
+
+    .product-card__color-row
+        display: flex
+        gap: 5px
+        flex-wrap: wrap
+        &.opened
+            .hidden
+                display: block !important
+        .show-more-btn
+            cursor: pointer
+            width: 114px
+            height: 52px
+            display: flex
+            justify-content: center
+            align-items: center
+            &.active
+                border: 1px solid #dadada
+                border-radius: 6px
+
+    .product-card__color-item
+        flex-shrink: 0
+        width: 57px
+        height: 52px
+        border-radius: 6px
+        border: 1px solid #DADADA
+        overflow: hidden
+        cursor: pointer
+        transition: border-color 0.2s, transform 0.2s
+
+        &:hover
+            border-color: #DEB262
+            transform: scale(1.05)
+
+        &.active
+            border-color: #DEB262
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: contain
+
+    // Блок с переключателями
+    .product-card__toggles
+        display: flex
+        flex-direction: column
+        gap: 10px
+        margin-top: 10px
+
+    // Переключатели на десктопе (в правой части)
+    .product-card__toggles-desktop
+        @media screen and (max-width: 1046px)
+            display: none
+
+    // Переключатели на мобильных (после выбора цвета)
+    .product-card__toggles-mobile
+        display: none
+
+        @media screen and (max-width: 1046px)
+            display: block
+            margin-top: 18px
+
+            .product-card__toggles
+                margin-top: 0
+
+    .product-card__toggle-item
+        display: flex
+        align-items: center
+        gap: 2px
+
+    .product-card__toggle-input
+        display: none
+
+        &:checked + .product-card__toggle-label .product-card__toggle-switch
+            +set_colors_1(background-color)
+
+            &::after
+                left: 16px
+
+    .product-card__toggle-label
+        display: flex
+        align-items: center
+        gap: 10px
+        cursor: pointer
+        user-select: none
+
+    .product-card__toggle-switch
+        position: relative
+        width: 31px
+        height: 17px
+        background: #D7E0ED
+        border-radius: 81.43px
+        transition: background-color 0.3s
+        flex-shrink: 0
+
+        &::after
+            content: ''
+            position: absolute
+            left: 2px
+            top: 2px
+            width: 13px
+            height: 13px
+            background: #FFFFFF
+            border-radius: 50%
+            transition: left 0.3s
+
+    .product-card__toggle-text-wrapper
+        display: flex
+        align-items: center
+        gap: 6px
+
+    .product-card__toggle-text
+        font-family: 'Lato', sans-serif
+        font-weight: 400
+        font-size: 16px
+        line-height: 1.2
+        color: #000000
+
+    .product-card__toggle-hint
+        position: relative
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        width: 16px
+        height: 16px
+        cursor: help
+        flex-shrink: 0
+
+        svg
+            width: 16px
+            height: 16px
+            display: block
+
+        &:hover
+            .product-card__toggle-tooltip
+                opacity: 1
+                visibility: visible
+
+    .product-card__toggle-tooltip
+        position: absolute
+        bottom: calc(100% + 10px)
+        left: 50%
+        transform: translateX(-50%)
+        width: 350px
+        padding: 10px
+        background: #FFFFFF
+        border: 1px solid #B1B2B3
+        border-radius: 12px
+        font-family: 'Lato', sans-serif
+        font-weight: 400
+        font-size: 16px
+        line-height: 1.2
+        color: #000000
+        text-align: left
+        opacity: 0
+        visibility: hidden
+        transition: opacity 0.2s, visibility 0.2s
+        z-index: 100
+        pointer-events: none
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1)
+
+        @media screen and (max-width: 768px)
+            width: 280px
+            font-size: 14px
+
+        &::before
+            content: ''
+            position: absolute
+            top: 100%
+            left: 50%
+            transform: translateX(-50%)
+            border: 6px solid transparent
+            border-top-color: #B1B2B3
+
+        &::after
+            content: ''
+            position: absolute
+            top: 100%
+            left: 50%
+            transform: translateX(-50%)
+            border: 5px solid transparent
+            border-top-color: #FFFFFF
+            margin-top: -1px
+
+    // Дополнительная информация (цена, склады) - правая колонка 315px
+    .product-card__additional-info
+        flex: 0 0 auto
+        display: flex
+        flex-direction: column
+        gap: 7px
+
+        @media screen and (max-width: 1046px)
+            flex: 1 1 auto
+            max-width: 100%
+
+        .product-card__price-section,
+        .product-card__warehouses-section,
+        .product-card__discount-block,
+        .product-card__warehouses-section
+            width: 100%
+            margin-top: 0
+
+    .product-card--fasad-images .warehouse
+        margin-top: 0
+
+    // Блок с ссылкой на шоу-рум
+    .detail-info-showroom
+        &__link
+            display: flex
+            align-items: center
+            gap: 6px
+            font-family: 'Lato', sans-serif
+            font-weight: 400
+            font-size: 14px
+            line-height: 1.2
+            color: #000000
+            text-decoration: none
+            transition: opacity 0.2s
+            
+            &:hover
+                opacity: 0.7
+
+                span
+                   +set_colors_1(border-color)
+
+            svg
+                flex-shrink: 0
+                width: 24px
+                height: 24px
+
+            span
+                display: inline-block
+                border-bottom: 1px solid #000000

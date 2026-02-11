@@ -1,0 +1,131 @@
+.product-card_type_relinking-v2
+    $block: '.product-card'
+
+    &#{$block}_type_relinking
+        #{$block}__info
+            padding: 0
+            border: none
+
+        .js-product__btn-in-cart
+            width: 104px
+            height: 42px
+            font-size: 13px
+            line-height: 1
+
+        #{$block}__callback-button
+            margin-top: 11px
+
+        #{$block}__buy
+            width: 222px
+            height: 42px
+            max-width: 100%
+            font-size: 11px
+
+        #{$block}__info-inner
+            border: none
+            padding-bottom: 0
+            margin-bottom: 0
+            @media screen and (max-width: 768px)
+                flex-direction: column
+                align-items: center
+
+        #{$block}__gallery
+            flex-basis: 518px
+            padding-top: 50px
+            @media screen and (max-width: 768px)
+                flex-basis: auto
+            @media screen and (max-width: 500px)
+                flex-basis: auto
+
+        #{$block}__info-wrap
+            flex-basis: 586px
+            border-left: 1px solid #f0f0f0
+            @media screen and (max-width: 768px)
+                flex-basis: auto
+            @media screen and (max-width: 500px)
+                border: none
+                flex-basis: auto
+
+        #{$block}__gallery-slider
+            margin-top: 0
+    .display-view-desktop
+        @media screen and (max-width: 768px)
+            display: block  !important
+    #{$block}__reviews
+        position: absolute
+        top: 0
+        left: 0
+
+    .js-product__price
+        font-size: 24px
+
+    #{$block}__cart-controls
+        margin-top: 10px
+
+    #{$block}__discount
+        top: 70px
+    .js-product__btn-in-cart-top-text
+        font-size: 13px
+
+    #{$block}__left-info
+        width: 60%
+        margin-right: 0
+        @media screen and (max-width: 768px)
+            width: 100%
+
+    #{$block}__right-info
+        width: 40%
+        flex-direction: column
+        @media screen and (max-width: 768px)
+            width: 100%
+            align-items: center
+
+    .js-product__custom-counter
+        width: 104px
+        height: 42px
+
+    #{$block}__brand
+        top: 0
+        left: 0
+
+    #{$block}__delivtext
+        margin-left: 16px
+    #{$block}__select-other-color
+        padding-right: 0
+        margin-top: 20px
+        padding-top: 13px
+        border-top: 1px solid #f0f0f0
+
+    .display-view-mobile
+        @media screen and (max-width: 500px)
+            display: flex
+            align-items: center
+            flex-direction: column
+    .warehouse__content
+        .icon
+            margin-top: 2px
+        .availability
+            display: flex
+            flex: 1
+            justify-content: space-around
+            font-weight: 600
+            &::before
+                border-bottom: 1px dashed #bbc2ce
+                content: ""
+                display: flex
+                flex: 1
+                height: 15px
+                margin: 0 4px
+                order: 1
+    // #{$block}__article
+    //     width: auto
+    //     margin-right: 24px
+    //     margin-top: 0
+
+    //     @media screen and (max-width: 768px)
+    //         margin-bottom: 24px
+    //         margin-right: 0
+
+    //     @media screen and (max-width: 480px)
+    //         margin-bottom: 4px
+

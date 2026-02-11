@@ -1,0 +1,75 @@
+@use "@/sass/mixins-context" as *
+
+.sect-warehouse
+    margin-bottom: 56px
+
+.sect-warehouse__info
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 32px
+    margin-bottom: 44px
+
+    @media screen and (max-width: 772px)
+        grid-template-columns: 1fr
+
+.sect-warehouse__text
+    p, li
+        line-height: 28px
+        font-size: 16px
+    ul
+        list-style-type: disc
+        padding-left: 20px
+
+.sect-warehouse__header
+    font-size: 20px
+    font-weight: 600
+    margin-bottom: 20px
+    display: block
+
+.sect-warehouse__image
+    img
+        object-fit: contain
+        width: 100%
+
+.sect-warehouse__items
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    gap: 20px
+    margin-bottom: 30px
+    width: 100%
+
+    @media screen and (max-width: 772px)
+        grid-template-columns: repeat(2, 1fr)
+
+.warehouse-item
+    display: flex
+    flex-direction: column
+    gap: 5px
+    position: relative
+
+    &__link-container
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+
+
+    &__image
+        height: 140px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    &__title
+        font-size: 18px
+        span
+            display: flex
+            align-items: center
+            justify-content: flex-start
+
+    &__link
+        cursor: pointer
+        font-size: 16px
+        +set_colors_1(color)

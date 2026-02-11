@@ -1,12 +1,17 @@
+@use "@/sass/_breakpoints" as *;
+@use "@/sass/variables/krovlya" as *;
+
 .catalog-horizontal-banner {
   width: 100%;
   grid-column: 1 / -1;
   grid-row: 3;
   position: relative;
+
   img {
     max-width: 100%;
     min-width: 320px;
   }
+
   &__overlay {
     position: absolute;
     left: 0;
@@ -14,6 +19,7 @@
     right: 0;
     bottom: 0;
   }
+
   &__button {
     position: absolute;
     display: flex;

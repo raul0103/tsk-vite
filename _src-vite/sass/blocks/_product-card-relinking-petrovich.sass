@@ -1,0 +1,609 @@
+@use "@/sass/mixins-context" as *
+
+.product-card_type_relinking-petrovich
+    $block: '.product-card'
+
+    .product-card
+        &__delivtext
+            justify-content: center
+             
+        &__content
+            padding: 0
+            border: 0
+
+        &__gallery-btn
+            bottom: 60px
+            @media screen and (min-width: 480px)
+                bottom: 20px
+
+        &__article
+            width: auto
+            margin-right: 24px
+            margin-top: 0
+
+            font-weight: 400
+            font-size: 14px
+            color: #B9B9B9
+
+            @media only screen and (max-width: 550px)
+                width: 100%
+                margin-right: 0
+                margin-bottom: 16px
+
+        &__availability
+            margin-right: 24px
+
+        &__title-1
+            margin-bottom: 15px
+
+        &__main-specs, &__reasons
+            flex-basis: 100%
+
+            #{$block}__specs-list-item
+                &:nth-last-of-type(n+2)
+                    margin-bottom: 24px
+
+            @media only screen and (max-width: 768px)
+                flex-basis: auto
+                flex-grow: 1
+
+            @media only screen and (max-width: 550px)
+                margin-bottom: 10px
+
+        &__side-panel
+            flex-basis: 420px
+            margin-left: 32px
+            background-color: #FFF
+            padding: 16px 20px 16px 20px
+            margin-top: -24px
+            margin-bottom: 20px
+
+            @media only screen and (max-width: 1040px)
+                margin-top: 10px
+                margin-left: auto
+                margin-right: auto
+
+            @media only screen and (max-width: 550px)
+                margin-left: -15px
+                margin-right: -15px
+                width: calc(100% + 30px)
+
+        &__gallery
+            //width: 304px
+            flex-direction: row
+            min-width: 260px
+        //
+        //    @media only screen and (max-width: 768px)
+        //        margin-right: 20px
+        //        margin-left: 0
+        //
+        //    @media only screen and (max-width: 550px)
+        //        margin-left: 0
+        //        margin-right: 0
+        //        margin-bottom: 32px
+        //        width: 100%
+
+        &__img-link
+            margin-right: 0
+            max-width: none
+
+        //&__img
+        //    @media only screen and (max-width: 550px)
+        //        width: 290px  !important
+        //        height: 290px  !important
+        //        margin-left: auto
+        //        margin-right: auto
+
+
+        &__side-panel-text
+            font-size: 14px
+            line-height: 100%
+            color: #323232
+            font-weight: 500
+
+            sup
+                position: absolute
+
+        &__relinking-items-wrap
+            display: flex
+            flex-wrap: wrap
+            margin-left: -4px
+
+        &__relinking-item
+            padding: 3px 4px
+            display: inline-block
+            margin-right: 4px
+            margin-bottom: 8px
+            text-decoration: underline
+            transition: .3s
+
+            &.active, &:hover
+                text-decoration: none
+                color: #FFFFFF
+                +set_colors_1(background-color)
+
+        &__relinking-color
+            width: 20px
+            height: 20px
+            display: inline-block
+            margin-right: 4px
+            margin-bottom: 8px
+            border-radius: 4px
+
+            &.active
+                border: 1px solid #323232
+
+            &[data-val="Зелёный"]
+                background-color: #008000
+            &[data-val="Прозрачный"]
+                background-color: #eeeeee
+            &[data-val="Бронза"]
+                background-color: #cb7c37
+            &[data-val="Синий"]
+                background-color: #155ea9
+            &[data-val="Розовый"]
+                background-color: #f39295
+            &[data-val="Серебро"]
+                background-color: #a2a0a1
+            &[data-val="Черный"]
+                background-color: #000
+
+        &__relinking-block
+            &:nth-last-of-type(n+2)
+                margin-bottom: 10px
+
+            #{$block}__side-panel-text
+                margin-bottom: 10px
+
+        &__controls-elem
+            margin-bottom: 10px
+
+            &:nth-last-of-type(n+2)
+                @media only screen and (min-width: 401px)
+                    margin-right: 16px
+
+            &:nth-of-type(1)
+                @media only screen and (max-width: 400px)
+                    margin-right: 16px
+                @media only screen and (max-width: 360px)
+                    margin-right: 6px
+
+            &:nth-of-type(3)
+                margin-left: 6px
+
+            #{$block}__side-panel-text
+                margin-bottom: 8px
+
+                sup
+                    position: absolute
+                    margin-top: -2px
+
+        &__controls-block
+            display: flex
+            flex-wrap: wrap
+
+            .js-product__custom-counter
+                height: 40px
+
+        &__info-block
+            display: flex
+            margin-bottom: 18px
+            flex-wrap: wrap
+
+        &__info-block-elem
+            flex-basis: 33.33%
+            flex-grow: 0
+            flex-shrink: 0
+            margin-bottom: 10px
+
+            @media only screen and (max-width: 400px)
+                flex-basis: 50%
+
+            #{$block}__info-elem
+                margin-bottom: 10px
+
+        &__info-val
+            font-weight: 800
+            color: #3C3C3B
+            font-size: 16px
+
+            @at-root .plity-mdvp &
+                font-size: 20px
+
+            &_content
+                &_price
+                    flex-direction: column
+                    align-items: flex-start
+                    display: flex
+
+        &__price-val
+            margin-right: 4px
+
+
+        &__price-val_type_total.product-card__price-val
+            font-size: 1.2rem
+            font-weight: 900
+
+        &__weight-val, &__price-val, &__price-unit
+            font: inherit
+
+        &__callback-btn
+            margin-top: 16px
+            flex-direction: column
+            width: 100%
+            padding-left: 0
+            padding-right: 0
+
+        &__callback-btn-spec-text
+            color: #C51717
+            display: block
+            font-weight: 500
+            font-size: 12px
+
+        &__callback-btn-main-text
+            white-space: nowrap
+
+        &__amount_style_default
+            width: 69px
+
+            @media only screen and (max-width: 360px)
+                width: 49px
+
+        &__amount_style_bordered
+            border-left: 1px solid #eaeaea
+            border-right: 1px solid #eaeaea
+            width: 92px
+            text-align: left
+            padding-left: 12px
+            padding-right: 12px
+
+        &__amount_style_default, &__amount_style_bordered, .custom-counter__btn
+            background-color: #fff
+
+        &__main-content
+            display: flex
+            flex-direction: column
+            flex-basis: 668px
+
+            .show-all-content
+                align-self: baseline
+                margin-top: -18px
+                margin-bottom: 20px
+                border-bottom: 1px dashed
+                color: #a5a5a5
+                cursor: pointer
+                &.mobile-none
+                    display: none
+
+            @media only screen and (max-width: 1040px)
+                flex-basis: auto
+
+        &__main-content-top
+            display: flex
+
+            @media only screen and (max-width: 550px)
+                flex-direction: column
+
+        &__main-content-top, &__main-content-bottom
+            width: 100%
+
+        &__top
+            margin-bottom: 0
+
+            @media only screen and (max-width: 1040px)
+                margin-bottom: 10px
+                flex-direction: column
+
+        &__right-info
+            display: grid
+            grid-template-columns: max-content max-content max-content
+            grid-gap: 15px
+            width: max-content
+
+            @media screen and (max-width: 900px)
+                order: 2
+                margin-bottom: 0
+                margin-top: 12px
+
+            @media only screen and (max-width: 550px)
+                display: none
+
+        &__article_pc
+            @media only screen and (max-width: 768px)
+                display: block
+
+        &__mobile
+            display: none
+
+            @media only screen and (max-width: 550px)
+                display: block
+
+        &__top-line
+            @media only screen and (max-width: 500px)
+                display: flex
+
+        &__fav-n-comp
+            @media only screen and (max-width: 550px)
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 32px
+                gap: 12px
+
+        &__btn-compare, &__btn-fav
+            margin-top: 0
+
+        &__new-price
+            margin-top: 4px
+            font-size: 14px
+
+        &__weight-unit
+            font: inherit
+
+        &__discount-block
+            background-color: #FFE19A
+            margin-top: 32px
+
+            @at-root .pilomat &
+                background-color: #fffcf5
+                margin-top: 16px
+            
+        &__tabs 
+            @at-root .pilomat &
+                @media only screen and (max-width: 768px)
+                    margin-bottom: 40px 
+
+    .js-product__btn-in-cart
+        width: 100%
+        margin-left: 0
+        height: 48px
+        max-width: none
+
+    .custom-counter__btn
+        color: #323232
+        width: 32px
+
+    .js-product__controls
+        flex-direction: column
+
+
+        #{$block}__gallery
+            flex-basis: 348px
+            display: flex
+            margin-right: 16px
+            width: auto
+
+        @media screen and (max-width: 880px)
+            flex-basis: 500px
+            text-align: center
+            margin: 16px 0 24px 16px
+
+        @media screen and (max-width: 768px)
+            margin: 0 0 16px 0
+            flex-basis: auto
+
+        @media screen and (max-width: 480px)
+            flex-direction: column
+
+
+
+    #{$block}__gallery
+        flex-basis: 348px
+        display: flex
+        margin-right: 16px
+        width: auto
+        height: 300px
+
+        @media screen and (max-width: 880px)
+            flex-basis: 500px
+            text-align: center
+            margin: 16px 0 24px 16px
+
+        @media screen and (max-width: 768px)
+            margin: 0 0 16px 0
+            flex-basis: auto
+
+        @media screen and (max-width: 480px)
+            flex-direction: column
+            height: auto
+
+    #{$block}__gallery-slider
+        width: 88vw
+        margin: 8px auto 24px
+
+        @media screen and (min-width: 480px)
+            margin: 0
+            z-index: 11
+            position: absolute
+            bottom: -22px
+            margin: 0px 50px
+            width: calc(100% - 100px)
+
+    #{$block}__gallery-btns-wrap
+            width: 100%
+
+    #{$block}__content-block
+        @media screen and (max-width: 480px)
+            // display: none
+
+    #{$block}__img-wrap
+        order: 2
+        margin: 0 auto
+        width: 100%
+
+        @media screen and (max-width: 480px)
+            order: 0
+
+    #{$block}__content-block
+        margin-top: 20px
+
+    #{$block}__gallery-btns-wrap
+        top: 20px
+        bottom: auto
+        width: 100%
+        height: 100%
+
+    #{$block}__gallery-item
+        width: 56px
+        height: 56px
+
+    .product-card__reasons
+        padding: 0px 16px 0px 16px
+        position: relative
+        .product-card__reasons-item
+            font-weight: 300
+            margin-bottom: 10px
+
+        .product-card__reasons-tip
+            position: absolute
+            right: 19px
+
+    @media only screen and (max-width: 550px)
+        .product-card
+            &__info-elem
+                text-align: left
+
+
+    .product-card__side-panel
+        border-left: 2px solid #eee
+        @media only screen and (max-width: 550px)
+            border-top: 1px solid #f0f0f0
+
+    .product-card__brand
+        bottom: 40px
+        top: unset
+        @media screen and (max-width: 448px)
+            bottom: 105px
+
+    .product-card__new-price-wrap
+        @media screen and (max-width: 442px)
+            width: 117px
+            text-align: left
+
+.photos-of-our-customers
+    padding: 15px 0px 15px 0px
+    position: relative
+    overflow: hidden
+    max-width: 668px
+    width: calc( 100vw - 30px )
+
+    &__header
+        font-weight: 600
+        font-size: 16px
+
+    &__swiper-wrapper
+        margin-top: 10px
+
+    .swiper-slide
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        aspect-ratio: 4/3
+        overflow: hidden
+        width: 100px
+        padding: 10px
+
+    .swiper-slide img
+        position: absolute
+        max-width: 100px
+        height: auto
+
+    .swiper-button-prev, .swiper-button-next
+        background: #fff
+        border-radius: 50%
+        padding: 20px
+        font-size: 12px
+        border: 1px solid #eee
+        z-index: 1
+        top: 60%
+
+
+    .swiper-button-prev:after, .swiper-button-next:after
+        font-size: 18px
+        color: #111
+        font-weight: 800
+
+
+
+.warehouse
+    position: relative
+    font-size: 14px
+    padding: 0px 16px 16px
+    font-family: Lato,sans-serif
+    font-style: normal
+    max-height: 500px
+
+
+    .icon
+        height: 14px
+        width: 14px
+        fill: #46d265
+        margin-right: 5px
+    &__header
+        font-size: 16px
+        font-weight: 600
+        margin-bottom: 8px
+    .content-block
+        margin: 0
+        padding: 12px 0
+
+    .header-small
+        font-family: Lato,sans-serif
+        font-style: normal
+        font-weight: bold
+        line-height: 18px
+        letter-spacing: 0.15px
+        margin: 0px 0px 9px
+
+    .list
+        max-height: 83px
+        overflow: hidden
+
+        &.active
+            max-height: 100%
+
+            .show-more-warehouse
+                bottom: 7px
+
+        .option
+            display: flex
+            line-height: 20px
+            .name
+                display: flex
+                justify-content: space-around
+                flex: 1
+                font-size: 14px
+                font-weight: 300
+
+                &:before
+                    border-bottom: 1px dashed #bbc2ce
+                    content: ""
+                    display: flex
+                    flex: 1
+                    height: 15px
+                    margin: 0 4px
+                    order: 1
+
+            .value
+                color: #000
+                font-weight: 600
+                order: 2
+                text-transform: lowercase
+                font-size: 14px
+                .check-icon
+                    width: 9px
+                    fill: #46d265
+                    margin-left: 2px
+                    &.out-of-stock
+                        visibility: hidden
+                .notAvailable
+                    font-size: 12px
+
+    .show-more-warehouse
+        position: absolute
+        bottom: 4px
+        cursor: pointer
+        left: 16px
+        color: #05afef
+        font-weight: 600

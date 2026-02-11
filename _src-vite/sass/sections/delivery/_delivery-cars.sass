@@ -1,0 +1,114 @@
+.delivery-cars__list
+      .item-car
+            display: grid
+            grid-template-columns: 2fr 3fr 3fr
+            border: 3px solid #F7F7F7
+            border-radius: 10px
+            padding: 25px 15px
+            margin-bottom: 25px
+            min-height: 220px
+            @media screen and (max-width: 768px)
+                  grid-template-columns: 1fr
+
+            &__image
+                  display: flex
+                  align-items: center
+                  flex-direction: column
+                  justify-content: space-evenly
+                  margin-right: 25px
+                  @media screen and (max-width: 768px)
+                        gap: 10px
+                  span
+                        color: #565656
+                        margin-bottom: 7px
+                        font-family: Lato
+
+                  img
+                        width: 204px
+
+
+            &__description
+                  display: flex
+                  flex-direction: column
+                  align-items: center
+                  position: relative
+                  justify-content: space-between
+                  gap: 1rem
+
+                  // @media screen and (max-width: 1024px)
+
+                  .description
+                        p
+                              color: #111
+                              font-family: Lato
+                              margin-top: 1rem
+                              padding-inline: 35px
+                              text-align: left
+                              font-weight: 400
+                              line-height: 1.2
+                              @media screen and (max-width: 1024px)
+                                    padding-inline: 0
+                                    margin-top: 0
+                              @media screen and (max-width: 768px)
+                                    margin-top: 1rem
+
+                  .order-container
+                        @media screen and (max-width: 768px)
+                              width: 100%
+
+                  .order-btn
+                        position: relative
+                        background: #AA000F
+                        color: #fff
+                        text-transform: uppercase
+                        width: 260px
+                        height: 39px
+                        border-radius: 6px
+                        @media screen and (max-width: 768px)
+                              width: 100%
+                        &:hover
+                              background: #7f000a
+                        .icon
+                              position: absolute
+                              right: 16px
+                              top: 30%
+
+
+
+
+            &__characteristic
+
+                  margin-right: 35px
+                  @media screen and (max-width: 768px)
+                        margin-right: 0
+                        margin-top: 1rem
+
+                  .characteristic-list
+                        &__item
+                              position: relative
+                              color: #111
+                              display: flex
+                              justify-content: space-between
+                              width: 100%
+                              margin-bottom: 9px
+                              transition: 0.3s
+                              cursor: pointer
+
+
+                              span
+                                    padding-bottom: 0.2rem
+                                    background: #fff
+                                    font-family: Lato
+                                    font-weight: 500
+
+                              &:hover
+                                    color: #AA000F
+                                    transition: 0.3s
+
+                              &:before
+                                    bottom: 5px
+                                    content: ""
+                                    position: absolute
+                                    width: 100%
+                                    border-bottom: 1px dotted
+                                    z-index: -1

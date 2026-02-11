@@ -76,8 +76,8 @@
 // =============================================
 .product-gallery-mv78 {
     width: 100%;
-    display: flex !important;
-    flex-direction: row !important; // Превьюшки слева, основное изображение справа
+    display: flex  !important;
+    flex-direction: row  !important; // Превьюшки слева, основное изображение справа
     align-items: flex-start;
     gap: 25px;
 
@@ -105,22 +105,22 @@
         }
         
         &-slider {
-            width: 80px !important;
+            width: 80px  !important;
             height: 100%; // Высота на весь контейнер
             overflow: visible; // Показываем все превьюшки
             
             .swiper-wrapper {
-                display: flex !important;
-                flex-direction: column !important;
+                display: flex  !important;
+                flex-direction: column  !important;
                 gap: 9px;
-                transform: none !important; // Отключаем transform от Swiper!
-                transition: none !important; // Отключаем transition
+                transform: none  !important; // Отключаем transform от Swiper!
+                transition: none  !important; // Отключаем transition
             }
         }
     }
 
     &__thumb-slide {
-        width: 80px !important;
+        width: 80px  !important;
         height: 80px;
         flex-shrink: 0;
         cursor: pointer;
@@ -164,7 +164,7 @@
         }
         
         &-slider {
-            width: 100% !important;
+            width: 100%  !important;
             height: 100%;
             border-radius: 5px;
             overflow: hidden;
@@ -179,9 +179,9 @@
     }
 
     &__slide {
-        width: 100% !important;
+        width: 100%  !important;
         height: auto;
-        flex-shrink: 0 !important; // Важно! Предотвращает сжатие слайда
+        flex-shrink: 0  !important; // Важно! Предотвращает сжатие слайда
         display: flex;
         align-items: center;
         justify-content: center;
@@ -195,7 +195,7 @@
     }
 
     &__img {
-        width: 100% !important;
+        width: 100%  !important;
         max-width: 100%;
         height: auto;
         display: block;
@@ -900,8 +900,8 @@
 
         // Убираем текст из ::after, который добавляют глобальные стили
         &::after {
-            content: none !important;
-            display: none !important;
+            content: none  !important;
+            display: none  !important;
         }
 
         &:hover {
@@ -933,8 +933,8 @@
 
             // Убираем текст из ::after для активного состояния
             &::after {
-                content: none !important;
-                display: none !important;
+                content: none  !important;
+                display: none  !important;
             }
         }
     }

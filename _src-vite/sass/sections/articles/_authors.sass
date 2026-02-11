@@ -1,0 +1,64 @@
+
+.authors-page
+    margin-bottom: 60px
+
+    &__items
+        display: grid
+        grid-template-columns: repeat(auto-fill, 48%)
+        width: 100%
+        gap: 20px
+        @media screen and ( max-width: 700px )
+            grid-template-columns: 1fr
+    &__item
+        background: #fff
+        border: 1px solid #dcdcdc
+        border-radius: 8px
+        padding: 20px
+        transition: .3s
+
+        &:hover
+            box-shadow: 0 4px 32px rgba(51, 51, 51, .08)
+
+        &-about
+            display: flex
+            flex-direction: column
+            gap: 5px
+
+        &-top
+            display: flex
+            gap: 10px
+
+        &-image
+            min-width: 100px
+            width: 100px
+            height: 100px
+            border-radius: 50%
+            background-size: cover
+            background-position: 50%
+
+        &-title
+            font-size: 18px
+            font-weight: bold
+            margin-bottom: 10px
+            color: #000
+
+        &-about
+            color: #000
+
+        &-bottom
+            margin-top: 10px
+            display: flex
+            justify-content: space-between
+
+        &-link
+            border-bottom: 1px dashed
+            color: #aa000f
+
+    .authors-icon-block
+        display: flex
+        align-items: center
+        gap: 5px
+
+        svg
+            width: 20px
+            height: 20px

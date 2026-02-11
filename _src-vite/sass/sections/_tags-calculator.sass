@@ -1,0 +1,86 @@
+.tags-calculator
+      position: relative
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+      -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+      box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+      margin-bottom: 20px
+      min-height: 60px
+
+      & > div
+            padding: 0px 10px
+            display: flex
+            align-items: center
+
+.tags-calculator__header
+      margin-right: 4px
+      width: 180px
+.tags-calculator__tags
+      display: flex
+      flex-wrap: wrap
+      &.hide
+            max-height: 30px
+            overflow: hidden
+            width: 100%
+
+.tags-calculator__tag
+      background: #fbfbfb
+      border: 1px solid #aaaaaa
+      border-radius: 12px
+      cursor: pointer
+      padding: 4px 10px
+      margin-right: 2px
+      margin-top: 2px
+      &:hover
+            transition: 0.3s
+            background: #aa000f
+            a
+                  color: #fff
+.tags-calculator__show_more
+      display: none
+      cursor: pointer
+      color: #5e5e5e
+      right: 10px
+      top: 20px
+      position: absolute
+      border-bottom: 2px dotted #eee
+      &.active
+            display: block
+      &.show
+            border-top: 2px solid #eee
+            position: unset
+            width: 100%
+            margin-top: 10px
+            padding-top: 5px
+            padding-bottom: 5px
+            padding-left: 10px
+            background: #fff
+            &:before
+                  content: ""
+                  padding: 2px
+                  border: solid #6a6969
+                  border-width: 0 2px 2px 0
+                  -webkit-transform: rotate(225deg)
+                  -ms-transform: rotate(225deg)
+                  transform: rotate(225deg)
+                  display: inline-block
+                  margin-bottom: 1px
+                  margin-right: 6px
+      &:before
+            content: ""
+            padding: 2px
+            border: solid #6a6969
+            border-width: 0 2px 2px 0
+            -webkit-transform: rotate(45deg)
+            -ms-transform: rotate(45deg)
+            transform: rotate(45deg)
+            display: inline-block
+            margin-bottom: 3px
+            margin-right: 6px
+
+@media screen and (max-width: 774px)
+      .tags-calculator > div
+            display: flex
+            flex-direction: column

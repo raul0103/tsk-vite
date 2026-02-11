@@ -1,0 +1,1110 @@
+@use "@/sass/mixins-context" as *
+@use "@/sass/mixins-sets" as *
+
+.product-card
+    margin-bottom: 60px
+    .swiper-pagination-bullet-active
+        +set_colors_1('background')
+    &__price-header
+        width: 100%
+        display: flex
+        gap: 10px
+    &__top-smallinfo
+        display: flex
+        justify-content: space-between
+        width: 100%
+        align-items: center
+        .header-availability
+            gap: 5px
+        .product-card__article
+            flex: 100%
+        *
+            margin: 0px !important
+        @media (min-width: 550px)
+            display: none
+    .product-card__aux-info .product-card__availability
+        @at-root .krovlya &
+            @media (max-width: 550px)
+                display: none
+    .header-availability
+        width: 100%
+        justify-content: flex-end
+        margin-bottom: 10px
+        @media (min-width: 550px)
+            display: none
+    .btn-calc
+        grid-column: span 3
+        border: 1px solid
+        +set_colors_1('border-color')
+        +set_colors_1('color')
+        max-width: 319px
+        font-size: 14px
+        font-weight: 500
+        border-radius: 4px
+        height: 40px
+        &:hover
+            opacity: .8
+        @media screen and (max-width: 450px)
+            max-width: none
+    &__unit-list
+        font-weight: 600
+        display: flex
+        align-items: center
+        gap: 4px
+        flex-wrap: wrap
+        &-link
+            border-radius: 4px
+            &.active
+                padding: 7px 8.5px
+                background-color: #f8f8f8
+                cursor: default
+                +set_colors_1('color')
+    .product-card__content-block
+        margin-bottom: 20px
+
+    &__saleinfo
+        font-weight: bold
+        margin-top: 6px
+
+        &_pos
+            &_top
+                margin-top: 12px
+
+    &__content
+        border: 1px solid #eaeaea
+        padding: 27px
+        width: 100%
+
+        @media screen and (max-width: 450px)
+            padding: 7px
+
+    &__left-info
+        margin-right: 20px
+
+        @media screen and (max-width: 900px)
+            margin-right: 0
+
+    &__article
+        font-weight: 700
+        font-size: 12px
+        color: #b1b2b3
+        width: 100%
+        text-align: right
+
+        @media screen and (max-width: 900px)
+            text-align: left
+            margin-top: 16px
+
+        @media screen and (max-width: 768px)
+            margin-top: 0
+
+        &_mobile
+            display: none
+
+            @media screen and (max-width: 768px)
+                display: block
+                margin-bottom: 6px
+
+        &_pc
+            @media screen and (max-width: 768px)
+                display: none
+
+    &__title-1
+        font-size: 24px
+        color: #323232
+        align-self: flex-start
+        text-align: left
+        @at-root .krovlya &
+            @media (max-width: 550px)
+                font-size: 18px
+    &__specs-list-item
+        display: flex
+        max-width: 564px
+        overflow: hidden
+
+        &:nth-last-child(n+2)
+            margin-bottom: 12px
+
+        &::before
+            width: 0
+            font-size: 14px
+            content: "...................................................................................................................................................................................."
+            white-space: nowrap
+
+    &__specs-list-item-value
+        margin-left: auto
+        padding-left: 4px
+
+        a
+            +set_colors_1('color')
+            text-decoration: underline
+            transition: 0.3s ease
+
+            &:hover
+                color: #6C262C
+                transition: 0.3s ease
+
+    &__specs-list-item-name
+        padding-right: 4px
+
+    &__specs-list-item-name, &__specs-list-item-value
+        background-color: #fff
+
+    &__buy, &__info-left
+        max-width: 372px
+        width: 100%
+
+    &__img
+        display: block
+
+    &__img-link
+        cursor: zoom-in
+        display: block
+        // При наведении на картинку срабатывает js-image-zoom, справа появляется прямоугольник. В некоторых карточках товара справа есть цена. И она может быть зачеркнута (если у товара указана старая цена). Для зачеркивания нужно position: relative. А из-за position: relative блок с ценой по z будет выше прямоугольника справа. Данные строки исправляют это
+        position: relative
+        z-index: 2
+
+        @media screen and (max-width: 480px)
+            display: none
+
+    &__info
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+        grid-gap: 10px 30px
+
+        @media screen and (max-width: 1200px)
+            grid-template-columns: 1fr
+
+    &__info-left, &__info-right
+        @media screen and (max-width: 450px)
+            grid-template-columns: 2fr
+
+    &__info-left
+        display: flex
+        align-items: flex-start
+        flex-direction: column
+
+        .yellow-btn
+            width: 100%
+            padding: 0 10px
+
+            svg
+                margin-right: 10px
+
+        .white-btn
+            width: 100%
+            grid-column: span 2
+
+    &__info-right
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
+        grid-gap: 14px
+
+    &__buy
+        max-width: 271px
+        margin-top: 15px
+
+    &__reviews
+        white-space: nowrap
+
+    &__package
+        margin-top: 14px
+        font-style: italic
+        font-size: 14px
+        line-height: 120%
+        color: #BABABA
+
+    &__content-wrap
+        display: none
+        padding-top: 20px
+
+        @media screen and (max-width: 768px)
+            padding-bottom: 20px
+
+    &__tabs
+        &.theme-color
+            .product-card__tabs-button:hover,.product-card__tabs-button.active
+                +set_colors_1(color)
+                &::before
+                    +set_colors_1(background)
+
+        &-buttons
+            @media screen and (max-width: 768px)
+                display: none
+        &-page
+            &.active
+                .product-card__content-wrap
+                    display: block
+
+                .product-card__mobile-tabs-button
+                    background-color: #fff
+                    +set_colors_1(color)
+
+                    &::before
+                        transform: rotate(-135deg)
+                        top: calc(50% - 2px)
+
+    &__mobile-tabs-button
+        cursor: pointer
+        line-height: 1
+        overflow: hidden
+        position: relative
+        align-items: center
+        justify-content: center
+        text-align: center
+        font-weight: 700
+        padding: 15px 20px
+        transition: color .3s, background-color .3s
+        background: #f6f6f6
+        border: 1px solid #eaeaea
+        box-sizing: border-box
+        border-radius: 2px
+
+        display: none
+
+        @media screen and (max-width: 768px)
+            display: flex
+
+        &::before
+            position: absolute
+            top: calc(50% - 6px)
+            right: 15px
+            display: inline-block
+            width: 0
+            height: 0
+            padding: 3px
+            content: ""
+            transition: .3s ease-in
+            transform: rotate(45deg)
+            border-width: 0 2px 2px 0
+            border-style: solid
+            +set_colors_1(border-color)
+
+    &__unit-span
+        margin-right: 4px
+
+    &__units-wrap
+        font-weight: 600
+        font-size: 14px
+        line-height: 100%
+        grid-column: span 2
+
+    &__unit-link
+        line-height: 1.8
+        transition: .3s
+        cursor: pointer
+
+        @at-root .pop-slide &, .listing__products-item &
+            transition: none
+
+        &:nth-last-of-type(n+2)
+            margin-right: 4px
+
+        &.active
+            +set_colors_1(color)
+            border-radius: 4px
+            padding: 7px 8.5px
+            background-color: #F8F8F8
+
+    &__info-inner
+        grid-column: span 2
+        display: flex
+        align-items: flex-start
+
+        @media screen and (max-width: 1200px)
+            grid-column: span 1
+
+        @media screen and (max-width: 900px)
+            display: block
+
+    &__right-info
+        display: flex
+        margin-left: auto
+        flex-wrap: wrap
+
+        @media screen and (max-width: 900px)
+            margin-left: 0
+            margin-bottom: 12px
+
+    &__btn-fav, &__btn-compare
+        &::after
+            padding-bottom: 2px
+            border-bottom: 1px solid currentColor
+            transition: .3s
+
+        &:hover
+            &::after
+                border-bottom-color: transparent
+
+    &__btns-wrap
+        display: flex
+        flex-wrap: wrap
+        column-gap: 12px
+
+    &__new-price-wrap
+        font-weight: bold
+
+    &__price-wrap
+        margin-top: 12px
+        font-weight: 700
+        font-size: 24px
+        display: block
+        margin-right: 20px
+
+    &__price-outer
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+
+        // @at-root .krovlya &
+        //     width: max-content
+        //     float: right
+
+    &__top
+        margin-bottom: 60px
+
+    &__top-line
+        display: flex
+        align-items: center
+        border-bottom: 1px solid #F0F0F0
+        padding-bottom: 16px
+        margin-bottom: 24px
+        flex-wrap: wrap
+
+        @media screen and (max-width: 900px)
+            border-bottom: none
+            margin-bottom: 0
+
+        @media screen and (max-width: 500px)
+            display: none
+
+        &::after
+            order: 1
+            display: none
+            content: ""
+            width: 100%
+
+            @media screen and (max-width: 900px)
+                display: block
+
+    &__select-span
+        font-size: 12px
+        padding-bottom: 8px
+
+        @at-root .fasad &
+            font-size: 14px
+
+    &__select-wrap
+        @media screen and (max-width: 500px)
+            width: 100%
+            margin-bottom: 16px
+
+            &:nth-last-of-type(1)
+                margin-bottom: 0
+
+        .euv-custom-select
+            width: 100%
+
+        &_align
+            &_right
+                margin-left: auto
+
+                @media screen and (max-width: 500px)
+                    margin-left: 0
+
+        &_type
+            &_full
+                width: 100%
+
+            &_half
+                width: calc(50% - 6px)
+
+        &.mb
+            margin-bottom: 16px
+
+        &.mt
+            margin-top: 16px
+            @media screen and (max-width: 500px)
+                margin-top: 0
+
+    &__select-other-color
+        padding: 0 16px
+        margin: 30px 0
+        min-height: 253px
+
+        @media screen and (max-width: 768px)
+            display: none
+
+        .show-all-colors
+            margin-top: 20px
+            font-weight: 800
+            cursor: pointer
+
+            &:hover
+                opacity: 0.8
+
+        .colors-options
+            display: flex
+            flex-wrap: wrap
+            gap: 5px
+            height: 180px
+            overflow-y: scroll
+
+        .colors-select__option
+            display: flex
+            justify-content: center
+            align-items: center
+            width: calc(100%/3 - 10px)
+            height: 50px
+            color: #fff
+            border-radius: 3px
+
+            &:nth-last-of-type(n+2)
+                margin-bottom: 0 !important
+
+            &:before
+                content: none !important
+
+            +colors_to_selector()
+
+            &[data-val="RAL 1014"], &[data-val="RAL 9003"], &[data-val="RAL 1015"], &[data-val="RR 22"], &[data-val="RAL 9010"], &[data-val="RAL 9002"], &[data-val="без покрытия"]
+                color: #000
+
+                .filter-option__tip-icon
+                    color: #000
+                    border-color: #000
+
+                &:hover
+                    color: #000
+
+            &[data-val="без покрытия"]
+                border: 1px solid #000
+
+            &:hover
+                color: #fff
+                opacity: 0.8
+
+        .filter-option__tip-icon
+            color: #fff
+            border-color: #fff
+
+    &__select-wrap
+        position: relative
+
+    &__select-other-color-span
+        font-weight: 800
+        margin-bottom: 10px
+
+    &__info-simple
+        grid-column: span 2
+        display: flex
+
+        @media screen and (max-width: 500px)
+            display: none
+
+    &__delivery
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        grid-column: span 3
+
+        &.center
+            align-items: center
+    &__delivery-title
+        font-weight: bold
+        margin-bottom: 14px
+
+    &__delivery-content
+        width: 100%
+        display: flex
+
+        @media screen and (max-width: 500px)
+            flex-wrap: wrap
+
+    &__article-and-availability
+        display: none
+
+        @media screen and (max-width: 500px)
+            display: block
+
+    &__delivery-link
+        cursor: pointer
+        font-size: 12px
+        color: #b1b2b3
+        display: flex
+        align-items: center
+        border-bottom: 1px dashed rgba(60, 60, 59, 0.5)
+        padding-bottom: 3px
+
+        @at-root .product-card_type_usual, .product-card--fasad-standart &
+            margin-top: 8px
+            font-weight: 700
+
+            svg
+                width: 13px
+                height: 13px
+                margin-right: 10px
+
+        @at-root .product-card_type_relinking &
+            font-weight: 600
+            background: url(/assets/template/fonts/icon-delivery-2.svg) no-repeat left top 1px
+            margin-top: 1px
+            padding-left: 16px
+
+        &:hover
+            border-bottom-color: transparent
+
+    &__delivery-text
+        margin-right: 12px
+        font-weight: 600
+
+        @media screen and (max-width: 500px)
+            width: 100%
+            margin-right: 0
+            margin-bottom: 10px
+
+    &__delivtext
+        display: flex
+        align-items: center
+        margin-top: 12px
+
+        &::before
+            display: block
+            width: 20px
+            height: 20px
+            content: ""
+            margin-right: 6px
+            margin-top: 3px
+            background: url(/assets/template/img/icons/delivery-v2.svg) no-repeat center center
+            background-size: contain
+
+    &__aux-info
+        display: none
+        margin-top: 16px
+
+        .product-card__availability svg
+            margin-right: 6px
+
+        @media screen and (max-width: 500px)
+            display: flex
+
+    &__brand
+        position: absolute
+        left: 10px
+        top: 10px
+        display: block
+        width: 60px
+        height: 40px
+        z-index: 10
+        background: rgba(255, 255, 255, .5)
+
+        +brands_to_selector('::after')
+
+        @at-root .krovlya &
+            right: 0
+            left: auto
+            bottom: 0
+            top: auto
+
+        @at-root [data-ctx="kirpich-m"] &
+            display: none
+
+        &::after
+            content: ""
+            display: block
+            width: 100%
+            height: 100%
+            background-repeat: no-repeat
+            background-position: center center
+            box-sizing: border-box
+            background-size: contain
+
+    &__brand-logo
+        margin-top: 20px
+        display: block
+        width: 100%
+        height: 40px
+        z-index: 10
+        background: rgba(255, 255, 255, .5)
+
+        +brands_to_selector('::after')
+
+        &::after
+            content: ""
+            display: block
+            width: 100%
+            height: 100%
+            background-repeat: no-repeat
+            background-position: 100%
+            box-sizing: border-box
+            background-size: contain
+
+    &__gallery-item
+        width: 50px
+        height: 50px
+        overflow: hidden
+        border: 2px solid transparent
+        transition: .3s
+        border-radius: 2px
+        display: flex
+        align-items: center
+        justify-content: center
+
+        &:hover
+            @media screen and (min-width: 481px)
+                +set_colors_1($property: border-color, $opacity: .4)
+
+        &.active.swiper-slide
+            +set_colors_1(border-color)
+
+    &__gallery-item-img
+        max-width: 100%
+        height: auto
+        display: block
+
+    &__gallery-btns-wrap
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+
+    &__gallery
+        width: 260px
+        margin-right: 30px
+        position: relative
+        display: flex
+        flex-direction: column
+
+        @media screen and (max-width: 768px)
+            margin-left: auto
+            margin-right: auto
+            text-align: center
+
+        @media screen and (max-width: 480px)
+            width: 100%
+            margin-left: 0
+            margin-right: 0
+
+    // Переопределение
+    .product-card__gallery-slider.product-card__gallery-slider_without-buttons
+        margin-left: 0
+        margin-right: 0
+
+    &__gallery-slider
+        margin-top: 15px
+        margin-left: 26px
+        margin-right: 26px
+
+        @media screen and (max-width: 768px)
+            margin-bottom: 16px
+
+    &__gallery-btn
+        z-index: 10
+        position: absolute
+        border: solid #323232
+        display: inline-block
+        transition: .3s
+        cursor: pointer
+        border-width: 0 3px 3px 0
+        padding: 6px
+        border-radius: 2px
+
+        &:hover
+            +set_colors_1(border-color)
+
+        &_dir
+            &_next
+                right: 0
+                transform: rotate(-45deg)
+
+            &_prev
+                left: 0
+                transform: rotate(135deg)
+
+    &__discount
+        right: -6px
+        top: 20px
+
+    &__controls-elem-input
+        display: flex
+        align-items: center
+        text-transform: uppercase
+        border-color: #eaeaea transparent
+        border-style: solid
+        border-width: 1px
+        height: 40px
+        border-left: 1px solid #eaeaea
+        border-right: 1px solid #eaeaea
+        padding-left: 12px
+        padding-right: 12px
+        text-align: left
+        width: 92px
+        background-color: #ffffff
+        color: #b1b1b1
+        font-size: 13.3333px
+        font-weight: normal !important
+        @media only screen and (max-width: 400px)
+            width: 72px
+        @media only screen and (max-width: 360px)
+            width: 53px
+            padding-left: 7px
+            padding-right: 7px
+
+    &__discount-block
+        background-color: #FFFCF5
+        height: 56px
+        border-radius: 4px
+        font-weight: 500
+        font-size: 14px
+        padding-left: 64px
+        padding-right: 10px
+        display: flex
+        flex-wrap: wrap
+        align-content: center
+        align-items: center
+        line-height: 1.5
+        background-position: left 23px center
+        background-repeat: no-repeat
+
+        &_type
+            &_full
+                transition: .3s
+                border: 1px solid #fffcf5
+                cursor: pointer
+
+                &:hover
+                    border-color: #0b703e
+
+        &_icon
+            &_fire
+                background-image: url(/assets/template/img/svg-sprite/fire.svg)
+            &_watch-live
+                background-image: url(/assets/template/img/svg-sprite/watch-live.svg)
+
+        @media only screen and (max-width: 1040px)
+            padding-left: 56px
+            background-position: 17.33px center
+
+    &__discount-block-proposal
+        margin-right: 4px
+
+    &__discount-block-link
+        cursor: pointer
+        +set_colors_1(color)
+
+    &__reasons-header
+        margin-bottom: 24px
+        font-weight: 600
+        font-size: 16px
+
+    &__reasons-items-wrap
+        padding-bottom: 8px
+
+    &__reasons-tip
+        display: flex
+        margin-left: 5.33px
+        margin-top: 2px
+        position: relative
+        fill: #808181
+        height: 20px
+        width: 20px
+
+        &::after
+            content: ""
+            display: none
+            width: 40px
+            height: 15px
+            position: absolute
+            left: 0
+            top: 16px
+
+        &:hover
+            &::after
+                display: block
+
+            .product-card__reasons-tip-text
+                padding-top: 8px
+                padding-bottom: 8px
+                max-height: 600px
+                width: 300px
+                opacity: 1
+
+    &__reasons-tip-text
+        overflow: hidden
+        position: absolute
+        max-height: 0
+        padding-left: 8px
+        padding-right: 8px
+        width: 300px
+        transition: .3s
+        background-color: #fff
+        box-shadow: rgba(51, 51, 51, 0.08) 0px 4px 10px 0px
+        border-radius: 6px
+        z-index: 1
+        top: 20px
+        left: 0
+        opacity: 0
+        font-size: 14px
+
+    &__reasons-item
+        display: flex
+        align-items: center
+        margin-bottom: 16px
+
+    &__reasons-item-img
+        margin-right: 16px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 4px
+        width: 32px
+        height: 32px
+        border-radius: 8px
+        background: #FBFBFB no-repeat center center
+        position: relative
+
+        &_icon
+            &_label
+                background-image: url(/assets/template/img/svg-sprite/icon-label.svg)
+
+            &_heart
+                background-image: url(/assets/template/img/svg-sprite/icon-heart-2.svg)
+
+            &_availability
+                background-image: url(/assets/template/img/svg-sprite/icon-availability.svg)
+
+            &_money
+                background-image: url(/assets/template/img/svg-sprite/icon-money-2.svg)
+
+            &_cut-white-black
+                background-size: cover
+                background-image: url(/assets/template/img/icons/electric-saw.png)
+
+            &_refund-black-white
+                background-size: cover
+                background-image: url(/assets/template/img/icons/certificate.png)
+
+    &__reasons-text
+        font-weight: 500
+        max-width: 312px
+        margin-bottom: 24px
+
+        @media screen and (max-width: 1200px)
+            max-width: none
+
+        a, span
+            +set_colors_1(color)
+
+        span
+            cursor: pointer
+
+    &__return
+        grid-column: span 4
+        padding-left: 22px
+        background: url(/assets/template/img/svg-sprite/icon-return.svg) no-repeat 0 2px
+
+        @media screen and (max-width: 1200px)
+            margin-bottom: 0
+
+        @media screen and (max-width: 480px)
+            grid-column: span 3
+
+    &__availability-cross
+        position: relative
+        width: 13px
+        height: 13px
+        opacity: 1
+        margin-right: 3px
+        margin-top: 1px
+
+        &:before, &:after
+            position: absolute
+            left: 6.5px
+            content: ""
+            height: 13px
+            width: 2px
+            background-color: #aa000f
+
+        &:before
+            transform: rotate(45deg)
+        &:after
+            transform: rotate(-45deg)
+
+    &__availability.negative
+        @media screen and (max-width: 500px)
+            font-size: 12px
+
+            .product-card__availability-cross
+                width: 12px
+                height: 12px
+
+                &:before, &:after
+                    position: absolute
+                    left: 5px
+                    height: 12px
+                    width: 1.5px
+                    background-color: #aa000f
+
+    &__free-shipping
+        grid-column: 1/3
+        +set-colors_1(color)
+        font-weight: bold
+        text-align: center
+
+        @at-root .product-card_type_usual &
+            @media screen and (max-width: 1200px)
+                grid-column: 1/4
+
+        @at-root .product-card_type_relinking-btns &, .product-card_type_relinking &
+            margin-bottom: 16px
+
+        @at-root .product-card_type_relinking &
+            &_screen
+                &_pc
+                    margin-top: 16px
+
+                    @media screen and (max-width: 768px)
+                        margin-bottom: 0
+
+    &__painting
+        display: flex
+        align-items: center
+        grid-column: span 3
+        background-color: #f8f8f8
+        max-width: 319px
+        height: 56px
+        padding-left: 4px
+        padding-right: 4px
+
+        @at-root .pilomat &
+            margin-top: 16px
+            max-width: none
+
+        @media screen and (max-width: 1200px)
+            max-width: none
+            width: 100%
+
+        &::before
+            display: block
+            content: ""
+            background: url(/assets/template/img/painting/painting-link.png) no-repeat center center
+            background-size: contain
+            width: 40px
+            height: 40px
+            margin-right: 10px
+
+    &__painting-link
+        font-weight: bold
+        text-decoration: underline
+        transition: text-decoration-color .2s ease-in-out
+        text-underline-offset: 4px
+        white-space: nowrap
+        +set_colors_2(color)
+        position: relative
+        padding-right: 20px
+        line-height: 1.4
+
+        @media screen and (max-width: 480px)
+            white-space: normal
+
+        &::after
+            content: "🔥"
+            position: absolute
+            margin-left: 2px
+
+        &:hover
+            text-decoration-color: transparent
+
+    &__mobile-gallery-item-img
+        max-width: 100%
+        display: block
+        height: auto
+
+    &__mobile-slider
+        display: none
+
+        @media screen and (max-width: 480px)
+            display: block
+
+    &__know-discount-block
+        margin-top: 10px
+        margin-bottom: 10px
+
+    &__know-discount-link
+        position: relative
+        cursor: pointer
+        white-space: nowrap
+        +set_colors_1(color)
+        padding-left: 30px
+        display: inline-block
+
+        &:hover
+            &::after
+                border-bottom-color: transparent
+
+        &::after
+            content: "Узнать о снижении цены"
+            display: block
+            padding-bottom: 2px
+            border-bottom: 1px solid currentColor
+            transition: .3s
+
+        svg
+            position: absolute
+            left: 0
+
+.advantages-list-price__price
+    position: relative
+    .product-card__units-wrap
+        position: absolute
+    .product-card__price-outer
+        margin-top: 30px
+.advantages-list-price
+    padding: 10px
+.advantages-list-price__item
+    display: flex
+    position: relative
+    margin-bottom: 14px
+    width: 100%
+
+.advantages-list-price__icon
+    background-image: url("/assets/template/img/icons/guarantee.png")
+    width: 40px
+    min-width: 40px
+    height: 30px
+    background-repeat: no-repeat
+    background-size: contain
+
+.advantages-list-price__price
+    &.product-card__left-info
+        width: 55%
+        margin: 0
+
+    &.product-card__right-info
+        width: 45%
+
+.display-view-mobile
+    display: none
+
+@media screen and (max-width: 768px)
+
+    .display-view-mobile
+        .advantages-list-price__price
+            margin-top: 20px
+            padding: 0
+
+    .display-view-desktop
+        display: none !important
+
+    .display-view-mobile
+        display: block
+
+    .advantages-list-price__price
+        &.product-card__left-info, &.product-card__right-info
+            width: 100%
+
+    .advantages-list-price__price
+        padding-left: 17px
+        padding-right: 17px

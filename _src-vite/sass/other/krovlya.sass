@@ -1,0 +1,54 @@
+.krovlya
+    .product-slider
+        .sect-pop__slider  
+            .listing__products-item
+                width: 267px
+                margin-right: 17px
+                @media (max-width:550px)
+                    margin-right: 6px
+                    width: calc(50% - 3px) !important
+    @media (max-width:550px)
+        .listing__products-list .listing__products-item-rate
+            margin-bottom: 0
+
+        .listing__products-list .listing__products-item-photo,
+        .listing__products-list .listing__products-item-title,
+        .listing__products-item-selprice
+            margin-bottom: 5px
+
+        .listing__products-item-price-and-logo
+            margin-top: 0
+            margin-bottom: 5px
+
+        .krovlya-product-card-mobile-style
+            .price-block
+                align-items: center
+                display: flex
+                justify-content: space-between
+                margin-top: 24px
+                position: relative
+                width: 100%
+                grid-column: span 2
+                .product-card__brand
+                    position: relative
+                    width: 50%
+                .product-card__info-inner
+                    width: 50%
+
+        .listing__products-item-btns-wrap-inner
+            bottom: 0
+            right: 100%
+
+        .product-card-controls
+            margin-top: 0
+            display: flex !important
+            flex-direction: column
+            gap: 10px
+            .product-card__buy
+                margin-top: 0
+                height: 40px
+        .product-card__gallery-slider
+            margin: 0 !important
+        
+        .js-product__btn-in-cart
+            height: 40px

@@ -1,0 +1,202 @@
+
+.wrapper_selection_custom_filters
+      padding-top: 6px
+      &:first-child
+            border-bottom: 1px solid #eee
+            margin-bottom: 2px
+
+      &.colors
+            margin-top: 10px
+
+            .selections
+                  &__item
+                        margin: 0
+                        padding: 8px 10px
+                        background: #f8f8f8
+                        margin-right: 5px
+                        margin-bottom: 5px
+                        border-radius: 4px
+                        &:hover
+                              background: #eee
+
+                        &-media
+                              height: 15px
+                              width: 15px
+                              border-radius: 50%
+                  &__btn
+                        height: 32px
+
+      .selections
+            &__items-wrap
+                  display: flex
+                  flex-wrap: wrap
+                  a:hover
+                        color: #111
+            &__btn
+                  position: relative
+                  border: none
+                  display: flex
+                  margin-top: 0
+                  justify-content: center
+                  background: #ededed
+                  color: #fff  !important
+                  padding: 0  !important
+                  height: 30px
+
+                  &:after
+                        content: ""
+                        padding: 3px
+                        border-left: 2px solid #fff
+                        border-bottom: 2px solid #fff
+                        transform: rotate(315deg)
+                        margin-left: 5px
+                        margin-bottom: 4px
+
+                  &:hover
+                        box-shadow: none
+                        text-decoration: underline
+
+            &__item
+                  margin-right: 0
+                  width: unset
+                  max-width: 95%
+
+
+      .selection
+            &_custom_filters
+                  &.show
+                        .selections__btn
+                              &:after
+                                    transform: rotate(135deg)
+                                    margin-top: 4px
+                                    margin-bottom: 0
+
+            &__link
+                  background: #f8f8f8
+                  padding: 8px 10px 8px 10px
+                  border-radius: 4px
+                  height: 30px
+                  display: flex
+                  align-items: center
+                  margin-right: 5px
+                  margin-bottom: 5px
+
+            &_custom_filters, &_custom_filters-small
+                  display: none
+
+            &_custom_filters-small.show
+                  display: block
+                  .listing__tags-item
+                        min-width: 95%
+                        margin-right: 0
+
+            &_custom_filters.show
+                  display: block
+                  margin-bottom: 15px
+
+                  dt
+                        margin-top: 5px
+                        border-radius: 4px
+                        font-weight: 600
+                        font-size: 0.9rem
+                        height: 100%
+                        min-width: 100px
+                        padding-bottom: 10px
+
+                  ul:first-child
+                        dl
+                              margin-top: 0px
+
+                  dl
+                        margin-top: 22px
+                        margin-bottom: 4px
+                        display: flex
+
+                  dd
+                        margin-left: 5px
+                        display: flex
+                        flex-wrap: wrap
+                        button
+                              display: none
+                        a
+                              margin-right: 5px
+                              margin-bottom: 5px
+                              font-size: 0.8rem
+                              display: flex
+                              align-items: center
+                              &:hover
+                                    color: #111
+
+                        &.active
+                              a
+                                    display: flex
+
+                        button
+                              color: grey
+                              border-bottom: 1px dashed grey
+
+                  @media(max-width: 772px)
+                        dl
+                              display: block
+
+                        dd
+                              margin-left: 0px
+                              display: flex
+                              flex-wrap: wrap
+                        dt
+                              width: 100%
+
+            .selections__item, .listing__tags-item, .selection__link
+                  border-radius: 2px
+                  margin-bottom: 5px
+
+            .listing__tags-item
+                  padding: 3px
+
+.selection-header
+      margin-top: 12px
+      font-weight: 700
+
+@media screen and (min-width: 448px)
+      .wrapper_selection_custom_filters
+            &.colors
+                  .selections
+                        &__item
+                              margin-right: 15px
+
+            .selection
+                  &__link
+                        margin-right: 15px
+                        padding: 6.5px 10px 6.5px 10px
+                        border-radius: 4px
+
+                        &:hover
+                              background: #eee
+
+                        &-title
+                              font-size: 14px
+
+                  &_custom_filters.show
+                        dt
+                              font-weight: 700
+                        dd
+                              a
+                                    margin-right: 15px
+                                    &:hover
+                                          background: #eee
+                                          transition: 0.3s
+                        .selections__item
+                              border-radius: 4px
+                        .selections
+                              &__btn
+                                    margin-top: 20px
+
+            .selections
+                  &__btn
+                        background: #ededed
+                        color: #323232  !important
+                        border-radius: 4px
+                        width: 120px
+
+                        &:after
+                              border-color: #323232

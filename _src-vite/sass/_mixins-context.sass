@@ -1,0 +1,344 @@
+@mixin set_colors_1($property, $dark: false, $opacity: false, $important: null)
+    @if $important == true
+        $important: !important
+
+    @at-root .ceresit &
+        @if $dark
+            #{$property}: darken(#4f70ad, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#4f70ad, $opacity) $important
+        @else
+            #{$property}: #4f70ad $important
+    @at-root .knauf &
+        @if $dark
+            #{$property}: darken(#4f70ad, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#4f70ad, $opacity) $important
+        @else
+            #{$property}: #4f70ad $important
+    @at-root .isotecti &
+        @if $dark
+            #{$property}: darken(#4f70ad, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#4f70ad, $opacity) $important
+        @else
+            #{$property}: #4f70ad $important
+    @at-root .rockwool &
+        @if $dark
+            #{$property}: darken(#AA000F, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#AA000F, $opacity) $important
+        @else
+            #{$property}: #AA000F $important
+    @at-root .rasprodazha &
+        @if $dark
+            #{$property}: darken(#ab0010, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#ab0010, $opacity) $important
+        @else
+            #{$property}: #ab0010 $important
+    @at-root .ruspanel &
+        @if $dark
+            #{$property}: darken(#AA000F, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#AA000F, $opacity) $important
+        @else
+            #{$property}: #AA000F $important
+    @at-root .tn &
+        @if $dark
+            #{$property}: darken(#ED1C24, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#ED1C24, $opacity) $important
+        @else
+            #{$property}: #ED1C24 $important
+    @at-root .penoplex &
+        @if $dark
+            #{$property}: darken(#F36F21, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#F36F21, $opacity) $important
+        @else
+            #{$property}: #F36F21 $important
+    @at-root .xotpipe &
+        @if $dark
+            #{$property}: darken(#F36F21, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#F36F21, $opacity) $important
+        @else
+            #{$property}: #F36F21 $important
+    @at-root .tizol &
+        @if $dark
+            #{$property}: darken(#F36F21, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#F36F21, $opacity) $important
+        @else
+            #{$property}: #F36F21 $important
+    @at-root .izovol &
+        @if $dark
+            #{$property}: darken(#F36F21, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#F36F21, $opacity) $important
+        @else
+            #{$property}: #F36F21 $important
+    @at-root .isover &
+        @if $dark
+            #{$property}: darken(#83c320, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#83c320, $opacity) $important
+        @else
+            #{$property}: #83c320 $important
+    @at-root .paroc &
+        @if $dark
+            #{$property}: darken(#CE1126, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#CE1126, $opacity) $important
+        @else
+            #{$property}: #CE1126 $important
+    @at-root .ursa &
+        @if $dark
+            #{$property}: darken(#EA4740, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#EA4740, $opacity) $important
+        @else
+            #{$property}: #EA4740 $important
+    @at-root .izomin &
+        @if $dark
+            #{$property}: darken(#EA4740, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#EA4740, $opacity) $important
+        @else
+            #{$property}: #EA4740 $important
+    @at-root .fasad &
+        @if $dark
+            #{$property}: darken(#deb262, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#deb262, $opacity) $important
+        @else
+            #{$property}: #deb262 $important
+    @at-root .pro-fanera &
+        @if $dark
+            #{$property}: darken(#ee8208, $dark)
+        @else if $opacity
+            #{$property}: rgba(#ee8208, $opacity)
+        @else
+            #{$property}: #ee8208
+    @at-root .fasady-pro &
+        @if $dark
+            #{$property}: darken(#0b703e, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#0b703e, $opacity) $important
+        @else
+            #{$property}: #0b703e $important
+    @at-root .baswool &
+        @if $dark
+            #{$property}: darken(#0b703e, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#0b703e, $opacity) $important
+        @else
+            #{$property}: #0b703e $important
+    @at-root .beltep &
+        @if $dark
+            #{$property}: darken(#0b703e, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#0b703e, $opacity) $important
+        @else
+            #{$property}: #0b703e $important
+    @at-root .policarbonat &
+        @if $dark
+            #{$property}: darken(#28a745, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#28a745, $opacity) $important
+        @else
+            #{$property}: #28a745 $important
+    @at-root .gazobeton &
+        @if $dark
+            #{$property}: darken(#7A99A6, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#7A99A6, $opacity) $important
+        @else
+            #{$property}: #7A99A6 $important
+    @at-root .proflist &
+        @if $dark
+            #{$property}: darken(#408acd, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#408acd, $opacity) $important
+        @else
+            #{$property}: #408acd $important
+
+    @at-root .sehndvich &
+        @if $dark
+            #{$property}: darken(#e05529, $dark) $important
+        @else if $opacity
+            #{$property}: rgba(#e05529, $opacity) $important
+        @else
+            #{$property}: #e05529 $important
+
+@mixin set_colors_2($property)
+    @at-root .ceresit &
+        filter: drop-shadow(0px 4px 16px rgba(85, 133, 222, 0.64))
+    @at-root .knauf &
+        #{$property}: #323232
+    @at-root .tizol &, .isotecti &, .izomin &, .baswool &, .xotpipe &, .izovol &, .beltep &, .ruspanel &
+        #{$property}: #323232
+    @at-root .rockwool &, .rasprodazha &
+        #{$property}: #323232
+    @at-root .ruspanel &
+        #{$property}: #323232
+    @at-root .tn &
+        #{$property}: #666666
+    @at-root .penoplex &
+        #{$property}: #323232
+    @at-root .isover &
+        #{$property}: #323232
+    @at-root .paroc &
+        #{$property}: #323232
+    @at-root .ursa &
+        #{$property}: #232F61
+    @at-root .fasad &
+        #{$property}: #323232
+    //@at-root .pro-fanera &, .pro-fanera
+    //    #{$property}: #323232
+    @at-root .fasady-pro &
+        #{$property}: #323232
+    @at-root .policarbonat &
+        #{$property}: #323232
+    @at-root .gazobeton &
+        #{$property}: #323232
+    @at-root .proflist &
+        #{$property}: #408acd
+
+@mixin set_colors_3($property)
+    @at-root .ceresit &
+        #{$property}: #FFB400
+    @at-root .knauf &
+        #{$property}: #FFB400
+    @at-root .isotecti &
+        #{$property}: #FFB400
+    @at-root .rockwool &
+        #{$property}: #D20014
+    @at-root .rasprodazha &
+        #{$property}: #ab0010
+    @at-root .ruspanel &
+        #{$property}: #D20014
+    @at-root .tn &
+        #{$property}: #ED1C24
+    @at-root .penoplex &
+        #{$property}: #F36F21
+    @at-root .xotpipe &
+        #{$property}: #F36F21
+    @at-root .tizol &
+        #{$property}: #F36F21
+    @at-root .izovol &
+        #{$property}: #F36F21
+    @at-root .isover &
+        #{$property}: #80C31C
+    @at-root .paroc &
+        #{$property}: #CE1126
+    @at-root .ursa &
+        #{$property}: #EA4740
+    @at-root .izomin &
+        #{$property}: #EA4740
+    @at-root .fasad &
+        #{$property}: #deb262
+    @at-root .pro-fanera &
+        #{$property}: #ee8208
+    @at-root .fasady-pro &
+        #{$property}: #0b703e
+    @at-root .baswool &
+        #{$property}: #0b703e
+    @at-root .beltep &
+        #{$property}: #0b703e
+    @at-root .policarbonat &
+        #{$property}: #28a745
+    @at-root .gazobeton &
+        #{$property}: #7A99A6
+    @at-root .proflist &
+        #{$property}: #408acd
+
+@mixin filter-shadow()
+    // TODO: Попробуй сделать это через box-shadow - чтобы поддерживалось другими браузерами
+    @at-root .ceresit &
+        filter: drop-shadow(0px 4px 16px rgba(85, 133, 222, 0.64))
+    @at-root .knauf &
+        filter: drop-shadow(0px 4px 16px rgba(85, 133, 222, 0.64))
+    @at-root .isotecti &
+        filter: drop-shadow(0px 4px 16px rgba(85, 133, 222, 0.64))
+    @at-root .rockwool &
+        filter: drop-shadow(0px 4px 16px rgba(235, 0, 21, 0.64))
+    @at-root .rasprodazha &
+        filter: drop-shadow(0px 4px 16px rgba(171, 0, 16, .64))
+    @at-root .ruspanel &
+        filter: drop-shadow(0px 4px 16px rgba(235, 0, 21, 0.64))
+    @at-root .tn &
+        filter: drop-shadow(0px 4px 16px rgba(237, 28, 36, 0.64))
+    @at-root .penoplex &
+        filter: drop-shadow(0px 4px 16px rgba(243, 111, 33, 0.64))
+    @at-root .xotpipe &
+        filter: drop-shadow(0px 4px 16px rgba(243, 111, 33, 0.64))
+    @at-root .tizol &
+        filter: drop-shadow(0px 4px 16px rgba(243, 111, 33, 0.64))
+    @at-root .izovol &
+        filter: drop-shadow(0px 4px 16px rgba(243, 111, 33, 0.64))
+    @at-root .isover &
+        filter: drop-shadow(0px 4px 16px rgba(131, 195, 32, 0.64))
+    @at-root .paroc &
+        filter: drop-shadow(0px 4px 16px rgba(206, 17, 38, 0.64))
+    @at-root .ursa &
+        filter: drop-shadow(0px 4px 16px rgba(234, 71, 64, 0.64))
+    @at-root .izomin &
+        filter: drop-shadow(0px 4px 16px rgba(234, 71, 64, 0.64))
+    @at-root .fasad &
+        filter: drop-shadow(0px 4px 16px rgba(222, 178, 98, 0.64))
+    @at-root .fasady-pro &
+        filter: drop-shadow(0px 4px 16px rgba(11, 112, 62, 0.64))
+    @at-root .baswool &
+        filter: drop-shadow(0px 4px 16px rgba(11, 112, 62, 0.64))
+    @at-root .beltep &
+        filter: drop-shadow(0px 4px 16px rgba(11, 112, 62, 0.64))
+    @at-root .policarbonat &
+        filter: drop-shadow(0px 4px 16px rgba(40, 167, 69, 0.64))
+    @at-root .gazobeton &
+        filter: drop-shadow(0px 4px 16px rgba(122, 153, 166, 0.64))
+    @at-root .proflist &
+        filter: drop-shadow(0px 4px 16px rgba(64, 138, 205, 0.64))
+
+// -----------------------------------
+// mixin stroke
+// -----------------------------------
+@mixin stroke()
+    position: relative
+
+    &::after
+        content: ""
+        border-bottom: 1px solid currentColor
+        position: absolute
+        width: 100%
+        height: 50%
+        left: 0
+        top: 0
+
+@mixin menustar($dataval, $context)
+    @at-root *[data-ctx="#{$context}"]
+        .header__nav-link, .header__menu-item, .header__column-header-link, .v2_header-menu__contents-link // если переедет на меню v2 - убрать лишние селекторы
+            &[data-val="#{$dataval}"]
+                position: relative
+                &::after
+                    content: ""
+                    width: 20px
+                    height: 20px
+                    background: url(/assets/template/img/svg-sprite/hit.svg) no-repeat
+                    background-size: cover
+                    display: inline-block
+                    position: relative
+                    left: 10px
+
+                .header__nav-link
+                    &[data-val="#{$dataval}"]
+                        &::after
+                            left: 8px
+                            top: 5px
+
+                .header__menu-item, .header__column-header-link
+                    &[data-val="#{$dataval}"]
+                        &::after
+                            top: 4px
+                            left: 5px

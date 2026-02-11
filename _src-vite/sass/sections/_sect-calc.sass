@@ -1,0 +1,100 @@
+.sect-calc
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+
+    @media screen and (max-width: 480px)
+        grid-template-columns: 1fr
+
+    &__item
+        padding-left: 16px
+        padding-right: 16px
+        display: grid
+        align-items: flex-start
+        grid-template-rows: 1fr minmax(0, 40px)
+        grid-row-gap: 10px
+        justify-items: center
+        text-align: center
+
+        @media screen and (max-width: 480px)
+            grid-template-rows: none
+
+            &:nth-last-of-type(n+2)
+                margin-bottom: 40px
+
+    &__page
+        margin-left: auto
+        margin-right: auto
+        max-width: 872px
+
+    &__btn.order-smeta
+        max-width: 284px
+        font-size: 0.8rem
+        text-align: center
+
+    &__btn-flex-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+    &__btn
+        margin-top: 30px
+
+        @media screen and (max-width: 780px)
+            margin-left: auto
+            margin-right: auto
+
+    &__btn.custom-btn
+        border: 0
+
+    &__item-img
+        max-width: 100%
+        display: block
+        height: auto
+
+    &__item-link
+        font-weight: bold
+        font-size: 17px
+
+        @media screen and (max-width: 768px)
+            font-size: 14px
+
+        @media screen and (max-width: 480px)
+            font-size: 17px
+
+    &__content
+        margin-top: 20px
+        margin-bottom: 0
+
+
+
+    .sect-calc__item
+        transition: 0.4s
+        border-radius: 6px
+        padding: 30px
+        border: 1px solid #eee
+        margin: 5px 10px
+        background: #fcfcfc
+        display: grid
+
+        &:hover
+            box-shadow: 0 4px 32px rgba(51,51,51,.08)
+            transition: 0.4s
+
+        & a
+            border: none
+
+        &-img-wrap
+
+            height: 100%
+            display: flex
+            align-items: center
+            text-decoration: none
+            border: none
+
+@media screen and (max-width: 774px)
+    .custom-btn.sect-calc__btn
+        padding: 0 10px
+        display: flex
+        justify-content: center
+        max-width: 164px
+        font-size: 0.8rem

@@ -1,0 +1,27 @@
+.about-uteplitel
+    display: flex
+    flex-direction: row
+    gap: 32px
+    align-items: self-start
+
+    .sect-inner__content
+        margin: 0  !important
+
+    @media screen and (max-width: 767px)
+        flex-direction: column
+
+    &__text
+        flex: 2
+        p
+            line-height: 28px
+            font-size: 16px
+
+    &__image
+        flex: 1
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 8px
+            

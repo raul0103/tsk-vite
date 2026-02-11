@@ -1,0 +1,82 @@
+// .block-delivery, .block-painting
+    // table.block-delivery__table, table.block-painting__table
+    //     @extend .custom-table
+    //     margin-bottom: 20px
+
+.block-delivery table.block-delivery__table
+    td, th
+        line-height: 130%
+        padding-bottom: 9px
+        padding-top: 9px 
+
+.block-delivery table.block-delivery__table
+    th span
+        font-weight: 700    
+                      
+.block-delivery
+    margin-bottom: 60px
+    width: 100%
+    
+    @at-root  .product-card &
+        margin-bottom: 0px
+    
+    &__intro, &__pre-btn-text
+        text-align: center
+        font-size: 18px
+
+    &__btn
+        padding-left: 20px
+        padding-right: 20px
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 20px
+        
+    &__text::before
+        content: ''
+        display: inline-block
+        background: no-repeat center center
+        background-size: contain 
+        width: 22px
+        height: 22px  
+        vertical-align: middle
+        margin-right: 5px
+        margin-top: -2px
+             
+    &__text_img
+        &_doski::before
+            background-image: url(/assets/template/img/doski.png)
+        &_gruzovik::before
+            background-image: url(/assets/template/img/gruzovik.png)
+        &_kraska::before
+            background-image: url(/assets/template/img/painting/painting-link.png)
+        &_24-hours::before
+            background-image: url(/assets/template/img/plitaopsb/icons/24-hours.png)
+        &_credit-card-payment::before
+            background-image: url(/assets/template/img/plitaopsb/icons/credit-card-payment.png)
+        &_fast-delivery::before
+            background-image: url(/assets/template/img/plitaopsb/icons/fast-delivery.png)
+        &_service::before
+            background-image: url(/assets/template/img/plitaopsb/icons/service.png)
+        &_tick::before
+            background-image: url(/assets/template/img/plitaopsb/icons/tick.png)
+
+    &__table-row
+        &_border-top_bold
+            border-top: 2px solid #c9c9c9  
+            
+    &__pre-btn-text
+        margin-bottom: 20px 
+        font-weight: bold
+
+    &__features
+        margin-bottom: 14px
+        
+
+.block-painting
+    &__palette-header
+        margin-bottom: 20px
+        text-align: center
+        
+.pricetable
+    &__btn
+        margin-bottom: 0

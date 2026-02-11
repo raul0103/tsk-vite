@@ -1,0 +1,64 @@
+@use "@/sass/mixins-context" as *
+
+.proflist
+  .banner
+    .wrapper
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      align-content: center
+      justify-content: center
+      align-items: center
+
+      .banner__slide-two
+        margin-left: 35px
+
+      .banner__slide
+        img
+          height: auto
+          width: auto
+
+      .banner__slide-img-mobile
+        display: none
+
+  @media screen and (max-width: 600px)
+    .wrapper
+      flex-direction: column !important
+    .banner__slide
+      justify-content: center !important
+    .banner__slide-two
+      margin-left: 0px !important
+      margin-top: 40px !important
+    .banner__slide-img-full
+      display: none
+    .banner__slide-img-mobile
+      display: block !important
+    .banner-btn-proflist
+      left: 12% !important
+
+.banner-btn-proflist
+  position: absolute
+  bottom: 10%
+  left: 4%
+  width: 248px
+  height: 51px
+  z-index: 2
+  padding: 14px 32px
+  font-size: 16px
+  font-weight: 500
+  color: #fff
+  border-radius: 6px
+  cursor: pointer
+  transition: all 0.3s ease
+  text-align: center
+
+  +set_colors_1(background-color)
+
+  +filter-shadow()
+
+  &:hover
+    +set_colors_1(background-color, 8)
+    transform: translateY(-2px)
+
+  &:active
+    transform: translateY(0)

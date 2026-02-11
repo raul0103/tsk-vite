@@ -1,0 +1,28 @@
+.application-icons
+    margin-bottom: 60px
+
+    &__rows
+        display: flex
+        align-items: center
+        gap: 20px
+        @media (max-width:740px)
+            flex-wrap: wrap
+            justify-content: center
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        gap: 10px
+        align-items: center
+        max-width: 138px
+
+    &__item-image img
+        width: 100%
+        height: 100px
+        @media (max-width:740px)
+            height: 50px
+            width: 100px
+
+    &__item-title
+        font-weight: 700
+        text-transform: uppercase

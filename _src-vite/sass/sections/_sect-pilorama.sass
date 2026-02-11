@@ -1,0 +1,30 @@
+.sect-pilorama
+    margin-bottom: 60px
+
+    .title-1
+        margin-bottom: 40px
+    
+    &__inner
+        width: 100%
+        
+    &__addresses-wrap 
+        margin-top: 30px 
+        
+    &__address
+        &::before
+            content: ""
+            display: inline-block
+            background: no-repeat 50% url(/assets/template/img/point.png)
+            background-size: contain
+            width: 26px
+            height: 26px
+            vertical-align: middle
+            margin-right: 5px
+            margin-top: -2px 
+            
+    &__address-header
+        font-size: 17px
+        
+        @at-root .sect-pilorama &
+            // Переопределение 
+            margin-bottom: 20px

@@ -1,0 +1,66 @@
+@use "@/sass/mixins-context" as *
+
+// Баннер-ротатор для каталога
+// Автоматическая смена баннеров с плавной анимацией
+// Использует Swiper для управления слайдами
+
+.banner-rotator
+    position: relative
+    overflow: hidden
+    @media (max-width: 768px)
+        width: 100%
+
+    // Стандартный wrapper Swiper
+    .swiper-wrapper
+        position: relative
+        width: 100%
+        height: 100%
+
+    // Слайды (с классами banner-rotator__slide и swiper-slide)
+    &__slide
+        width: 100%
+        height: auto
+
+        picture
+            display: block
+            width: 100%
+            height: auto
+
+            img
+                width: 100%
+                height: auto
+                object-fit: cover
+
+    .listing__catalog-promo-btn-more
+        +set_colors_1(background)
+        width: 80%
+
+    // Контейнер пагинации
+    &__dots
+        position: absolute
+        bottom: 15px
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        gap: 8px
+        z-index: 10
+
+    // Точки пагинации
+    &__dot
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background-color: rgba(255, 255, 255, 0.5)
+        cursor: pointer
+        transition: background-color 0.3s ease
+
+        &.active
+            background-color: rgba(255, 255, 255, 1)
+
+        &:hover
+            background-color: rgba(255, 255, 255, 0.8)
+
+// Скрыть кнопку на мобильных устройствах
+.desktop-only
+    @media (max-width: 768px)
+        display: none !important

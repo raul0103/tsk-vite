@@ -1,0 +1,142 @@
+@use "@/sass/mixins-context" as *
+
+.v2_header-menu
+    &__navigations
+        flex: 30%
+        min-height: 300px
+        display: flex
+        flex-direction: column
+        gap: 15px
+        padding-right: 10px
+        margin-bottom: 20px
+        border-right: 1px solid #d4d4d4
+
+        &-item
+            position: relative
+            display: flex
+            align-items: center
+            gap: 5px
+            padding-right: 20px
+            font-size: 16px
+            font-weight: bold
+            cursor: pointer
+
+            &.active
+                +set_colors_1('color')
+                &__svg
+                    +set_colors_1('fill')
+                &:after
+                    +set_colors_1('border-color')
+            &:after
+                border-bottom: 2px solid #b9b9b9
+                border-left: 2px solid #b9b9b9
+                content: ""
+                display: block
+                flex-shrink: 0
+                height: 5px
+                margin-left: 5px
+                position: absolute
+                right: 14px
+                top: 50%
+                -webkit-transform: rotate(225deg) translateY(50%)
+                -ms-transform: rotate(225deg) translateY(50%)
+                transform: rotate(225deg) translateY(50%)
+                width: 5px
+    &__contents
+        flex: 70%
+        padding-left: 20px
+        &-wrapper
+            opacity: 0
+            height: 0
+            position: relative
+            top: -1000px
+            pointer-events: none
+            transition: opacity 0.1s
+            display: flex
+            flex-wrap: wrap
+            gap: 20px
+            flex-direction: column
+            max-height: 315px
+            overflow: auto hidden
+            &.active
+                opacity: 1
+                height: 100%
+                top: 0
+                pointer-events: all
+
+        &-item
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+            max-height: 315px
+            gap: 10px 30px
+            @at-root .rockwool &, .paroc &, .tn &, .ursa &, .penoplex &, .isover &, .knauf &, .isorok & , .umatex &, .tizol &, .isotecti &, .izomin &, .baswool &, .xotpipe &, .izovol &, .beltep &, .ruspanel &
+                width: fit-content
+                
+            &-category
+                font-weight: bold
+                font-size: 16px
+        &-link
+            +menustar('ТеплоКНАУФ', 'web')
+            +menustar('Скандик Лайт Баттс', 'rockwool')
+            +menustar('Лайт Баттс Оптима', 'rockwool')
+            +menustar('Акустик Баттс', 'rockwool')
+            +menustar('Венти Баттс', 'rockwool')
+            +menustar('Вагонка', 'fasady-pro')
+            +menustar('Виниловый сайдинг', 'fasad')
+            +menustar('Фиброцементный сайдинг', 'fasad')
+            +menustar('Технониколь Роклайт', 'tn')
+            +menustar('Технониколь Carbon', 'tn')
+            +menustar('Технониколь Технофас', 'tn')
+            +menustar('Ursa Терра', 'ursa')
+            +menustar('Ursa GEO', 'ursa')
+            +menustar('Пеноплэкс Фундамент', 'penoplex')
+            +menustar('Пеноплэкс Основа', 'penoplex')
+            +menustar('Доска обрезная ест. влаж', 'pilomat')
+            +menustar('Брус обрезной ест. влаж', 'pilomat')
+            +menustar('OSB плиты', 'plitaosb')
+            +menustar('Гипрок (гипсокартон)', 'plitaosb')
+            +menustar('Изолайт', 'isorok')
+            +menustar('Супер Теплый', 'isorok')
+        &-product
+            max-width: 200px
+
+    &__svg
+        height: 25px
+        margin-right: 12px
+        max-height: 25px
+        max-width: 24px
+        min-height: 25px
+        min-width: 24px
+        transition: 0.3s
+        width: 24px
+        fill: #b9b9b9
+        &[data-svg="assort-kirpich"],
+        &[data-svg="assort-smesi"]
+                stroke: #b9b9b9
+                fill: none !important
+    
+.header__nav-items-wrap
+    display: flex
+    flex-direction: column
+    gap: 10px
+    margin-top: 10px
+    margin-bottom: 30px
+
+    .header__nav-link
+        padding-top: 0
+        padding-bottom: 0
+
+        &.category-title
+            font-size: 17px
+
+
+.v2_header-menu__navigations-item img
+    height: 25px
+    margin-right: 12px
+    max-height: 25px
+    max-width: 24px
+    min-height: 25px
+    min-width: 24px
+    transition: 0.3s
+    width: 24px    

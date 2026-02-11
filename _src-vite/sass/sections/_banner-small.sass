@@ -1,0 +1,119 @@
+.banner-small
+    margin-bottom: 50px
+    text-align: center
+
+    .color-white
+        color: #fff
+    .color-black
+        color: #000
+    .bg-green
+        background: linear-gradient(88.68deg, #1EC661 0%, #1BB763 98.87%)
+        &:hover
+            box-shadow: 0px 16px 32px rgba(27, 183, 99, 0.16), 0px 8px 16px rgba(27, 183, 99, 0.56)
+    .font-weight-500
+        font-weight: 500
+    .font-weight-700
+        font-weight: 700
+
+    &__slide
+        position: relative
+        width: 100%
+        min-height: 205px
+        border-radius: 24px
+
+        @at-root .krovlya &, .fasad &
+            border-radius: 16px
+
+        @media screen and (max-width: 520px)
+            &:not(.height-full)
+                background-position-x: -500px !important
+
+        &.height-full
+            min-height: 305px
+            background-position: 50% !important
+            background-size: cover !important
+            &.v2
+                background-position: 100% !important
+            .banner-small__content
+                top: 100px
+
+    &__content
+        position: absolute
+        top: 30px
+        left: 48px
+        display: flex
+        flex-direction: column
+        gap: 16px
+        &.v2
+            top: 50px !important
+        @at-root .fasad &
+            @media screen and (max-width: 600px)
+                max-width: calc(100% - 96px)
+
+            @media screen and (max-width: 520px)
+                max-width: calc(100% - 40px)
+
+        @media screen and (max-width: 520px)
+            left: 20px
+            align-items: center
+
+        &-button
+            padding: 18px 24px
+            width: max-content
+            border-radius: 8px
+            display: flex
+            align-items: center
+            gap: 10px
+            transition: .3s
+
+            @at-root .fasad &
+                @media screen and (max-width: 600px)
+                    font-size: 12px
+                    padding: 12px 14px
+                    max-width: 100%
+
+            span
+                font-size: 24px
+                line-height: 100%
+                @media screen and (max-width: 520px)
+                    font-size: 18px
+            &__subtext
+                font-size: 14px
+        &-text
+            font-size: 24px
+            line-height: 140%
+            text-align: left
+            @media screen and (max-width: 520px)
+                font-size: 18px
+
+        &-button-v2
+            align-items: center
+            border-radius: 8px
+            display: flex
+            flex-direction: column
+            gap: 6px
+            padding: 12px 70px
+            transition: .3s
+            width: max-content
+            background: #73B017
+            color: #fff
+            box-shadow: 0px 4px 1px 0px #49710D
+            span
+                font-size: 24px
+                line-height: 100%
+                @media screen and (max-width: 520px)
+                    font-size: 18px
+            &:hover
+                background: #49710D
+        &-text-v2
+            font-size: 40px
+            color: #AA000F
+            line-height: 140%
+            text-align: left
+            max-width: 450px
+            font-weight: bold
+            @media screen and (max-width: 600px)
+                font-size: 30px
+                text-align: center
+                color: #fff
+                text-shadow: 0 0 10px black

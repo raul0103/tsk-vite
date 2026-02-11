@@ -1,0 +1,71 @@
+@use "@/sass/_breakpoints" as *;
+
+.product-card__top.with-customer-photos {
+  display: grid;
+  //grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-columns: 260px minmax(300px, 1fr) minmax(300px, 1fr);
+  gap: 10px 30px;
+
+  @include until-1200 {
+    grid-template-columns: 260px minmax(300px, 1fr) minmax(100px, 1fr);
+  }
+
+  @include until-980 {
+    grid-template-columns: 260px minmax(300px, 1fr);
+  }
+
+  @include until-768 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-card {
+    &__gallery {
+      grid-row: 1 / 3;
+
+      @include until-980 {
+        grid-row: 1 / 4;
+      }
+    }
+
+    &__info-right {
+      @include until-1200 {
+        grid-column: 2;
+      }
+    }
+
+    &__right-wrapper {
+      @include until-980 {
+        //grid-column: 2;
+      }
+    }
+
+    &__article {
+      @include until-980 {
+        margin-top: 16px;
+        text-align: left;
+      }
+    }
+  }
+
+  .photos-of-our-customers {
+    grid-column: 1 / 3;
+    border-top: 1px solid #DADADA;
+
+    & .swiper-button-next,
+    & .swiper-button-prev {
+      border-radius: 5px;
+    }
+
+    @include until-768 {
+      max-width: 100%;
+    }
+  }
+
+}
+
+.product-card_type_usual .product-card__top.with-customer-photos .product-card__btns-wrap {
+  @include until-980 {
+    margin-left: 0;
+  }
+}

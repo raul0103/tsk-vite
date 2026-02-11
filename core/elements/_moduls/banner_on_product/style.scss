@@ -1,4 +1,6 @@
-.banner_product_horisontal{
+@use "@/sass/mixins-context" as *;
+
+.banner_product_horisontal {
     position: relative;
     width: 100%;
     display: flex;
@@ -6,14 +8,18 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 30px;
-    img{
+
+    img {
         position: relative;
         width: 100%;
     }
-    a, button, .listing__catalog-promo-btn-more{
+
+    a,
+    button,
+    .listing__catalog-promo-btn-more {
 
         @include set_colors_1(background-color);
-        
+
         align-items: center;
         border-radius: 6px;
         color: #fff;
@@ -32,27 +38,30 @@
         z-index: 2;
         bottom: 0;
         margin-bottom: 30px;
-        &:after{
+
+        &:after {
             content: " →";
             display: block;
             margin-left: 10px;
             margin-bottom: 3px;
         }
-        &:hover{
-            @include set_colors_1(background-color,10%);
+
+        &:hover {
+            @include set_colors_1(background-color, 10%);
             color: #fff;
             padding: 10px 40px;
         }
     }
 }
 
-._promo_1{
+._promo_1 {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    span{
+
+    span {
         align-items: center;
         border-radius: 6px;
         color: #fff;
@@ -71,14 +80,16 @@
         width: auto;
         bottom: 0;
         z-index: 2;
-        &:after{
+
+        &:after {
             content: " →";
             display: block;
             margin-left: 10px;
             margin-bottom: 3px;
         }
-        &:hover{
-            @include set_colors_1(background-color,10%);
+
+        &:hover {
+            @include set_colors_1(background-color, 10%);
             color: #fff;
             padding: 10px 40px;
         }

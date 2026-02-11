@@ -1,0 +1,244 @@
+@use "@/sass/mixins-context" as *
+
+.article-page
+    .wrapper
+        max-width: 900px
+    .header__search-wrap
+        flex-basis: 400px
+
+.article
+    // ul
+    //     li
+    //         position: relative
+    //         list-style-type: none !important
+
+    //     li:not(.article-content-list__title):before
+    //         content: ''
+    //         position: absolute
+    //         left: -17px
+    //         top: 7px
+    //         bottom: 0
+    //         width: 6px
+    //         height: 6px
+    //         border-radius: 50%
+    //         border: 2px solid
+    //         +set_colors_1(color)
+    h3
+        font-weight: bold
+    &__like
+        display: flex
+        align-items: center
+        gap: 5px
+        svg
+            stroke: #000
+            stroke-width: 4px
+            position: relative
+            bottom: 2px
+        &:hover
+            svg
+                stroke: #777
+
+        &.active
+            svg
+                stroke: #aa000f
+                fill: #aa000f
+    &__favorite
+        padding: 0
+        svg
+            stroke: #000
+            height: 18px
+            width: 18px
+            stroke-width: 2px
+        &:hover
+            svg
+                stroke: #777
+
+        &.active
+            svg,use
+                stroke: #aa000f
+                fill: #aa000f
+                // *
+                //     fill: #aa000f
+
+    &__author
+        display: flex
+        gap: 5px
+        margin-bottom: 10px
+        width: 100%
+        align-items: center
+        &-image
+            min-width: 44px
+            height: 44px
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: 50%
+            border-radius: 50%
+    iframe
+        @media screen and ( max-width: 600px )
+            width: 100%
+
+    &__social-sharing
+        margin-top: 20px
+        a
+            border: none !important
+        &__title
+            font-weight: 700
+            margin-bottom: 10px
+    &__info
+        display: flex
+        width: 100%
+        justify-content: space-between
+        margin-bottom: 10px
+        @media screen and ( max-width: 600px )
+            flex-wrap: wrap
+            gap: 5px
+        &-left
+            color: #a9a9a9
+            font-size: 12px
+            display: flex
+            width: 100%
+            gap: 15px
+            align-items: center
+            @media screen and ( max-width: 600px )
+                flex-wrap: wrap
+                justify-content: space-between
+        &-right
+            display: flex
+            gap: 10px
+            align-items: center
+            @media screen and ( max-width: 600px )
+                justify-content: space-between
+                width: 100%
+                margin: 10px 0
+        &-item
+            display: flex
+            align-items: center
+            gap: 5px
+        &-rating
+            display: flex
+            gap: 10px
+            align-items: center
+            &-stars
+                fill: #ffbe00
+                align-items: center
+                display: flex
+                width: 90px
+                height: 10px
+                display: flex
+                gap: 5px
+
+    &-also
+        margin-top: 20px
+        &__title
+            margin-bottom: 20px
+    &-back
+        border-bottom: 1px solid !important
+        position: relative
+        margin-left: 15px
+        &::before
+            content: ''
+            border: solid #323232
+            border-width: 0 2px 2px 0
+            cursor: pointer
+            display: inline-block
+            height: auto
+            padding: 3px
+            position: absolute
+            transform: rotate(134deg)
+            left: -13px
+            top: 6px
+            width: max-content
+
+    &-image
+        width: 100%
+        &-container
+            width: 100%
+            max-height: 400px
+            overflow: hidden
+            display: flex
+            align-items: center
+            margin-bottom: 24px
+
+    &-content-list
+        width: 100%
+        max-width: 100%
+        background: #fff
+        border: 1px solid #000
+        box-shadow: none
+        position: relative
+        padding: 30px
+        margin: 0 !important
+        ul
+            margin: 0 !important
+        &__title
+            font-size: 1.5em
+            font-weight: 400
+            position: absolute
+            top: -22px
+            left: 0
+            right: 0
+            margin: 10px auto
+            padding: 0 10px
+            width: max-content
+            background: #fff
+            list-style: none !important
+        &__index
+            display: none
+        &__item
+            border: none
+            position: relative
+            list-style: disc !important
+
+    blockquote:not[class]
+        position: relative
+        display: flex
+        flex-direction: column
+        padding: 50px 150px 50px 250px
+        background: #fff
+        box-shadow: 0 4px 40px #dcdcdc
+        border-radius: 6px
+        margin: 1rem 0
+        &::before
+            content: ""
+            background-image: url(/assets/template/img/review-quotes.png)
+            background-repeat: no-repeat
+            background-position: 0 0
+            background-size: 82px 82px
+            display: block
+            position: absolute
+            top: 50px
+            left: 150px
+            width: 82px
+            height: 82px
+        @media screen and ( max-width: 700px )
+            padding: 25px
+            &::before
+                position: unset
+                margin: auto
+
+    table
+        border-collapse: collapse
+        border-spacing: 0
+        width: 100%
+        border: 1px solid #ddd
+        tr:nth-child(even)
+            background-color: #f2f2f2
+
+        th
+            background-color: #e3e3e3
+            font-weight: 700
+    figure
+        width: 100% !important
+        max-width: 100%
+        text-align: center
+        img
+            width: 100%
+            max-width: max-content
+            border-radius: 3px
+        figcaption
+            font-style: normal
+            font-weight: 400
+            font-size: 12px
+            line-height: 14px
+            color: #a9a9a9
+            width: 100%

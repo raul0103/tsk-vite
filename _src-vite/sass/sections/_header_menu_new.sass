@@ -1,0 +1,189 @@
+@use "@/sass/mixins-context" as *
+
+.menu_new_v2
+      position: relative
+      padding: 15px
+      flex-direction: column
+
+      .mm_block_main
+            width: 100%
+            position: relative
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr
+            gap: 8px
+
+            span
+                  display: flex
+                  align-items: center
+                  padding: 10px 10px 10px 10px
+                  background: #F0F0F0
+                  border-radius: 8px
+                  font-weight: 500
+                  cursor: pointer
+                  transition: .3s
+                  font-size: 14px
+
+                  @media screen and (max-width: 700px) and (min-width: 501px)
+                        font-size: 12px
+
+                  svg
+                        fill: #3e3b3b
+                        stroke: transparent
+                        width: 35px
+                        height: 35px
+
+                  &:hover
+                        +set_colors_1(color)
+                        svg
+                              +set_colors_1(fill)
+
+                  &.active
+                        +set_colors_1(background)
+                        color: #fff
+
+                        svg
+                              fill: #fff
+
+                        &:hover
+                              +set_colors_1(background)
+                              color: #fff
+
+                              svg
+                                    fill: #fff
+
+      .mm_block_cat_blocks_wrapper
+            position: relative
+            width: 100%
+
+            .mm_block_inner
+                  position: relative
+                  width: 100%
+                  display: none
+
+                  &.active
+                        display: block
+
+                  .mm_block-inner_tabs
+                        margin: 32px 0
+                        position: relative
+                        width: 100%
+                        display: flex
+                        flex-direction: row
+                        justify-content: flex-start
+                        align-items: center
+
+                        a
+                              +set_colors_1(color)
+                              margin-right: 32px
+                              font-weight: 500
+                              font-size: 16px
+
+                              &::after
+                                    content: ' →'
+
+                              &:hover
+                                    text-decoration: underline
+
+            .mm_block-inner_groups
+                  width: 100%
+                  display: flex
+                  flex-direction: column
+                  position: relative
+
+                  &:first-child
+                        margin-top: 32px
+
+                  .mm_block-inner_group
+                        width: 100%
+                        display: flex
+                        flex-direction: column
+                        position: relative
+
+                        &:not(:first-of-type)
+                              margin-top: 32px
+
+                        .mm_block-inner_group-title
+                              margin-bottom: 24px
+                              //text-transform: uppercase
+                              +set_colors_1(color)
+
+                        .mm_block-inner_group-linkwrapper
+                              width: 100%
+                              position: relative
+
+                              .mm_block-inner_group-linkitem
+                                    border-radius: 8px
+                                    display: flex
+                                    flex-direction: row
+                                    justify-content: flex-start
+                                    align-items: center
+                                    overflow: hidden
+
+                                    .img_wrapper
+                                          width: 105px
+                                          height: 54px
+                                          border-radius: 8px
+                                          flex-shrink: 0
+                                          position: relative
+                                          overflow: hidden
+                                          display: flex
+                                          flex-direction: column
+                                          justify-content: center
+                                          align-items: center
+                                          overflow: hidden
+
+                                          img
+                                                width: 100%
+                                                height: auto
+                                                min-width: 100%
+
+                                    .txt_wrapper
+                                          padding: 10px
+                                          color: #000
+
+                                    &:hover
+                                          background: #F0F0F0
+
+                                          .txt_wrapper
+                                                +set_colors_1(color)
+
+                              &.type_1
+                                    display: grid
+                                    gap: 24px
+                                    grid-template-columns: 1fr 1fr 1fr 1fr
+
+                                    a:hover
+                              // background: #F0F0F0
+                              &.type_2
+                                    display: grid
+                                    gap: 24px
+                                    grid-template-columns: 1fr 1fr
+
+                                    .mm_block-inner_group-linkitem
+                                          align-items: flex-start
+
+                                    .txt_wrapper a
+                                          display: block
+                                          overflow: hidden
+                                          position: relative
+                                          padding-top: 0
+                                          padding-left: 24px
+                                          margin-bottom: 5px
+
+                                          &:first-of-type
+                                                padding-left: 0px
+                                                font-weight: 600
+
+                              &.type_3
+                                    display: flex
+                                    flex-direction: row
+                                    justify-content: flex-start
+                                    flex-wrap: wrap
+                                    align-items: center
+
+                                    a
+                                          margin-right: 24px
+                                          padding: 12px 0
+                                          position: relative
+                                          display: block
+                                          color: #000

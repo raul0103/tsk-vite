@@ -1,0 +1,243 @@
+@use "@/sass/mixins-context" as *
+
+.v2-assort
+    &__tabs
+        width: 100%
+    &__navigations
+        display: flex
+        flex-wrap: wrap
+        gap: 8px
+
+        &-item
+            overflow: hidden
+            align-items: center
+            background: #f0f0f0
+            border-radius: 8px
+            cursor: pointer
+            display: flex
+            justify-content: space-between
+            font-size: 16px
+            font-weight: 700
+            padding: 13px 12px
+            transition: 0.3s
+            gap: 12px
+            flex: 24%
+            &:nth-child(1),&:nth-child(2),&:nth-child(3)
+                flex: 32.8%
+            @media screen and (max-width: 680px)
+                font-size: 14px
+                flex: 48% !important
+
+            &[data-tab-id="assort-kirpich"],
+            &[data-tab-id="assort-smesi"]
+                svg
+                    stroke: #b9b9b9
+                    fill: none !important
+            &.active
+                background: #aa000f
+                color: #fff  !important
+                svg
+                    fill: #fff
+                    // display: none
+                    // position: absolute
+                    @media screen and (max-width: 680px)
+                        margin-left: -24px
+                        opacity: 0
+                .v2-assort__close
+                    width: 11px
+                    right: 0
+            &.active[data-tab-id="assort-kirpich"],
+            &.active[data-tab-id="assort-smesi"]
+                svg
+                    stroke: #fff
+            &:hover
+                color: #aa000f
+
+            &-main
+                display: flex
+                align-items: center
+                gap: 10px
+                pointer-events: none
+    &__svg
+        fill: #b9b9b9
+        stroke: none
+        height: 25px
+        max-height: 25px
+        max-width: 24px
+        min-height: 25px
+        min-width: 24px
+        transition: 0.3s
+        width: 24px
+        margin-left: 0
+        opacity: 1
+
+    &__close
+        color: #fff
+        position: relative
+        width: 0
+        right: -100%
+        transition: 0.3s
+        // @media screen and (max-width: 680px)
+        //     display: none
+    &__contents
+        margin-top: 30px
+        display: flex
+        flex-direction: column
+        gap: 35px
+        margin-bottom: 30px
+
+    &__content
+        height: max-content
+        transition: .3s
+        overflow: hidden
+        &.hide
+            height: 0px
+            margin-top: -30px
+            opacity: 0
+            pointer-events: none
+
+        &-wrap
+            display: flex
+            flex-wrap: wrap
+            gap: 14px
+            @media screen and (max-width: 680px)
+                gap: 8px
+            @media screen and (max-width: 680px)
+                grid-template-columns: 1fr 1fr
+
+        &-title
+            margin-bottom: 12px
+            font-weight: bold
+            @media screen and (min-width: 780px)
+                font-size: 30px
+
+        &-item
+            display: flex
+            height: 130px
+            background: #f8f7f5
+            border-radius: 20px
+            transition: 0.3s
+            position: relative
+            overflow: hidden
+            // background-repeat: no-repeat
+            // background-size: cover
+            // background-position: 50%
+            @media screen and (max-width: 680px)
+                height: 100px
+            // &:after
+            //     content: ''
+            //     width: 100%
+            //     height: 100%
+            //     background: #fcfcfb6b
+            //     position: absolute
+            //     transition: .3s
+
+            &:hover
+                +set_colors_1('background')
+                // &:after
+                //     background: none
+                .v2-assort__content-item-title
+                    // +set_colors_1('background')
+                    color: #fff  !important
+            &.desktop-small
+                width: 15.4%
+                .v2-assort__content-item-image img
+                    bottom: 10px
+
+            &.desktop-average
+                width: 32.455%
+                .v2-assort__content-item-image img
+                    right: 35px
+                    bottom: 15px
+
+            &.desktop-big
+                width: 49.28%
+                .v2-assort__content-item-image img
+                    right: 50px
+                    bottom: 5px
+            &.mobile-very-small
+                @media screen and (max-width: 680px)
+                    width: 31.7%
+            &.mobile-half
+                @media screen and (max-width: 680px)
+                    width: 48.5%
+            &.mobile-small
+                @media screen and (max-width: 680px)
+                    width: 39.3%
+            &.mobile-average
+                @media screen and (max-width: 680px)
+                    width: 58%
+            &.mobile-big
+                @media screen and (max-width: 680px)
+                    width: 100%
+            &-image
+                position: absolute
+                z-index: 0
+                max-width: 120px
+                right: -5px
+                bottom: 0
+                img
+                    position: relative
+                    width: 100%
+                    max-height: 100px
+                    max-height: inherit
+                    @media screen and (max-width: 680px)
+                        bottom: 5px !important
+                        max-height: 50px
+                        right: 10px !important
+                        width: max-content !important
+                        max-width: 80px
+                        transform: scale(1) !important
+            &-title
+                margin: 10px
+                // position: relative
+                width: max-content
+                // height: max-content
+                z-index: 1
+                // background: #f8f7f5c9
+                // border-radius: 10px
+                font-size: 16px
+                font-weight: bold
+                transition: 0.3s
+                @media screen and (min-width: 680px)
+                    max-width: 80%
+                    padding: 5px 10px
+                @media screen and (max-width: 680px)
+                    font-size: 14px
+
+    .mobile-order-1
+        @media screen and (max-width: 680px)
+            order: 1
+    .mobile-order-2
+        @media screen and (max-width: 680px)
+            order: 2
+    .mobile-order-3
+        @media screen and (max-width: 680px)
+            order: 3
+    .mobile-order-4
+        @media screen and (max-width: 680px)
+            order: 4
+    .mobile-order-5
+        @media screen and (max-width: 680px)
+            order: 5
+    .mobile-order-6
+        @media screen and (max-width: 680px)
+            order: 6
+    .mobile-order-7
+        @media screen and (max-width: 680px)
+            order: 7
+    .mobile-order-8
+        @media screen and (max-width: 680px)
+            order: 8
+    .mobile-order-9
+        @media screen and (max-width: 680px)
+            order: 9
+    .mobile-order-10
+        @media screen and (max-width: 680px)
+            order: 10
+    .mobile-order-11
+        @media screen and (max-width: 680px)
+            order: 11
+    .mobile-order-12
+        @media screen and (max-width: 680px)
+            order: 12

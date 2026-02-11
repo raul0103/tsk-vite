@@ -1,0 +1,329 @@
+@use "@/sass/mixins-context" as *
+@use "@/sass/placeholders" as *
+
+.sect-showroom-title
+    margin-bottom: 0
+    // margin-block: 40px
+    h1, h2
+        font-weight: 500
+
+.sect-showroom-info
+    display: flex
+    flex-direction: row
+    margin-bottom: 10px
+
+    @media screen and (max-width: 768px)
+        flex-direction: column
+        gap: 20px
+
+    &__info
+        flex-basis: 40%
+        padding: 10px
+
+        @media screen and (max-width: 768px)
+            width: 95dvw
+            padding: 0
+
+        p:first-child
+            margin-bottom: 10px
+            @media screen and (max-width: 768px)
+                margin-bottom: 8px
+
+        @media screen and (max-width: 768px)
+            width: 95dvw
+
+    &__map
+        flex: 1
+        .showroom-map
+
+            @media screen and (max-width: 768px)
+                width: 95dvw
+
+    .showroom-grid
+        align-self: flex-start
+        &__line
+            display: flex
+            text-align: left
+            justify-content: center
+            margin-bottom: 20px
+            gap: 10px
+            @media screen and (max-width: 768px)
+                margin-bottom: 15px
+
+            &_left
+                justify-self: flex-start
+                flex-basis: 30%
+                color: #555
+
+            &_right
+                flex-basis: 70%
+                color: #111
+
+            h2
+                font-weight: 500
+                width: 100%
+                text-align: left
+                margin-bottom: 5px
+
+            .link-red
+                color: #aa000f
+                &:hover, &:active
+                    color: #555
+
+            .showroom-phone
+                font-weight: bold
+                display: flex
+                align-items: center
+                grid-row-gap: 10px
+
+                // &__messenger
+                //     font-size: 0
+                //     .icon-whatsapp
+                //         width: 20px
+                //         height: 20px
+
+        &__cta
+            margin-top: 20px
+            max-width: 260px
+            @media screen and (max-width: 768px)
+                margin: 10px auto
+            &-button
+                +set_colors_1(background-color)
+                &:hover
+                    +set_colors_1(background-color, 10%)
+
+.sect-showroom-content
+    padding-inline: 20px
+    @media screen and (max-width: 768px)
+        padding-inline: 10px
+    .content-block
+        margin-bottom: 50px
+        margin-top: 10px
+        @media screen and (max-width: 768px)
+            margin-bottom: 30px
+            margin-top: 0px
+
+.sect-showroom-gallery
+    &__wrapper
+        margin-inline: auto
+
+    .showroom-gallery
+        display: grid
+        justify-items: flex-start
+        justify-content: space-between
+        grid-template-columns: repeat(2, minmax(300px, 1fr))
+        gap: 30px
+        width: 100%
+
+        @media screen and (max-width: 768px)
+            grid-template-columns: minmax(200px, 1fr)
+            gap: 20px
+            justify-items: center
+
+        &__thumb
+            font-size: 0
+            border: 0
+            border-radius: 2rem
+            box-shadow: 0 0 10px #e6ecee
+            overflow: hidden
+            max-width: 570px
+            // @at-root .kirpich-m &
+            //     border: 5px solid #aa000f
+
+            &:nth-child(2n)
+                justify-self: flex-end
+            @media screen and (max-width: 768px)
+                &:nth-child(2n)
+                    justify-self: center
+
+            img
+                width: 100%
+                cursor: zoom-in
+
+            @media screen and (max-width: 768px)
+                box-shadow: none
+                width: 100%
+
+.sect-showroom-banner
+
+    box-sizing: border-box
+    margin-top: 100px
+    margin-bottom: 40px
+    padding-inline: 1rem
+    @media screen and (max-width: 768px)
+        margin-top: 60px
+    &__wrapper
+        position: relative
+        width: 100%
+        min-height: 300px
+        border-radius: 10px
+        box-shadow: 0 0 60px #eee
+        background-color: #e6ecee
+        display: flex
+        flex-direction: row
+        align-items: center
+        @media screen and (max-width: 768px)
+            flex-direction: column
+
+    &__info
+        padding: 50px
+        padding-right: 0
+        max-width: 500px
+        z-index: 1
+        flex-basis: 66%
+        @media screen and (max-width: 768px)
+            padding: 15px
+            padding-top: 20px
+            max-width: 100%
+
+        h2
+            text-align: center
+            font-weight: 700
+            @media screen and (max-width: 500px)
+                text-align: left
+        p
+            margin-block: 1rem
+            color: #323232
+
+    .banner-info
+        &__intro-text
+            font-size: 16px
+
+        &__outtro-text
+            font-size: 15px
+
+        .banner-actions
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            gap: 20px
+            padding-block: 10px
+
+            &__cta
+                width: 300px
+                +set_colors_1(background-color)
+                &:hover
+                    +set_colors_1(background-color, 10%)
+                @at-root .fasad &
+                    background-color: #00BD58
+                    &:hover
+                        background-color: #068441
+
+            // &__social
+            //     .icon
+            //         width: 50px
+            //         height: 50px
+
+    &__hands
+        transition: all .2s
+        min-height: 250px
+        @media screen and (max-width: 768px)
+            min-height: 200px
+
+        .hands-phone
+            display: block
+            position: absolute
+            width: 43dvw
+            max-width: 490.1px
+            min-width: 220px
+            right: 0
+            bottom: 0
+            transition: all .1s
+
+.sect-showroom-swiper
+
+    &__wrapper
+        margin-inline: auto
+        // display: flex
+
+    .showroom-swiper
+        margin-bottom: 60px
+        width: 100%
+        overflow-x: hidden
+
+        &__image
+            display: block
+            cursor: zoom-in
+            max-width: 100%
+            margin-inline: auto
+            border-radius: 10px
+            border: 1px inset transparent
+            +set_colors_1('border-color')
+
+        // Swiper overrides
+        .swiper-buttons
+            position: relative
+            display: flex
+            gap: 16px
+            margin-bottom: 20px
+
+        .swiper-button
+            width: 40px
+            height: 40px
+            display: flex
+            align-items: center
+            justify-content: center
+            border: 1.5px solid
+            border-radius: 4px
+            position: static
+            margin: 0
+            transition: .3s
+
+            &-prev, &-next
+                width: 40px
+                height: 40px
+                display: flex
+                align-items: center
+                justify-content: center
+                border: 1.5px solid
+                border-radius: 4px
+                position: static
+                margin-top: 0
+                transition: .3s
+
+                +set_colors_1(border-color)
+                @at-root .isover &
+                    border-color: transparent
+                @at-root .ursa &
+                    border-color: #232F61
+
+                &:hover
+                    +set_colors_1(background-color)
+
+                    @at-root .ursa &
+                        background-color: #232F61
+
+                    &::after
+                        border-color: #fff
+                        @at-root .isover &
+                            border-color: #323232
+
+                &::after
+                    @extend %css-arrow
+                    width: 7px
+                    height: 7px
+                    transition: .3s
+
+            &-prev
+                margin-left: auto
+
+                &::after
+                    transform: rotate(130deg)
+                    margin-left: 5px
+
+            &-next
+                &::after
+                    transform: rotate(310deg)
+                    margin-right: 5px
+
+        .swiper-slide
+            width: auto
+
+        .swiper-pagination
+            &-bullets
+                width: 100%
+                display: flex
+            &-bullet
+                width: 100%
+                border-radius: 4px

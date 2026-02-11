@@ -1,0 +1,314 @@
+.pkt-calc
+    width: 100%
+    margin-bottom: 60px
+    &__materials
+        margin-top: 35px
+
+        ul
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+            -ms-flex-pack: distribute
+            justify-content: space-around
+
+        ul li
+            max-width: 300px
+            width: 100%
+            height: 60px
+            background: #f1c52b
+            border-radius: 5px
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+            -webkit-box-pack: center
+            -ms-flex-pack: center
+            justify-content: center
+            -webkit-box-align: center
+            -ms-flex-align: center
+            align-items: center
+            color: #fff
+
+            font-weight: 300
+            font-size: 17px
+            text-align: center
+            cursor: pointer
+
+        li:not(.active)
+            &:hover
+                background: #f5d66a
+
+        .active
+            max-width: 300px
+            width: 100%
+            height: 60px
+            background: #fff
+            border-radius: 5px
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+            -webkit-box-pack: center
+            -ms-flex-pack: center
+            justify-content: center
+            -webkit-box-align: center
+            -ms-flex-align: center
+            align-items: center
+            color: #000
+
+            font-weight: 300
+            font-size: 17px
+            text-align: center
+            border: 1px solid #f1c52b
+
+        ul li input
+            opacity: 0
+
+    &__type
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        margin: 40px 0px
+
+        &__title
+
+            font-weight: 600
+            font-size: 16px
+            color: #54575a
+            padding-right: 15px
+
+        &__list
+            margin-left: 10px
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+            -webkit-box-align: center
+            -ms-flex-align: center
+            align-items: center
+
+        &__list li
+            -ms-flex-negative: 0
+            flex-shrink: 0
+            position: relative
+            margin: 0px 5px
+
+        &__list li input
+            display: none
+
+        &__list label
+            width: 50px
+            height: 50px
+            background-position: center
+            background-size: cover
+
+        &__img
+            width: 50px
+            height: 50px
+            background-position: center
+            background-repeat: no-repeat
+            cursor: pointer
+
+    &__img-zabor
+        background-image: url(/assets/template/img/pkt-calc/zabor-icon.png)
+
+        &_active
+            background-image: url(/assets/template/img/pkt-calc/zabor-icon-active.png)
+
+        &:hover
+            background-image: url(/assets/template/img/pkt-calc/zabor-icon-active.png)
+
+    &__img-arc
+        background-image: url(/assets/template/img/pkt-calc/arka-icon.png)
+
+        &_active
+            background-image: url(/assets/template/img/pkt-calc/arka-icon-active.png)
+
+        &:hover
+            background-image: url(/assets/template/img/pkt-calc/arka-icon-active.png)
+
+    &__img-gable
+        background-image: url(/assets/template/img/pkt-calc/naves-icon.png)
+
+        &:hover
+            background-image: url(/assets/template/img/pkt-calc/naves-icon-active.png)
+
+        &_active
+            background-image: url(/assets/template/img/pkt-calc/naves-icon-active.png)
+
+    &__img-lean-to
+        background-image: url(/assets/template/img/pkt-calc/kozirek-icon.png)
+
+        &:hover
+            background-image: url(/assets/template/img/pkt-calc/kozirek-icon-active.png)
+
+        &_active
+            background-image: url(/assets/template/img/pkt-calc/kozirek-icon-active.png)
+
+    &__img-arcuate
+        background-image: url(/assets/template/img/pkt-calc/kozirek-icon-2.png)
+
+        &:hover
+            background-image: url(/assets/template/img/pkt-calc/kozirek-icon-2-active.png)
+
+        &_active
+            background-image: url(/assets/template/img/pkt-calc/kozirek-icon-2-active.png)
+
+    &__hidden-name
+        min-height: 30px
+        background: #f5f5f5
+        border-radius: 5px
+        -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2)
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2)
+        position: relative
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        padding: 0px 15px
+        min-width: 80px
+        position: absolute
+        bottom: -50px
+        left: 0px
+        display: none
+
+        &__title
+
+            font-weight: 400
+            font-size: 14px
+            color: #54575a
+            text-align: center
+
+        &__rect
+            position: absolute
+            top: -12px
+            left: 15px
+
+        &__type__list li:hover &
+            display: block
+
+    &__dimension .h5
+
+        font-weight: 600
+        font-size: 16px
+        color: #54575a
+        margin-bottom: 15px
+
+    &__dimension .group
+
+        font-weight: 400
+        font-size: 16px
+        color: #54575a
+        margin: 10px 0px
+        width: 250px
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-between
+
+        input
+            height: 30px
+            width: 100px
+            padding-left: 7px
+            border: 1px #b7b7b7 solid
+            border-radius: 5px
+            margin-right: 5px
+
+        label
+            margin-right: 20px
+
+    &__dimension
+        float: left
+
+    &__img-zabortype_active
+        background-image: url(/assets/template/img/pkt-calc/zabor-01.png)
+        background-repeat: no-repeat
+        background-position: left
+        background-size: 80%
+        @media (max-width: 600px)
+            background-size: 100%
+    &__img-arctype_active
+        background-image: url(/assets/template/img/pkt-calc/arka.png)
+        background-repeat: no-repeat
+        background-position: left
+        background-size: 80%
+        @media (max-width: 600px)
+            background-size: 100%
+    &__img-gabletype_active
+        background-image: url(/assets/template/img/pkt-calc/kozyrek-dva-skata.png)
+        background-repeat: no-repeat
+        background-position: left
+        background-size: 80%
+        @media (max-width: 600px)
+            background-size: 100%
+    &__img-lean-totype_active
+        background-image: url(/assets/template/img/pkt-calc/kozyrek-skat.png)
+        background-repeat: no-repeat
+        background-position: left
+        background-size: 80%
+        @media (max-width: 600px)
+            background-size: 100%
+    &__img-arcuatetype_active
+        background-image: url(/assets/template/img/pkt-calc/koz-odin-skat-duga.png)
+        background-repeat: no-repeat
+        background-position: left
+        background-size: 80%
+        @media (max-width: 600px)
+            background-size: 100%
+
+    &__thickness-result
+        border: 1px solid #f1c52b
+        padding: 15px
+        width: 20%
+        background-color: #fff5d4
+        font-size: 14px
+        text-align: center
+        @media (max-width: 600px)
+            width: 100%
+            margin-top: 20px
+
+    &__box
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        @media (max-width: 600px)
+            flex-wrap: wrap
+
+    &__dimension
+        width: 40%
+        @media (max-width: 600px)
+            width: 100%
+            order: 1
+    &__img-construct
+        width: 60%
+        @media (max-width: 600px)
+            width: 100%
+    &__img-type
+        height: 350px
+        @media (max-width: 600px)
+            height: 300px
+    &__controls
+        text-align: flex-end
+        margin-top: 20px
+        @media (max-width: 600px)
+            text-align: center
+        .btn.calculate
+            background: #f1c52b
+            border-radius: 5px
+            color: #fff
+            padding: 20px 40px
+            cursor: pointer
+            font-size: 17px
+
+            &:hover
+                opacity: .7
+    .sect-pop__wrapper
+        margin-top: 40px
+        margin-bottom: 0

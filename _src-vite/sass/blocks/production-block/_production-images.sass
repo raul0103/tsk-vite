@@ -1,0 +1,35 @@
+.production-images
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 3px
+
+    &__column
+        display: flex
+        flex-direction: column
+        gap: 3px
+
+        & img
+            width: 100%
+            height: auto
+            object-fit: cover
+
+    // Mobile version - show between info and form
+    &--mobile
+        display: grid
+        @media (min-width: 768px)
+            display: none
+
+    // Desktop version - show on right side
+    &--desktop
+        display: none
+        @media (min-width: 768px)
+            display: grid
+            height: 100%
+            
+            & .production-images__column
+                & img
+                    border-radius: 4px
+
+
+
+

@@ -1,0 +1,30 @@
+@use "@/sass/mixins-context" as *
+
+.advantages-mini
+    display: flex
+    gap: 8px
+    width: 100%
+    margin-top: 16px
+    &__item
+        max-width: 65px
+        max-height: 65px
+        position: relative
+        img
+            width: 100%
+        &:hover &-title
+            opacity: 1
+        &-title
+            transition: .2s
+            opacity: 0
+            pointer-events: none
+            position: absolute
+            top: -30px
+            left: 0
+            width: max-content
+            background: #fff
+            border: 1px solid
+            +set_colors_1(border-color)
+            padding: 2px 15px
+            z-index: 2
+        &-anchor
+            cursor: pointer

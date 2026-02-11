@@ -1,0 +1,50 @@
+.contacts
+    &__item-value-text
+        font-weight: bold
+        white-space: nowrap
+
+        @media screen and (max-width: 768px)
+            white-space: normal
+			
+    &__select-address
+        margin-top: -5px
+        height: auto
+
+        .euv-custom-select__input-value
+            font-weight: bold
+
+        .euv-custom-select__input
+            text-align: center
+            line-height: 1.2
+
+            @media screen and (max-width: 768px)
+                white-space: normal
+
+    &__item
+        &_content
+            &_address
+                .contacts__item-value
+                    white-space: nowrap
+                    flex-grow: 0
+                    flex-shrink: 1
+
+                    @media screen and (max-width: 950px)
+                        flex-grow: 0
+                        flex-shrink: 1
+                        white-space: normal
+
+                    @media screen and (max-width: 768px)
+                        flex-grow: 1
+                        flex-shrink: 0
+                        text-align: center
+                         
+        &_wrap
+            &_true
+                .euv-custom-select__input
+                    white-space: normal
+                    text-align: right 
+
+    &__left
+        &_width_full
+            margin-right: 0
+            max-width: none

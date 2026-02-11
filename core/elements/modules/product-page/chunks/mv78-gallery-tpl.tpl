@@ -3,7 +3,7 @@
 
 {* Если есть файлы в галерее *}
 {if $amountPhotos > 0}
-    <div class="product-gallery-mv78 {if $amountPhotos == 1}product-gallery-mv78_single{/if}" style="display: flex !important; flex-direction: row !important; gap: 25px;">
+    <div class="product-gallery-mv78 {if $amountPhotos == 1}product-gallery-mv78_single{/if}" style="display: flex  !important; flex-direction: row  !important; gap: 25px;">
         {* Превьюшки СЛЕВА - показываем только если больше 1 изображения *}
         {if $amountPhotos > 1}
         <div class="product-gallery-mv78__thumbs">

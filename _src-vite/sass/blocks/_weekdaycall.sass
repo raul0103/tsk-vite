@@ -1,0 +1,190 @@
+.weekdaycall
+    padding: 12px
+    max-width: 100%
+    position: fixed
+    bottom: 0
+    left: 40px
+    border: 1px solid black
+    border-bottom: 0
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+    background-color: #fff
+    z-index: 10
+    transition: bottom .3s, transform .3s
+    width: 350px
+    transform: translateY(calc(100% - 46px))
+    height: 408px
+
+    @media screen and (max-width: 400px)
+        left: 0
+        right: 0
+        margin-left: auto
+        margin-right: auto
+
+    @media screen and (max-width: 768px)
+        bottom: 57px
+        display: none // на мобилах решили скрыть вообще 05.02.24
+
+    .custom-input
+        height: 30px
+
+    &.active
+        bottom: 0
+        z-index: 11
+        transform: none
+
+        .weekdaycall__btn-close
+            display: block
+
+    &.complete
+        bottom: -46px
+
+    &__bg
+        display: none
+        position: fixed
+        width: 100%
+        height: 100%
+        background: #000
+        opacity: 0.35
+        z-index: 10
+        left: 0
+        top: 0
+
+        @media screen and (min-width: 401px)
+            display: none  !important
+        @media screen and (max-width: 768px) // на мобилах решили скрыть вообще 05.02.24
+            display: none
+
+        &.active
+            display: block
+            @media screen and (max-width: 768px)
+                display: none
+
+    &__header
+        margin-left: -12px
+        margin-top: -12px
+        margin-right: -12px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: #424867
+        font-weight: 700
+        font-size: 20px
+        color: #FFFFFF
+        cursor: pointer
+        height: 46px
+
+    &__title
+        font-weight: bold
+        text-align: center
+        font-size: 16px
+        padding-top: 8px
+        padding-bottom: 6px
+
+    &__inputs-wrap
+        max-width: 263px
+        margin-left: auto
+        margin-right: auto
+
+    &__label
+        display: block
+
+        &:nth-last-of-type(n+2)
+            margin-bottom: 6px
+
+        &_field
+            &_time
+                margin-left: 16px
+                width: 106px
+
+    &__textarea
+        height: 85px
+
+    &__label-text
+        display: block
+        margin-top: 6px
+        margin-bottom: 6px
+        font-weight: bold
+
+    &__select
+        margin-left: auto
+        margin-right: auto
+        width: 263px
+        border: 0
+        height: 30px
+        border-radius: 2px
+        margin-bottom: 6px
+
+        .euv-custom-select__btn
+            top: 9px
+
+        &.euv-custom-select_visible .euv-custom-select__btn
+            top: 12px
+
+    &__top-content
+        display: flex
+        padding-bottom: 8px
+        margin-bottom: 8px
+        position: relative
+
+        &::after
+            left: -12px
+            bottom: 0
+            height: 1px
+            background: #000
+            position: absolute
+            display: block
+            content: ""
+            width: calc(100% + 24px)
+
+    &__input-time
+        width: 106px
+        margin-left: auto
+
+    &__btn-submit
+        margin-top: 7px
+        padding: 0 20px
+        height: 34px
+        margin-bottom: 10px
+
+    &__btn-submit, &__privacy
+        margin-left: auto
+        margin-right: auto
+
+    &__privacy
+        max-width: none
+
+    &__thanks-title
+        text-align: center
+        font-size: 25px
+        padding-top: 158px
+
+    &__btn-close
+        display: none
+        position: absolute
+        width: 35px
+        height: 35px
+        border-radius: 1000px
+        border: 1px solid black
+        padding: 0
+        cursor: pointer
+        right: -42px
+        top: -26px
+
+        @media screen and (max-width: 450px)
+            right: 0
+            top: -42px
+
+        &::before, &::after
+            position: absolute
+            left: 16px
+            top: 9px
+            content: ""
+            height: 18px
+            width: 1px
+            background-color: #000
+
+        &::before
+            transform: rotate(45deg)
+
+        &::after
+            transform: rotate(-45deg)

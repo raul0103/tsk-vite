@@ -1,0 +1,316 @@
+// Подробности тут: https://thecode.media/fortune/?ysclid=lldqh4s8b6678403978
+// Данный файл в scss, а не в sass, т.к. изначально (в статье) он вообще был в css. И переписывать его под sass проблематично. А самое главное - зачем?
+
+// общие настройки страницы
+.parent {
+	// подключаем сетку
+	display: grid;
+	// ставим всё по центру
+	place-items: center;
+	// если что-то не помещается на своё место — скрываем то, что не поместилось
+	overflow: hidden;
+}
+
+// общий блок для всех элементов
+.deal-wheel {
+	// задаём переменные блока
+	// размеры колеса
+	--size: clamp(250px, 80vmin, 412px);
+	// настройки яркости и заливки фона секторов
+	--lg-hs: 0 3%;
+	--lg-stop: 50%;
+	--lg: linear-gradient(hsl(var(--lg-hs) 0%) 0 var(--lg-stop), hsl(var(--lg-hs) 20%) var(--lg-stop) 100%);
+	// добавляем позиционирование относительно других элементов
+	position: relative;
+	// подключаем сетку
+	display: grid;
+	grid-gap: calc(var(--size) / 20);
+	// выравниваем содержимое блока по центру
+	align-items: center;
+	// задаём имена областей внутри сетки
+	grid-template-areas:
+		"spinner"
+		"trigger";
+	// устанавливаем размер шрифта
+	font-size: calc(var(--size) / 21);
+
+	@media screen and (max-width: 535px) {
+		--size: clamp(250px, 80vmin, 200px);
+	}
+}
+
+// всё, что относится ко внутренним элементам главного блока, будет находиться в области сетки с названием spinner
+.deal-wheel > * {
+	grid-area: spinner;
+}
+
+// сам блок и кнопка будут находиться в области сетки с названием trigger и будут выровнены по центру
+.deal-wheel .btn-spin {
+	grid-area: trigger;
+	justify-self: center;
+}
+
+// сектор колеса
+.spinner {
+	// добавляем относительное позиционирование
+	position: relative;
+	// подключаем сетку
+	display: grid;
+	// выравниваем всё по центру
+	align-items: center;
+	// добавляем элемент в сетку
+	grid-template-areas: "spinner";
+	// устанавливаем размеры
+	width: var(--size);
+	height: var(--size);
+	// поворачиваем элемент
+	transform: rotate(calc(var(--rotate, 25) * 1deg));
+	// рисуем круглую обводку, а всё, что не поместится, — будет скрыто за кругом
+	border-radius: var(--size);
+	overflow: hidden;
+}
+
+// всё, что внутри этого блока, будет находиться в области сетки с названием spinner
+.spinner * {
+	grid-area: spinner;
+}
+
+// текст на секторах
+.prize {
+	// включаем «гибкую» вёрстку
+	display: flex;
+	align-items: center;
+	// задаём отступы от краёв блока
+	padding: 0 calc(var(--size) / 6) 0 calc(var(--size) / 20);
+	// устанавливаем размеры
+	width: 50%;
+	height: 50%;
+	// устанавливаем координаты, относительно которых будем вращать текст
+	transform-origin: center right;
+	// поворачиваем текст
+	transform: rotate(var(--rotate));
+	// запрещаем пользователю выделять мышкой текст на секторах
+	user-select: none;
+	color: #fff;
+
+	span {
+		@media screen and (max-width: 768px) {
+			font-size: 11px;
+		}
+	}
+}
+
+// язычок
+.ticker {
+	// добавляем относительное позиционирование
+	position: relative;
+	// устанавливаем размеры
+	left: calc(var(--size) / -15);
+	width: calc(var(--size) / 10);
+	height: calc(var(--size) / 20);
+	// фон язычка
+	background: var(--lg);
+	// делаем так, чтобы язычок был выше колеса
+	z-index: 1;
+	// форма язычка
+	clip-path: polygon(20% 0, 100% 50%, 20% 100%, 0% 50%);
+	// устанавливаем точку, относительно которой будет вращаться язычок при движении колеса
+	transform-origin: center left;
+}
+
+// кнопка запуска колеса
+.btn-spin {
+	color: white;
+	background: black;
+	border: none;
+	// берём размер шрифта такой же, как в колесе
+	font-size: inherit;
+	// добавляем отступы от текста внутри кнопки
+	padding: 0.9rem 2rem 1rem;
+	// скругляем углы
+	border-radius: 0.5rem;
+	// меняем внешний вид курсора над кнопкой на руку
+	cursor: pointer;
+}
+
+// если кнопка нажата и неактивна
+.btn-spin:disabled {
+	// меняем внешний вид курсора
+	cursor: progress;
+	// делаем кнопку полупрозрачной
+	opacity: 0.25;
+}
+
+// анимация вращения
+.is-spinning .spinner {
+	transition: transform 8s cubic-bezier(0.1, -0.01, 0, 1);
+}
+
+// анимация движения язычка
+.is-spinning .ticker {
+	animation: tick 700ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+// эффект, когда колесо задевает язычок при вращении
+@keyframes tick {
+	40% {
+		// чуть поворачиваем язычок наверх в середине анимации
+		transform: rotate(-12deg);
+	}
+}
+
+// анимируем выпавший сектор
+.prize.selected .text {
+	// делаем текст белым
+	color: white;
+	font-weight: bold;
+	// настраиваем длительность анимации
+	animation: selected 800ms ease;
+}
+
+// настраиваем анимацию текста на выпавшем секторе по кадрам
+@keyframes selected {
+	// что происходит на 25% от начала анимации
+	25% {
+		// увеличиваем текст в 1,25 раза
+		transform: scale(1.25);
+		// добавляем тексту тень
+		text-shadow: 1vmin 1vmin 0 #{"hsla(0 0% 0% / 0.1)"};
+	}
+	40% {
+		transform: scale(0.92);
+		text-shadow: 0 0 0 #{"hsla(0 0% 0% / 0.2)"};
+	}
+	60% {
+		transform: scale(1.02);
+		text-shadow: 0.5vmin 0.5vmin 0 #{"hsla(0 0% 0% / 0.1)"};
+	}
+	75% {
+		transform: scale(0.98);
+	}
+	85% {
+		transform: scale(1);
+	}
+}
+
+.fortwheel-gift {
+	animation: fancyboxw_heartbeat 2.5s ease-in-out infinite both;
+	background: url(/assets/template/img/svg-sprite/fortwheel-gift.svg) no-repeat center center;
+	background-size: contain;
+	width: 73px;
+	height: 73px;
+	position: fixed;
+	z-index: 10;
+	cursor: pointer;
+	bottom: 45%;
+	left: 5px;
+
+	@keyframes fancyboxw_heartbeat {
+		from {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+			-webkit-transform-origin: center center;
+			transform-origin: center center;
+			-webkit-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
+		}
+		10% {
+			-webkit-transform: scale(0.91);
+			transform: scale(0.91);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		17% {
+			-webkit-transform: scale(0.98);
+			transform: scale(0.98);
+			-webkit-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
+		}
+		33% {
+			-webkit-transform: scale(0.87);
+			transform: scale(0.87);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		45% {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+			-webkit-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
+
+.popup-fortwheel {
+	&_start-animation .spinner {
+		animation: spin 23s linear 0s infinite;
+	}
+
+	@keyframes spin {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	@-webkit-keyframes spin {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.popup__form {
+		max-width: 800px;
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		gap: 0 40px;
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+
+	.form__button {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.popup-fortwheel_submitted {
+		.popup-fortwheel__submitted-text {
+			margin-top: 10px;
+			display: block;
+		}
+		.popup-fortwheel__form-wrap {
+			display: none;
+		}
+	}
+
+	&__submitted-text {
+		display: none;
+		text-align: center;
+		font-size: 17px;
+	}
+
+	&__hidden-form {
+		display: none;
+	}
+
+	&_sending {
+		.form__button,
+		.popup-fortwheel__input-phone {
+			cursor: not-allowed;
+		}
+	}
+}

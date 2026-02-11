@@ -1,0 +1,60 @@
+@use "@/sass/variables/_counter-variables.sass" as *
+
+.counter
+      & .counter-title
+            font-size: 14px
+            line-height: 14px
+            margin-bottom: 8px
+      & .counter-controls
+            background: #eee
+            display: flex
+            height: 50px
+            border-radius: $counter-border-radius
+            border: 1px solid #eee
+            overflow: hidden
+            span
+                  color: #B9B9B9
+                  height: 100%
+                  padding: 9px 13px
+                  font-size: 19px
+                  font-weight: 600
+                  margin: 0
+                  background: #fff
+                  cursor: pointer
+                  display: flex
+                  align-items: center
+                  -webkit-touch-callout: none
+                  -webkit-user-select: none
+                  -khtml-user-select: none
+                  -moz-user-select: none
+                  -ms-user-select: none
+                  user-select: none
+
+
+                  &.decrease, &.increase
+                        border: transparent 1px solid
+                        transition: 0.5s
+
+                  &.increase
+                        border-radius: 1px $counter-border-radius $counter-border-radius 1px
+
+                  &.decrease
+                        border-radius: $counter-border-radius 1px 1px $counter-border-radius
+
+                  &.decrease:hover, &.increase:hover
+                        border-color: $counter-border-color
+
+
+            input
+                  font-size: 14px
+                  width: 85px
+                  text-align: center
+                  height: 100%
+                  padding: 0
+                  margin: 0
+                  background: transparent
+                  border: 1px solid transparent
+
+            input:hover
+               border-color: $counter-border-color
+               transition: 0.3s

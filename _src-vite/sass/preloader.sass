@@ -1,0 +1,43 @@
+body.have-preloader
+    overflow: hidden
+
+#preloader, #preloader-status
+    transition: opacity 350ms
+
+#preloader
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 999900
+    background-color: #fff
+    transition-delay: 350ms
+
+    &.hide
+        opacity: 0
+
+        #preloader-status
+            opacity: 0
+
+    &.disable-zindex
+        z-index: -1
+
+#preloader-status
+    position: absolute
+    top: 50%
+    left: 50%
+    background-repeat: no-repeat
+    background-position: center center
+    width: 100px
+    height: 100px
+    transform: translate(-50%, -50%)
+    background-size: contain
+
+    @at-root .kirpich-m &
+        background-image: url(/assets/template/img/preloader/bricks-loader.svg)
+
+    @at-root .krovlya &
+        background-image: url(/assets/template/img/preloader/roof-loader.svg)
+        width: 150px
+        height: 150px

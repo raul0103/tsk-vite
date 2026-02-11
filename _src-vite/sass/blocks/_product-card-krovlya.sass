@@ -1,0 +1,165 @@
+@use "@/sass/variables/_counter-variables.sass" as *
+
+.card-krovlya
+      font-family: 'Lato'
+
+      .product-card__info-simple
+            .counter
+                  margin-right: 12px
+            &.unity
+                  margin-bottom: 7px
+      .js-product
+            &__price-wrap
+                  font-weight: 700
+
+      .basic-info
+            margin-bottom: -10px
+            padding-bottom: 18px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+
+            & .list-additions__value
+                  line-height: 24px
+            & .price-block
+                  width: 161px
+
+                  & .js-product__new-price-wrap
+                        font-size: 12px
+                        margin-top: 6px
+
+            .product-card
+                  &__price-outer
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-start
+
+                  &__price-wrap
+                        margin: 0
+
+      .list-additions__value
+
+            &-title
+                  width: 141px
+                  font-weight: 800
+                  &::after
+                        content: ":"
+
+      .product-card__info-wrap
+            .product-card
+                  &__info-simple
+                        &.action
+                              display: grid
+                              grid-template-columns: 1fr 1fr
+
+                              & .js-product__btn-in-cart, & .product-card__buy
+                                    margin-left: 0
+                                    width: 100%
+                                    max-width: 100%
+                  &__select-wrap
+                        margin-top: 16px
+                        margin-bottom: -8px
+
+      .euv-custom-select__options-wrap
+            top: 101%
+      .euv-custom-select
+            border: 1px solid transparent
+            &:hover
+                  border: 1px solid $counter-border-color
+
+      .resultSum
+            position: relative
+            padding: 0
+            margin: 0
+            width: 100%
+
+            .resultSum-rub
+                  & .value, & .prefix
+                        font-size: 24px
+                        color: #aa000f
+
+            .resultSum-m2
+                  margin-bottom: 12px
+                  & .prefix
+                        margin-left: 5px
+
+                  & .title, & .value, & .prefix
+                        font-size: 14px
+
+            .resultSum-m2, .resultSum-rub
+                  & .value, & .prefix
+                        font-weight: 900
+
+@media screen and (max-width: 772px)
+      .card-krovlya
+            // .product-card__mobile, .product-card__mobile-btns
+            //       display: none  !important
+
+            .list-additions
+                  width: 100%
+                  &__value
+                        display: flex
+
+                        &-value
+                              width: 30%
+                              display: flex
+                              justify-content: flex-end
+            .basic-info
+
+                  .price-block
+                        margin-top: 24px
+                        width: 100%
+                        position: relative
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        .product-card__brand
+                              position: relative
+                              width: 140px
+                        .product-card__price-wrap
+                              margin-bottom: 8px
+                        .product-card__price-wrap, .product-card__new-price-wrap
+                              width: 100%
+                              .js-product__new-price-val
+                                    position: absolute
+                                    top: 5px
+                                    right: 40px
+
+                              .js-product__new-price-text br
+                                    display: none
+
+            .product-card_type_relinking .product-card__info-inner
+                  margin: 0
+                  padding-bottom: 12px
+
+            .euv-custom-select__type-colums:first-child
+                  margin-top: 0
+
+            .product-card__select-wrap
+                  &.cvet-options
+                        width: 65%
+                        margin-right: 5%
+                  &.item-thickness-options
+                        width: 30%
+
+            .product-card__info-wrap
+
+                  .product-card__info-simple
+                        &.unity
+                              display: flex
+                              flex-wrap: wrap
+                              .counter
+                                    width: 50%
+                                    margin: 0
+                                    padding: 4px
+                                    margin-bottom: 12px
+                                    display: flex
+                                    flex-direction: column
+                                    justify-content: space-between
+                                    .counter-input
+                                          width: 100%
+
+                        &.action
+                              grid-template-columns: 1fr
+                              & .js-product__controls
+                                    margin-bottom: 12px

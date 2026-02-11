@@ -1,0 +1,70 @@
+@use "@/sass/mixins-context" as *
+
+.banner-slider
+    width: 100%
+    margin-bottom: 60px
+    @media screen and (max-width: 768px)
+        margin-bottom: 20px
+
+
+    img
+        width: 100%
+
+    &__row
+        display: flex
+        gap: 25px
+        width: 100%
+
+    &__big
+        flex: 72.5%
+        max-width: 775px
+        position: relative
+        overflow: hidden
+        &-wrapper
+            display: flex
+
+        &-item
+            display: block
+            background-repeat: no-repeat  !important
+
+    &__small
+        flex: 30%
+        position: relative
+        @media (max-width: 890px)
+            display: none
+        &-button
+            position: absolute
+            background: linear-gradient(180deg, #db3343, #d10015)
+            color: #fff !important
+            padding: 10px 20px
+            border-radius: 30px
+            width: max-content
+            display: flex
+            align-items: center
+            gap: 10px
+            font-weight: bold
+            height: 45px
+            bottom: 34px
+            left: 26px
+            &:hover
+                background: #aa000f !important
+
+            .icon-arrow
+                width: 15px
+                transform: rotate(270deg)
+                fill: #fff
+    .swiper-pagination-bullet-active
+        +set_colors_1('background')
+
+    .swiper-button
+        +set_colors_1('color')
+        background: white
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        &:hover
+            +set_colors_1('background')
+            color: #fff
+    .swiper-button:after
+        font-size: 14px
+        font-weight: bold
