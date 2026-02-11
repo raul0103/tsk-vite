@@ -1,0 +1,246 @@
+
+.header__catalog-menu-inner--v4
+{
+  padding-top: 21px;
+}
+
+.menu-v4{
+  .menu{
+    &__header a{
+      display: block;
+      width: 100%;
+      color: var(--theme-color);
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+    &__body{
+      display: grid;
+      grid-template-columns: 268px auto;
+      gap: 18px;
+    }
+
+    &__body-right{
+      padding: 29px;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+    &-catalog{
+      display: flex;
+      flex-direction: column;
+      align-items: space-between;
+      min-height: 450px; 
+
+      &__item{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #DDDDDD;
+        position: relative;
+        overflow: hidden;
+
+        &:hover, &.active{
+            border: 1px solid;
+            border-color: var(--theme-color);
+        }
+
+        span{
+          position: absolute;
+          left: 30px;
+          width: calc(100% - 110px);
+          top: 25%;
+          font-weight: 700;
+          font-size: 16px;
+          color: #000000F0;
+        }
+
+        img{
+          position: absolute;
+          right: 0; 
+          top: calc(50% - 30px);
+          width: 67px;
+          height: 67px;
+        }
+      }
+    }
+
+    .menu-group__header
+    {
+      span{
+        font-weight: 700;
+        font-size: 16px;
+        color: #000000F0;
+      }
+    }
+
+    &-content{
+      opacity: 0;
+      visibility: visible;
+      //transform: translateX(30px) scale(0.95);
+      //transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: absolute;
+      
+      &.active{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0) scale(1);
+        position: relative;
+
+        // Анимация для групп внутри контента
+        .menu-group {
+          animation: slideInUp 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+          opacity: 1;
+          transform: translateY(20px);
+
+          //@for $i from 1 through 10 {
+          //  &:nth-child(#{$i}) {
+          //    animation-delay: #{$i * 0.1}s;
+          //  }
+          //}
+        }
+
+        // Анимация для элементов в группах
+        .menu-group__item {
+          //animation: fadeInScale 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+          opacity: 1;
+          transform: scale(1);
+
+          //@for $i from 1 through 20 {
+          //  &:nth-child(#{$i}) {
+          //    animation-delay: #{0.3 + $i * 0.05}s;
+          //  }
+          //}
+        }
+      }
+    }
+
+
+
+    &-group{
+      margin-bottom: 30px;
+    }
+
+    &-group__header {
+      margin-bottom: 10px;
+      span{
+      font-weight: 700;
+      font-size: 16px;
+      color: #000000F0;
+    }
+  }
+
+    &-group__list{
+      display: grid;
+      flex-wrap: wrap;
+      max-width: 500px;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
+    }
+
+    &-group__item{
+      color: #000000; 
+    }
+  }
+}
+
+// Анимации для контента меню
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+// Дополнительные эффекты для элементов меню
+.menu-v4 {
+  .menu-catalog__item {
+    //transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    &:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 20px rgba(64, 138, 205, 0.15);
+    }
+    
+    &.active {
+      transform: translateX(5px);
+      box-shadow: 0 4px 20px rgba(64, 138, 205, 0.25);
+      
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: var(--theme-color);
+        //animation: slideInLeft 0.3s ease-out;
+      }
+    }
+  }
+  .menu-group__list.flex
+  {
+    display: flex;
+    gap: 45px;
+  }
+  .menu-group__all-link{
+    grid-column: span 4;
+    a{
+      color: #00000082;
+      font-size: 12px;
+    }
+  }
+  
+  .menu-group__item {
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    &:hover {
+      transform: translateY(-2px);
+      color: var(--theme-color);
+      text-shadow: 0 2px 8px rgba(64, 138, 205, 0.3);
+    }
+
+    a{
+      text-align: center;
+    }
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+

@@ -1,0 +1,15 @@
+.button {
+  border: none;
+  background: none;
+
+  &-bordered {
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    &.active {
+      border-color: var(--theme-color);
+    }
+    &--small {
+      padding: 6px;
+    }
+  }
+}

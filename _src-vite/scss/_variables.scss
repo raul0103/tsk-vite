@@ -1,0 +1,33 @@
+$themes: (
+  knauf: #4f70ad,
+  ceresit: #4f70ad,
+  isotecti: #4f70ad,
+  rockwool: #aa000f,
+  rasprodazha: #aa000f,
+  ruspanel: #aa000f,
+  tn: #ed1c24,
+  penoplex: #f36f21,
+  xotpipe: #f36f21,
+  tizol: #f36f21,
+  izovol: #f36f21,
+  isover: #83c320,
+  paroc: #ce1126,
+  ursa: #ea4740,
+  izomin: #ea4740,
+  fasad: #deb262,
+  pro_fanera: #ee8208,
+  fasady_pro: #0b703e,
+  baswool: #0b703e,
+  beltep: #0b703e,
+  policarbonat: #28a745,
+  gazobeton: #7a99a6,
+  proflist: #408acd,
+  sehndvich: #FF7514
+);
+
+// Генерация CSS-переменных для каждой темы
+@each $name, $color in $themes {
+  body.#{$name} {
+    --theme-color: #{$color};
+  }
+}
