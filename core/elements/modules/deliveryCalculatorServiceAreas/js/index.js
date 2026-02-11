@@ -1,19 +1,19 @@
 import { EventKeeper } from "./EventKeeper";
-import { Suggestions, Events as SuggEvents } from "./suggestions";
+import { Suggestions } from "./suggestions";
 import { DropDownList } from "./DropDownList";
-import { InputIndicator} from './InputIndicator';
+import { InputIndicator } from './InputIndicator';
 import { coordsFromStr } from "./Utils";
 import { Events } from "./Events";
 //TODO: сделать взаимодействие компонентов через систему событий
 class Utils {
-  static containsPoint (bounds, point) {
+  static containsPoint(bounds, point) {
     return point[0] >= bounds[0][0] && point[0] <= bounds[1][0] &&
-            point[1] >= bounds[0][1] && point[1] <= bounds[1][1];
+      point[1] >= bounds[0][1] && point[1] <= bounds[1][1];
   }
 
   //Заменить пробелы на &nbsp;
   static priceFormat(price) {
-    if(!price)return;
+    if (!price) return;
     price = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "&nbsp;");
     return price.replace(/ /, '&nbsp;');
   }
@@ -32,12 +32,12 @@ class AddressFieldKeeper {
     addrMsgS: '.js-delivery-calculator__form-address-message',
     dropDownSel: '.js-delivery-calculator__form-address-dropdown',
     inputDelay: 1000
-  }){
+  }) {
     this.config = config;
     this.addrField = body.querySelector(this.config.addrS);
-    if(!this.addrField)throw 'Couldn\'t find address field';
+    if (!this.addrField) throw 'Couldn\'t find address field';
     this.addrMsg = body.querySelector(this.config.addrMsgS);
-    if(!this.addrMsg)throw 'Couldn\'t find address message element';
+    if (!this.addrMsg) throw 'Couldn\'t find address message element';
     this.addrMsg.dataset['origMessage'] = this.addrMsg.innerHTML;
     //console.log(this.addrMsg.dataset['origMessage']);
     this.owner = owner;
@@ -56,7 +56,7 @@ class AddressFieldKeeper {
     let timer;
     this.addrField.addEventListener('keyup', (e) => {
       host.setAddrMessage('');
-      if(timer)clearTimeout(timer);
+      if (timer) clearTimeout(timer);
       this.inputIndicator.setLoading();
       timer = setTimeout(async () => {
         //console.log(this.addrField.value);
@@ -69,13 +69,13 @@ class AddressFieldKeeper {
 
   async processSuggestions() {
     const host = this;
-    const suggestions = await this.suggestions.get(this.addrField.value, {kind: 'province', name: 'Московская область'});
+    const suggestions = await this.suggestions.get(this.addrField.value, { kind: 'province', name: 'Московская область' });
     //console.log(suggestions);
-    if(!suggestions || suggestions.length < 1) {
+    if (!suggestions || suggestions.length < 1) {
       this.owner.ui.setService(false, true);
       return;
     }
-    if(suggestions && suggestions.length == 1) {
+    if (suggestions && suggestions.length == 1) {
       const coords = suggestions[0].coords;
       const text = suggestions[0].text;
       host.pointFromCoords(coords, text);
@@ -89,13 +89,13 @@ class AddressFieldKeeper {
       this.dropDownList.hide();
       this.addrField.value = text;
     });
-    if(suggestions)this.dropDownList.show();
+    if (suggestions) this.dropDownList.show();
   }
 
   setAddrMessage(msg) {
     //console.log('setAddrMessage');
     //console.log(msg);
-    if(!msg){
+    if (!msg) {
       this.addrMsg.innerHTML = this.addrMsg.dataset['origMessage'];
       return;
     }
@@ -108,9 +108,9 @@ class AddressFieldKeeper {
     this.addrField.value = text;
   }
 
-  addrByCoords(coords){
-    if(!coords)return;
-    if(coords.constructor != Array)return;
+  addrByCoords(coords) {
+    if (!coords) return;
+    if (coords.constructor != Array) return;
     this.setAddrMessage();
     const host = this;
     const gc = ymaps.geocode(coords);
@@ -128,10 +128,10 @@ class AddressFieldKeeper {
 
   pointFromAddress(addr) {
     const host = this;
-    if(!addr)return;
+    if (!addr) return;
     //console.log(addr);
     const gc = ymaps.geocode(addr);
-    gc.then((res)=>{
+    gc.then((res) => {
       const nearest = res.geoObjects.get(0);
       //console.log(nearest.geometry.getCoordinates());
       host.owner.setMark(nearest.geometry.getCoordinates(), nearest.properties.get('name'));
@@ -142,7 +142,7 @@ class AddressFieldKeeper {
   }
 
   pointFromCoords(coords, text) {
-    if(!coords)return;
+    if (!coords) return;
     this.owner.setMark(coords, text);
   }
 
@@ -152,15 +152,15 @@ class CoordinatesFixer {
   static fixCoordBlock(coordBlock) {
     //console.log("before");
     //console.log(coordBlock);
-    for(let i = 0; i < coordBlock.length; ++i) {
-      [ coordBlock[i][0],coordBlock[i][1] ] = [ coordBlock[i][1], coordBlock[i][0] ];
+    for (let i = 0; i < coordBlock.length; ++i) {
+      [coordBlock[i][0], coordBlock[i][1]] = [coordBlock[i][1], coordBlock[i][0]];
       //[a, b] = [b, a];
     }
     //console.log("after");
     //console.log(coordBlock);
   }
   static fixCoords(feature) {
-    for(let i = 0; i < feature.geometry.coordinates.length; ++i) {
+    for (let i = 0; i < feature.geometry.coordinates.length; ++i) {
       CoordinatesFixer.fixCoordBlock(feature.geometry.coordinates[i]);
     }
   }
@@ -176,22 +176,23 @@ class AreasKeeper {
     const host = this;
     const p = fetch(this.config.areasJSONPath);
     p.then((res) => {
-      if(!res.ok){console.error("Error fetching Areas.geojson"); console.error(res.statusText);}
+      if (!res.ok) { console.error("Error fetching Areas.geojson"); console.error(res.statusText); }
       //host.#renderAreas(res.text()); //.json();
       return res.json();
-    }, (err) => { console.error('promise error Areas.geojson'); console.error(err);
+    }, (err) => {
+      console.error('promise error Areas.geojson'); console.error(err);
     }).then((res) => {
       //console.log(res);
       //console.log(typeof res);
       host.#fixCoords(res.features);
       host.#renderAreas(res);
       EventKeeper.trigger(Events.areasRendered, res);
-    }, (err) => {console.error(err);});
+    }, (err) => { console.error(err); });
   }
 
   #fixCoords(features) {
     //console.log(features);
-    for(let i = 0; i < features.length; ++i) {
+    for (let i = 0; i < features.length; ++i) {
       CoordinatesFixer.fixCoords(features[i]);
       //features[i].geometry.coordinates[0]
     }
@@ -208,24 +209,24 @@ class AreasKeeper {
     //console.log(this.owner.map.geoObjects);
     //this.owner.map.geoObjects.add(this.areas);
     //console.log(this.areas);
-    
+
     this.areas.each((obj) => {
-        //console.log(obj.properties.get('fill'));
-        obj.options.set({
-            fillColor: obj.properties.get('fill'),
-            fillOpacity: obj.properties.get('fill-opacity'),
-            //strokeColor: obj.properties.get('stroke'),
-            strokeWidth: 0,//obj.properties.get('stroke-width'),
-            strokeOpacity: 0,//obj.properties.get('stroke-opacity')
-        });
-        obj.events.add('click', (e) => {
-          const coords = e.get('coords');
-          host.owner.afk.addrByCoords(coords);
-          //console.log(coords.join(', '));
-          //console.log('Clicked!');
-          //console.log(e);
-        });
-        //obj.properties.set('balloonContent', obj.properties.get('description'));
+      //console.log(obj.properties.get('fill'));
+      obj.options.set({
+        fillColor: obj.properties.get('fill'),
+        fillOpacity: obj.properties.get('fill-opacity'),
+        //strokeColor: obj.properties.get('stroke'),
+        strokeWidth: 0,//obj.properties.get('stroke-width'),
+        strokeOpacity: 0,//obj.properties.get('stroke-opacity')
+      });
+      obj.events.add('click', (e) => {
+        const coords = e.get('coords');
+        host.owner.afk.addrByCoords(coords);
+        //console.log(coords.join(', '));
+        //console.log('Clicked!');
+        //console.log(e);
+      });
+      //obj.properties.set('balloonContent', obj.properties.get('description'));
     });
   }
 }
@@ -252,7 +253,7 @@ class ResultsRenderer {
   async load(path) {
     const resp = await fetch(path);
     //console.log(resp);
-    if(!resp.ok) throw resp;
+    if (!resp.ok) throw resp;
     const result = await resp.json();
     this.areas = result;
     //console.log(result);
@@ -267,7 +268,7 @@ class ResultsRenderer {
       '5',
       '10'
     ];
-    for(let w in weights) {
+    for (let w in weights) {
       this.owner.ui.setPrices('handler', w, '-', '-');
     }
     /*
@@ -281,17 +282,17 @@ class ResultsRenderer {
   #setAreaInfo(area) {
     this.#clearAreaInfo();
     //console.log(area);
-    if(area.car){
-      for(let p in area.car){
+    if (area.car) {
+      for (let p in area.car) {
         //console.log(p);
         //console.log(area.car[p]);
         this.owner.ui.setPrices('car', p, area.car[p].dur, area.car[p].exact);
       }
       //console.log('car is empty');
     }
-    if(area.handler){
+    if (area.handler) {
       //console.log(area.car);
-      for(let p in area.handler){
+      for (let p in area.handler) {
         //console.log(p);
         //console.log(area.handler[p]);
         this.owner.ui.setPrices('handler', p, area.handler[p].dur, area.handler[p].exact);
@@ -300,7 +301,7 @@ class ResultsRenderer {
   }
 
   async render(desc) {
-    if(!desc){
+    if (!desc) {
       //this.owner.afk.setAddrMessage('Адрес за пределами области обслуживания');
       this.owner.ui.setService(false, true);
       return;
@@ -308,7 +309,7 @@ class ResultsRenderer {
     //console.log(desc);
     //console.log(this.areas);
     const area = this.areas[desc];
-    if(!area){console.error('Area not found in delivery data: ' + desc); return;}
+    if (!area) { console.error('Area not found in delivery data: ' + desc); return; }
     this.owner.ui.setService(true, false);
     this.#setAreaInfo(area);
   }
@@ -344,23 +345,23 @@ class UIHandler {
     //if(!weights)throw 'Can\'t find weights block';
     //console.log(this.formData);
     //console.log(weights);
-    if(this.formData.vehicleId == 'car') {
+    if (this.formData.vehicleId == 'car') {
       weightsCars.classList.add('active');
       weightsHandlers.classList.remove('active');
       const links = weightsCars.querySelectorAll('a');
       links.forEach((link) => {
         const weight = link.dataset.value;
         link.classList.remove('active');
-        if(weight == host.formData.carWeight)link.classList.add('active');
+        if (weight == host.formData.carWeight) link.classList.add('active');
       });
-    }else if(this.formData.vehicleId == 'handler') { 
+    } else if (this.formData.vehicleId == 'handler') {
       weightsHandlers.classList.add('active');
       weightsCars.classList.remove('active');
       const links = weightsHandlers.querySelectorAll('a');
       links.forEach((link) => {
         const weight = link.dataset.value;
         link.classList.remove('active');
-        if(weight == host.formData.handlerWeight)link.classList.add('active');
+        if (weight == host.formData.handlerWeight) link.classList.add('active');
       });
     }
   }
@@ -368,13 +369,13 @@ class UIHandler {
   #togglePrices() {
     const host = this;
     const priceTabs = body.querySelectorAll(this.config.priceTabs);
-    if(!priceTabs)throw 'Can\'t find price tabs';
+    if (!priceTabs) throw 'Can\'t find price tabs';
     priceTabs.forEach((tab) => {
       tab.classList.remove('active');
       const weight = tab.dataset.weight;
       const vehicleId = tab.dataset.vehicle;
-      const formDataWeight = host.formData.vehicleId == 'car'?host.formData.carWeight:host.formData.handlerWeight;
-      if(vehicleId == host.formData.vehicleId && (weight == formDataWeight)){ 
+      const formDataWeight = host.formData.vehicleId == 'car' ? host.formData.carWeight : host.formData.handlerWeight;
+      if (vehicleId == host.formData.vehicleId && (weight == formDataWeight)) {
         tab.classList.add('active');
       }
       //if(vehicleId == host.formData.vehicleId && (weight == host.formData.handlerWeight)){ 
@@ -391,7 +392,7 @@ class UIHandler {
 
   #setActiveLink(linkElem) {
     const weightLinks = body.querySelectorAll(this.config.weightLinkSel);
-    if(weightLinks.length < 1)throw 'Can\'t find weight links';
+    if (weightLinks.length < 1) throw 'Can\'t find weight links';
     weightLinks.forEach((link) => {
       link.classList.remove('active');
     });
@@ -399,27 +400,27 @@ class UIHandler {
   }
 
   setPrices(vehicle, weight, priceDur, priceExact) {
-    if(!priceDur)priceDur = '-';
-    if(!priceExact)priceExact = '-';
+    if (!priceDur) priceDur = '-';
+    if (!priceExact) priceExact = '-';
     //console.log(vehicle, weight, priceDur, priceExact);
     const host = this;
     const priceTabs = body.querySelectorAll(this.config.priceTabs);
-    if(!priceTabs)throw 'Can\'t find price tabs';
+    if (!priceTabs) throw 'Can\'t find price tabs';
     priceTabs.forEach((tab) => {
       const tabWeight = tab.dataset.weight;
       const vehicleId = tab.dataset.vehicle;
       const priceDurElem = tab.querySelector(host.config.priceDurSel);
       const priceExactElem = tab.querySelector(host.config.priceExactSel);
-      if(vehicle == 'handler' && vehicleId == 'handler'){
-        if(tabWeight == weight) {
+      if (vehicle == 'handler' && vehicleId == 'handler') {
+        if (tabWeight == weight) {
           priceDurElem.innerHTML = Utils.priceFormat(priceDur);
-          if(priceExactElem)priceExactElem.innerHTML = Utils.priceFormat(priceExact);
+          if (priceExactElem) priceExactElem.innerHTML = Utils.priceFormat(priceExact);
         }
       }
-      if(vehicle == 'car' && vehicleId == 'car'){
-        if(tabWeight == weight) {
+      if (vehicle == 'car' && vehicleId == 'car') {
+        if (tabWeight == weight) {
           priceDurElem.innerHTML = Utils.priceFormat(priceDur);
-          if(priceExactElem)priceExactElem.innerHTML = Utils.priceFormat(priceExact);
+          if (priceExactElem) priceExactElem.innerHTML = Utils.priceFormat(priceExact);
         }
       }
     });
@@ -427,16 +428,16 @@ class UIHandler {
 
   setService(showInSevice, showOutOfService) {
     const inService = document.querySelector(this.config.tabInServiceSel);
-    if(!inService)throw 'Can\'t find In service tab';
+    if (!inService) throw 'Can\'t find In service tab';
     const outOfService = document.querySelector(this.config.tabOutOfServiceSel);
-    if(!outOfService)throw 'Can\'t find Out of service tab';
-    if(showInSevice){inService.classList.add('active');}else {inService.classList.remove('active');}
-    if(showOutOfService){outOfService.classList.add('active');}else {outOfService.classList.remove('active');}
+    if (!outOfService) throw 'Can\'t find Out of service tab';
+    if (showInSevice) { inService.classList.add('active'); } else { inService.classList.remove('active'); }
+    if (showOutOfService) { outOfService.classList.add('active'); } else { outOfService.classList.remove('active'); }
   }
 
   #bindMapScrollHover() {
     const wrapper = body.querySelector(this.config.mapWrapperSel);
-    if(!wrapper)throw 'Can\'t find map scroll hover overlay';
+    if (!wrapper) throw 'Can\'t find map scroll hover overlay';
     const map = body.querySelector(this.config.mapSel);
     wrapper.addEventListener('click', (e) => {
       //console.log('click');
@@ -447,8 +448,8 @@ class UIHandler {
       //console.log(e);
       //console.log(e.fromElement.closest(this.config.mapSel));
       const parent = e.fromElement.closest(this.config.mapSel);
-      if(e.fromElement.closest(this.config.mapSel)){
-        if(!parent.contains(e.relatedTarget))map.classList.remove('active');
+      if (e.fromElement.closest(this.config.mapSel)) {
+        if (!parent.contains(e.relatedTarget)) map.classList.remove('active');
       }
     });
   }
@@ -458,33 +459,33 @@ class UIHandler {
     this.#bindMapScrollHover();
     const vehicles = body.querySelectorAll(this.config.vehicleSel + ' label');
     //console.log(this.config.vehicleSel + ' label');
-    if(vehicles.length < 1)throw 'Can\'t find vehicles';
+    if (vehicles.length < 1) throw 'Can\'t find vehicles';
     //console.log(vehicles);
     vehicles.forEach((obj) => {
-      obj.addEventListener('click', function(e){
-        if(e.target.nodeName != 'INPUT')return;
+      obj.addEventListener('click', function (e) {
+        if (e.target.nodeName != 'INPUT') return;
         //console.log(e);
         //console.log(e.target);
         //const val = e.target.value;
-        const vehicleId =  e.target.dataset.value;
+        const vehicleId = e.target.dataset.value;
         host.formData.vehicleId = vehicleId;
         host.#toggleWeights();
         host.#togglePrices();
         //console.log(vehicleId);
       });
-    }); 
+    });
 
     const weightLinks = body.querySelectorAll(this.config.weightLinkSel);
-    if(weightLinks.length < 1)throw 'Can\'t find weight links';
+    if (weightLinks.length < 1) throw 'Can\'t find weight links';
     //console.log(weightLinks);
     weightLinks.forEach((link) => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
         const linkElem = e.target.closest(this.config.weightLinkSel);
-        if(!linkElem)throw 'Can\'t find link element';
+        if (!linkElem) throw 'Can\'t find link element';
         //console.log(linkElem);
         const weight = linkElem.dataset.value;
-        host.formData.vehicleId == 'car'?host.formData.carWeight = weight:host.formData.handlerWeight = weight;
+        host.formData.vehicleId == 'car' ? host.formData.carWeight = weight : host.formData.handlerWeight = weight;
         host.#setActiveLink(linkElem);
         host.#togglePrices();
         //console.log(host.formData);
@@ -500,7 +501,7 @@ class DeliveryCalculatorServiceAreas {
     this.config = config;
     this.map = null;
     const elem = document.getElementById(config.mapid);
-    if(!elem)throw 'Map id not found: #' + config.mapid;
+    if (!elem) throw 'Map id not found: #' + config.mapid;
     //this.restrictedArea = [[54.63970408670057, 35.36583007812499],[56.6400464750958, 39.738388671874986]]; //левый нижний, правый верхний
     this.afk = new AddressFieldKeeper(this);
     this.rr = new ResultsRenderer(this);
@@ -511,22 +512,22 @@ class DeliveryCalculatorServiceAreas {
 
   #ymapsInit() {
     const host = this;
-    ymaps.ready(function() {
-        // Создание карты.
+    ymaps.ready(function () {
+      // Создание карты.
       host.map = new ymaps.Map(host.config.mapid, {
-          // Координаты центра карты.
-          // Порядок по умолчанию: «широта, долгота».
-          // Чтобы не определять координаты центра карты вручную,
-          // воспользуйтесь инструментом Определение координат.
-          center: [59.9311, 30.3609], // Центр Санкт-Петербурга
-          // Уровень масштабирования. Допустимые значения:
-          // от 0 (весь мир) до 19.
-          controls: ['zoomControl'],
-          zoom: 6
+        // Координаты центра карты.
+        // Порядок по умолчанию: «широта, долгота».
+        // Чтобы не определять координаты центра карты вручную,
+        // воспользуйтесь инструментом Определение координат.
+        center: [59.9311, 30.3609], // Центр Санкт-Петербурга
+        // Уровень масштабирования. Допустимые значения:
+        // от 0 (весь мир) до 19.
+        controls: ['zoomControl'],
+        zoom: 6
       }, {
         restrictMapArea: Constraints.restrictedArea
       });
-      try{
+      try {
         host.areas = new AreasKeeper(host);
         const cursor = host.map.cursors.push('pointer');
         //host.map.setBounds([[54.63970408670057, 35.36583007812499],[56.6400464750958, 39.738388671874986]]);
@@ -534,40 +535,40 @@ class DeliveryCalculatorServiceAreas {
         host.#bindMapEvents();
         try {
           host.ui.bind();
-        }catch(t){
+        } catch (t) {
           console.error(t);
         }
         EventKeeper.trigger(Events.mapLoaded);
-      }catch(t){
+      } catch (t) {
         console.error(t);
       }
     });
   }
 
-  setMark(coords, name = false){
-    if(!coords)return;
+  setMark(coords, name = false) {
+    if (!coords) return;
     //console.log(coords);
-    if(coords.constructor != Array)return;
+    if (coords.constructor != Array) return;
     this.map.geoObjects.remove(this.placemark); //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     this.placemark = new ymaps.Placemark(coords);
     //const name = pm.properties.get('name');
-    if(name)this.placemark.properties.set('iconContent', name);
+    if (name) this.placemark.properties.set('iconContent', name);
     this.placemark.options.set('preset', 'islands#redStretchyIcon');
-    
+
     const polygon = this.areas.areas.searchContaining(coords).get(0);
     //console.log("Polygon: ");
     //console.log(typeof polygon);
     try {
-      if(!polygon) {this.rr.render();}
-      if(polygon && this.rr.ready){
+      if (!polygon) { this.rr.render(); }
+      if (polygon && this.rr.ready) {
         this.rr.render(polygon.properties.get('description'));
       }
       this.map.geoObjects.add(this.placemark);
       this.map.panTo(coords);
-    }catch(t) {
+    } catch (t) {
       console.error(t);
     }
-    
+
   }
 
 
@@ -578,7 +579,7 @@ class DeliveryCalculatorServiceAreas {
       host.afk.addrByCoords(coords);
       //console.log(coords.join(', '));
       //console.log(host.map.getZoom());
-  });
+    });
   }
 
   #setEventHandlers() {
@@ -589,7 +590,7 @@ class DeliveryCalculatorServiceAreas {
       mapLoaded: false
     };
     function readyToGo() {
-      if(states.areasRendered && states.pricesLoaded && states.mapLoaded){
+      if (states.areasRendered && states.pricesLoaded && states.mapLoaded) {
         EventKeeper.trigger(Events.readyToGo);
       }
     }
@@ -612,7 +613,7 @@ class DeliveryCalculatorServiceAreas {
 
   #setFormHandler() {
     const form = document.querySelector('.js-delivery-calculator__form');
-    if(!form)return;
+    if (!form) return;
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       console.log('submit');

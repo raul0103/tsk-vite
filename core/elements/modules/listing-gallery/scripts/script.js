@@ -1,4 +1,4 @@
-import Swiper, { Lazy, Pagination } from "swiper";
+import Swiper from "swiper";
 
 function swiperInit() {
   // Находим все слайдеры с классом listing-gallery

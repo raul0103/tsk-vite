@@ -1,8 +1,11 @@
-import Swiper, {Navigation, Pagination, Scrollbar, Thumbs, Autoplay, Lazy} from 'swiper';
-Swiper.use([Navigation, Pagination, Scrollbar, Thumbs, Autoplay, Lazy]);
+import Swiper from 'swiper';
 
-class CategoryProductRules{
-  constructor() {}
+import { Navigation, Pagination, Scrollbar, Thumbs, Autoplay, } from 'swiper/modules';
+
+Swiper.use([Navigation, Pagination, Scrollbar, Thumbs, Autoplay,]);
+
+class CategoryProductRules {
+  constructor() { }
   run() {
     // Находим все элементы с классом 'other-products__slider'
     const otherProductsSliders = document.querySelectorAll(".other-products__slider");

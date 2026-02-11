@@ -15,6 +15,14 @@
     "vite": "^7.3.1"
   },
   "dependencies": {
-    "@vitejs/plugin-basic-ssl": "^2.1.4"
+    "@fancyapps/fancybox": "^3.5.7",
+    "@fancyapps/ui": "^6.1.10",
+    "@vitejs/plugin-basic-ssl": "^2.1.4",
+    "inputmask": "^5.0.9",
+    "jquery": "^4.0.0",
+    "js-cookie": "^3.0.5",
+    "js-image-zoom": "^0.7.0",
+    "swiper": "^12.1.0",
+    "vanilla-lazyload": "^19.1.3"
   }
 }

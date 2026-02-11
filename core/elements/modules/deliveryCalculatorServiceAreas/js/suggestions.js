@@ -12,7 +12,7 @@ class Suggestions {
 
   //where - объект {kind: 'province', name: 'Московская область'}, который фильтрует результаты на принадлежность к территории
   async get(text, where = null) {
-    if(!text)return;
+    if (!text) return;
     const host = this;
     //console.log('get!');
     const results = await ymaps.geocode(text, { results: 5, boundedBy: host.settings.bounds, json: true });
