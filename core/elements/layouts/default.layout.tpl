@@ -10,7 +10,7 @@
         {include "file:elements/meta-description.tpl"}
     {/block}
 
-    <link rel="stylesheet" href="/dist/main.css">
+    {include "file:vite/production/css.tpl"}
 
     {if $_modx->context.key == 'web'}
         {set $site_context = 'knauf'}
@@ -214,10 +214,9 @@
     <script src="{$_modx->config['template_path']}js/jquery-3.7.1.min.js"></script>
 
     {if 'APP_ENV' | config === 'development'}
-        <script type="module" src="http://localhost:5173/@vite/client"></script>
-        <script type="module" src="http://localhost:5173/_src-vite/js/main.js"></script>
+        {include "file:vite/development/js.tpl"}
     {else}
-        <script type="module" src="/dist/main.js"></script>
+        {include "file:vite/production/js.tpl"}
     {/if}
 
     {if $_modx->context.key in list ['rasprodazha']}
