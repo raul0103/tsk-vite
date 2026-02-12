@@ -11,6 +11,7 @@ const MAIN_FILE = 'js/main.js' // входной файл
 const HOST = 'localhost' // хост dev-сервера
 const PORT = 5173 // порт dev-сервера
 const WATCH_DIR = 'core/elements' // папка, за которой следим и перезагружаем страницу при изменении
+const IGNORE_ASSETS = `${DIST_DIR}/ignore-assets` // папка куда будут скопированы файлы после build. vite делает это автоматом и данные файлы не нужны
 
 const CSS_FILE_NAME = 'css/[name]-[hash].[ext]'
 const ENTRY_FILE_NAME = 'js/[name]-[hash].js'
@@ -34,7 +35,7 @@ export default defineConfig({
         assetFileNames: (assetInfo) => {
           if (/\.(css)$/.test(assetInfo.name ?? '')) return CSS_FILE_NAME;
 
-          return IGNORE_FILE_NAME // vite копирует не нужные нам асеты (картинки, шрифты и тд)
+          return IGNORE_FILE_NAME
         }
       },
     },
@@ -63,6 +64,11 @@ export default defineConfig({
       generateBundle(options, bundle) {
         utils.generateBundleTpls(bundle)
       }
+    },
+    {
+      closeBundle() {
+        utils.deleteIgnoreAssets()
+      }
     }
   ]
 })
@@ -89,6 +95,11 @@ const utils = {
 
     fs.writeFileSync(css_tpl, css_items, 'utf-8');
     fs.writeFileSync(js_tpl, js_items, 'utf-8');
+  },
+  // Удалить скопированные vite файлы. Они не нужны
+  deleteIgnoreAssets: () => {
+    const dir = path.resolve(__dirname, IGNORE_ASSETS)
+    fs.rmSync(dir, { recursive: true, force: true })
   },
   fileWatcher: (file, server) => {
     // Действия при изменении файлов в core/elements
