@@ -130,6 +130,23 @@ try {
 
 jQuery(function ($) {
 
+  // Динамическая подгрузка "Скачать PDF"
+  const pdfButtons = document.querySelectorAll(".js-create-pdf");
+  if (pdfButtons.length > 0) {
+    pdfButtons.forEach((button) => {
+      button.addEventListener("click", async (e) => {
+        e.preventDefault();
+
+        // ⬇️ динамический импорт с правильным относительным путём
+        const module = await import('../../core/elements/modules/createPdf/js/createPdf.js');
+
+        // вызываем функцию
+        await module.createPdf();
+      });
+    });
+  }
+
+
   collapseLongTexts();
   showMoreListing();
   // Переменная инициадизируется в шаблоне elements/layouts/default.layout.tpl

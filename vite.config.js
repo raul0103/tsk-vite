@@ -15,7 +15,7 @@ const IGNORE_ASSETS = `${DIST_DIR}/ignore-assets` // папка куда буд�
 
 const CSS_FILE_NAME = 'css/[name]-[hash].[ext]'
 const ENTRY_FILE_NAME = 'js/[name]-[hash].js'
-const CHUNK_FILE_NAME = 'js/[name]-[hash].[ext]'
+const CHUNK_FILE_NAME = 'js/[name]-[hash].js'
 const IGNORE_FILE_NAME = 'ignore-assets/[name]'
 
 const CSS_TEMPLATE = 'core/elements/vite/production/css.tpl' // Шаблон для вывода стилей
@@ -23,6 +23,7 @@ const JS_TEMPLATE = 'core/elements/vite/production/js.tpl' // Шаблон дл�
 // -----------------------------
 
 export default defineConfig({
+  base: `/${DIST_DIR}/`,
   build: {
     outDir: path.resolve(__dirname, DIST_DIR),
     emptyOutDir: true,
@@ -82,7 +83,9 @@ const utils = {
     // Собираем JS и CSS файлы
     for (const fileName in bundle) {
       if (fileName.endsWith('.css')) css_files.push(fileName);
-      if (fileName.endsWith('.js')) js_files.push(fileName);
+      // Подгружаем только файл main.js
+      // остальные скрипты подтягиваться чанками вызванными из main.js
+      if (fileName.indexOf('main') > -1 && fileName.endsWith('.js')) js_files.push(fileName);
     }
 
     // Генерируем строки <link> и <script>

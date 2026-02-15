@@ -219,10 +219,6 @@
         {include "file:vite/production/js.tpl"}
     {/if}
 
-    {if $_modx->context.key in list ['rasprodazha']}
-    <script defer src="{$_modx->config['template_path']}js/createPdf.js?v={'file_version' | config}"></script>
-    {/if}
-
     <script data-map-id="districts_map" data-src="https://api-maps.yandex.ru/2.1/?apikey=99aa267b-edef-422a-b3d8-12bfaa6253a1&lang=ru_RU&coordorder=latlong&onload=initDistrictsMap" type="text/javascript" async defer></script>
 
 <!--
