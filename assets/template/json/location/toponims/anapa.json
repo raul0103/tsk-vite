@@ -1,0 +1,161 @@
+{
+    "offices": [
+        {
+            "phone": "+7 (861) 203-47-71",
+            "address": "Анапа, Анапский тупик, 18",
+            "scale": 14,
+            "coord": "",
+            "gmap": "",
+            "ymap": "3A41dd614ce6647eae47e71a8df2cfefcce1b88a6670c430c1eb64598078ff808c"
+        }
+    ],
+    "show_room": {
+        "phone": "+7 (861) 203-47-71",
+        "address": "Россия, Краснодар, Трамвайная улица, 2/6",
+        "ymap": "3A41dd614ce6647eae47e71a8df2cfefcce1b88a6670c430c1eb64598078ff808c",
+        "ymap_link": ""
+    },
+    "district_map": {
+        "center": [
+            45.03547,
+            38.975313
+        ],
+        "zoom": 8,
+        "json_districts_file_path": null,
+        "json_district_stores_file_path": "assets/template/json/district_stores_krasnodar.json"
+    },
+    "omny_offices_use": false,
+    "main_contacts": {
+        "email_prefix": "krasnodar"
+    },
+    "istochnik": 9052039106,
+    "toponim": {
+        "base": {
+            "standart": "Анапа",
+            "abr": "Анапа",
+            "full": "Анапа и Краснодарский край",
+            "abr_full": "Анапа и Краснодарский край"
+        },
+        "where": {
+            "standart": "в Анапе",
+            "abr": "в Анапе",
+            "full": "в Анапе и Краснодарском крае",
+            "abr_full": "в Анапе и Краснодарском крае"
+        },
+        "on": {
+            "standart": "по Анапе",
+            "abr": "по Анапе",
+            "full": "по Анапе и Краснодарскому краю",
+            "abr_full": "по Анапе и Краснодарскому краю"
+        },
+        "what": {
+            "standart": "Анапы",
+            "abr": "Анапы",
+            "full": "Анапы и Краснодарского края",
+            "abr_full": "Анапы и Краснодарского края"
+        },
+        "region": {
+            "base": "Краснодарский край",
+            "where": "Краснодарском крае",
+            "on": "Краснодарскому краю",
+            "what": "Краснодарского края"
+        }
+    },
+    "cityChangerOff": true,
+    "is_block_delivery_intro": "",
+    "seo": {
+        "knauf": {
+            "metrika": "96524160",
+            "gtm": "GTM-NMZ7HMCZ"
+        },
+        "rockwool": {
+            "metrika": "96524372",
+            "gtm": "GTM-PG33KV6J"
+        },
+        "tn": {
+            "metrika": "96524479",
+            "gtm": "GTM-MSW2DSFQ"
+        },
+        "penoplex": {
+            "metrika": "96524558",
+            "gtm": "GTM-TD6NWGK4"
+        },
+        "isover": {
+            "metrika": "96524618",
+            "gtm": "GTM-TR3NPM43"
+        },
+        "paroc": {
+            "metrika": "96524679",
+            "gtm": "GTM-PRVTJDVQ"
+        },
+        "ursa": {
+            "metrika": "96524738",
+            "gtm": "GTM-544JMR2L"
+        },
+        "krovlya": {
+            "metrika": "96524805",
+            "gtm": "GTM-K7T8NB83"
+        },
+        "kirpich-m": {
+            "metrika": "96524864",
+            "gtm": "GTM-TCTMPQS9"
+        },
+        "fasady-pro": {
+            "metrika": "96524909",
+            "gtm": "GTM-5D2DKMJC"
+        },
+        "pro-fanera": {
+            "metrika": "96524938",
+            "gtm": "GTM-M5MP2KK7"
+        },
+        "fasad": {
+            "metrika": "96524981",
+            "gtm": "GTM-MC522B3H"
+        },
+        "armatura-178": {
+            "metrika": "96525018",
+            "gtm": "GTM-PV5G8KBM"
+        },
+        "pilomat": {
+            "metrika": "96525048",
+            "gtm": "GTM-KZGRKPNM"
+        },
+        "plitaosb": {
+            "metrika": "96525141",
+            "gtm": "GTM-M779NQHV"
+        },
+        "policarbonat": {
+            "metrika": "96525219",
+            "gtm": "GTM-5R7WHNNB"
+        },
+        "plity-mdvp": {
+            "metrika": "96525270",
+            "gtm": "GTM-MFTSV4MP"
+        },
+        "isorok": {
+            "metrika": "96525310",
+            "gtm": "GTM-KTMGL6C4"
+        },
+        "drova": {
+            "metrika": "96525346",
+            "gtm": "GTM-5CBX9V6L"
+        },
+        "ugol": {
+            "metrika": "96525375",
+            "gtm": "GTM-MVP9ZDKW"
+        },
+        "pellety": {
+            "metrika": "96525408",
+            "gtm": "GTM-5QWZRHM9"
+        },
+        "brikety": {
+            "metrika": "96525445",
+            "gtm": "GTM-PF5LFNTN"
+        },
+        "umatex": {
+            "metrika": "96525470",
+            "gtm": "GTM-5KNSX9PS"
+        }
+    },
+    "subdomain_key": "anapa"
+}

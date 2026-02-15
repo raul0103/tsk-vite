@@ -1,0 +1,393 @@
+{
+  "catalog": [
+    {
+      "name": "Кровельные сэндвич-панели",
+      "url": null,
+      "icon": "/assets/template/img/menu/v4/sehndvich/img-_28_ 1.png",
+      "options": [
+        {
+          "name": "Тип",
+          "items": [
+            {
+              "name": "Минеральная вата",
+              "url": "https://sehndvich-panel-spb.ru/krovelnyie-sendvich-paneli-s-mineralnoj-vatoj/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "PIR (ПИР)",
+              "url": "https://sehndvich-panel-spb.ru/krovelnyie-sendvich-paneli-iz-pir-pir/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Пенополистирол",
+              "url": "https://sehndvich-panel-spb.ru/krovelnyie-sendvich-paneli-iz-penopolistirola/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Пенополиуретан (ППУ)",
+              "url": "https://sehndvich-panel-spb.ru/krovelnyie-sendvich-paneli-iz-penopoliuretana-ppu/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Акустические",
+              "url": "https://sehndvich-panel-spb.ru/akusticheskaya-krovelnaya-sendvich-panel/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Алюминиевые",
+              "url": "https://sehndvich-panel-spb.ru/krovelnyie-alyuminievyie-sendvich-paneli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Нержавеющие",
+              "url": "https://sehndvich-panel-spb.ru/nerzhaveyushhaya-krovelnaya-sendvich-panel/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Тип",
+              "url": null,
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Минеральная вата",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-sendvich-paneli-s-mineralnoj-vatoj/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "PIR (ПИР)",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-sendvich-paneli-iz-penopoliizoczianurata-pir-pir/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Пенополистирол",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-sendvich-paneli-iz-penopolistirola/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Пенополиуретан (ППУ)",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-sendvich-paneli-iz-penopoliuretana-ppu/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Акустические",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-sendvich-paneli-akusticheskie/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Алюминиевые",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-alyuminievyie-sendvich-paneli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Гладкие сэндвич панели",
+              "url": "https://sehndvich-panel-spb.ru/gladkie-sendvich-paneli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Для холодильной камеры",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-sendvich-paneli-s-mineralnoj-vatoj-dlya-xolodilnoj-kameryi/",
+              "icon": "",
+              "options": []
+            }
+          ],
+          "url": null
+        },
+        {
+          "name": "Толщина",
+          "items": [
+            {
+              "name": 50,
+              "url": "https://sehndvich-panel-spb.ru/krovelnyie/?item_thickness=50",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 100,
+              "url": "https://sehndvich-panel-spb.ru/krovelnyie/?item_thickness=100",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 120,
+              "url": "https://sehndvich-panel-spb.ru/krovelnyie/?item_thickness=120",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 200,
+              "url": "https://sehndvich-panel-spb.ru/krovelnyie/?item_thickness=200",
+              "icon": "",
+              "options": []
+            }
+          ],
+          "url": null
+        }
+      ]
+    },
+    {
+      "name": "Стеновые сэндвич-панели",
+      "url": null,
+      "icon": "/assets/template/img/menu/v4/sehndvich/img-_4_ 1.png",
+      "options": [
+        {
+          "name": "Тип",
+          "items": [
+            {
+              "name": "Минеральная вата",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-sendvich-paneli-s-mineralnoj-vatoj/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "PIR (ПИР)",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-sendvich-paneli-iz-penopoliizoczianurata-pir-pir/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Пенополистирол",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-sendvich-paneli-iz-penopolistirola/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Пенополиуретан (ППУ)",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-sendvich-paneli-iz-penopoliuretana-ppu/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Акустические",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-sendvich-paneli-akusticheskie/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Алюминиевые",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-alyuminievyie-sendvich-paneli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Гладкие сэндвич панели",
+              "url": "https://sehndvich-panel-spb.ru/gladkie-sendvich-paneli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Для холодильной камеры",
+              "url": "https://sehndvich-panel-spb.ru/stenovyie-sendvich-paneli-s-mineralnoj-vatoj-dlya-xolodilnoj-kameryi/",
+              "icon": "",
+              "options": []
+            }
+          ],
+          "url": null
+        },
+        {
+          "name": "Толщина",
+          "items": [
+            {
+              "name": 50,
+              "url": "https://sehndvich-panel-spb.ru/stenovyie/?item_thickness=50",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 100,
+              "url": "https://sehndvich-panel-spb.ru/stenovyie/?item_thickness=100",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 120,
+              "url": "https://sehndvich-panel-spb.ru/stenovyie/?item_thickness=120",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 200,
+              "url": "https://sehndvich-panel-spb.ru/stenovyie/?item_thickness=200",
+              "icon": "",
+              "options": []
+            }
+          ],
+          "url": null
+        }
+      ]
+    },
+    {
+      "name": "Арочные сэндвич-панели",
+      "url": null,
+      "icon": "/assets/template/img/menu/v4/sehndvich/img-_4_ 1.png",
+      "options": [
+        {
+          "name": "Тип",
+          "items": [
+            {
+              "name": "Минеральная вата",
+              "url": "https://sehndvich-panel-spb.ru/arochnyie-stenovyie-sendvich-paneli-s-mineralnoj-vatoj/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "PIR (ПИР)",
+              "url": "https://sehndvich-panel-spb.ru/arochnyie-stenovyie-sendvich-paneli-iz-penopoliizoczianurata-pir-pir/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Пенополистирол",
+              "url": "https://sehndvich-panel-spb.ru/arochnyie-stenovyie-sendvich-paneli-iz-penopolistirola/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Пенополиуретан (ППУ)",
+              "url": "https://sehndvich-panel-spb.ru/arochnyie-stenovyie-sendvich-paneli-iz-penopoliuretana-ppu/",
+              "icon": "",
+              "options": []
+            }
+          ],
+          "url": null
+        },
+        {
+          "name": "Толщина",
+          "items": [
+            {
+              "name": 50,
+              "url": "https://sehndvich-panel-spb.ru/arochnyie/?item_thickness=50",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 100,
+              "url": "https://sehndvich-panel-spb.ru/arochnyie/?item_thickness=100",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 120,
+              "url": "https://sehndvich-panel-spb.ru/arochnyie/?item_thickness=120",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 200,
+              "url": "https://sehndvich-panel-spb.ru/arochnyie/?item_thickness=200",
+              "icon": "",
+              "options": []
+            }
+          ],
+          "url": null
+        }
+      ]
+    },
+    {
+      "name": "Горизонтально угловые сэндвич панели",
+      "url": null,
+      "icon": "/assets/template/img/menu/v4/sehndvich/img-_4_ 1-1.png",
+      "options": [
+        {
+          "name": "Толщина",
+          "items": [
+            {
+              "name": 50,
+              "url": "https://sehndvich-panel-spb.ru/gorizontalno-uglovyie/?item_thickness=50",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 100,
+              "url": "https://sehndvich-panel-spb.ru/gorizontalno-uglovyie/?item_thickness=100",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 120,
+              "url": "https://sehndvich-panel-spb.ru/gorizontalno-uglovyie/?item_thickness=120",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 200,
+              "url": "https://sehndvich-panel-spb.ru/gorizontalno-uglovyie/?item_thickness=200",
+              "icon": "",
+              "options": []
+            }
+          ],
+          "url": null
+        }
+      ]
+    },
+    {
+      "name": "Двухслойные сэндвич-панели",
+      "url": null,
+      "icon": "/assets/template/img/menu/v4/sehndvich/img-_4_ 1-2.png",
+      "options": [
+        {
+          "name": "Тип",
+          "items": [
+            {
+              "name": "Минеральная вата",
+              "url": "https://sehndvich-panel-spb.ru/dvuxslojnyie-sendvich-paneli-s-mineralnoj-vatoj/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "PIR (ПИР)",
+              "url": "https://sehndvich-panel-spb.ru/dvuxslojnyie-sendvich-paneli-iz-penopoliizoczianurata-pir-pir/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Пенополистирол",
+              "url": "https://sehndvich-panel-spb.ru/dvuxslojnyie-sendvich-paneli-iz-penopolistirola/",
+              "icon": "",
+              "options": []
+            }
+          ],
+          "url": null
+        },
+        {
+          "name": "Толщина",
+          "items": [
+            {
+              "name": 50,
+              "url": "https://sehndvich-panel-spb.ru/dvuhsloynyie/?item_thickness=50",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 100,
+              "url": "https://sehndvich-panel-spb.ru/dvuhsloynyie/?item_thickness=100",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": 120,
+              "url": "https://sehndvich-panel-spb.ru/dvuhsloynyie/?item_thickness=120",
+              "icon": "",
+              "options": []
+            }
+          ],
+          "url": null
+        }
+      ]
+    }
+  ]
+}

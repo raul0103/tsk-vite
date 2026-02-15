@@ -1,0 +1,79 @@
+[
+    {
+        "coords"  :[60.095437, 30.302033],
+        "name": "Склад СПБ Север",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[59.888841, 30.507709],
+        "name": "Склад СПБ Восток",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[59.809960, 30.164158],
+        "name": "Склад СПБ ЮГ",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[61.034092, 30.118767],
+        "name": "Склад Приозерск",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[60.704906, 28.781041],
+        "name": "Склад Выборг",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[60.560001, 30.218770],
+        "name": "Склад Сосново",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[59.572289, 30.154513],
+        "name": "Склад Гатчина",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[59.403185, 28.477475],
+        "name": "Склад Кингисепп",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[59.105408, 28.080176],
+        "name": "Склад Сланцы",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[58.751428, 29.852831],
+        "name": "Склад Луга",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[59.552136, 30.833349],
+        "name": "Склад Тосно",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[60.254115, 29.575553],
+        "name": "Склад Рощино",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[59.728510, 30.100380],
+        "name": "Склад Красное Село",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[59.882822, 29.101508],
+        "name": "Склад Сосновый Бор",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[59.460055, 29.498431],
+        "name": "Склад Волосово",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[59.915849, 32.348457],
+        "name": "Склад Волхов",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[59.449051, 32.041397],
+        "name": "Склад Кириши",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[60.728961, 33.593527],
+        "name": "Склад Лодейное Поле",
+        "style": "text-align: center;"
+    },{
+        "coords"  :[59.669877, 33.499404],
+        "name": "Склад Тихвин",
+        "style": "text-align: center;"
+    }
+]

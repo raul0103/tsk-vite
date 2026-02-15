@@ -1,0 +1,338 @@
+{
+  "catalog": [
+    {
+      "name": "Профлист для забора",
+      "url": "https://profnastil-list.ru/proflist-dlya-zabora/",
+      "icon": "/assets/template/img/menu/v4/proflist/6d87289f02366eec7fe303df1197ae2814a82853.png",
+      "options": [
+        {
+          "name": "Профиль",
+          "url": null,
+          "items": [
+            {
+              "name": "С8",
+              "url": "https://profnastil-list.ru/proflist-s-8-dlya-zabora/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "С10",
+              "url": "https://profnastil-list.ru/proflist-s10-dlya-zabora/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "МП10",
+              "url": "https://profnastil-list.ru/proflist-mp-10-dlya-zabora/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "МП35",
+              "url": "https://profnastil-list.ru/proflist-mp-35-dlya-zabora/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "СС10",
+              "url": "https://profnastil-list.ru/proflist-ss10/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "С15",
+              "url": "https://profnastil-list.ru/proflist-s15-dlya-zabora/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "НС13",
+              "url": "https://profnastil-list.ru/proflist-ns13-dlya-zabora/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "НС15",
+              "url": "https://profnastil-list.ru/proflist-ns15-dlya-zabora/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Все категории",
+              "url": "https://profnastil-list.ru/proflist-dlya-zabora/",
+              "icon": "",
+              "options": []
+            }
+          ]
+        },
+        {
+          "name": "Цвет",
+          "url": null,
+          "class": "flex",
+          "items": [
+            {
+              "name": "Серый",
+              "url": "https://profnastil-list.ru/profnastil-seryij-dlya-zabora/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Коричневый",
+              "url": "https://profnastil-list.ru/profnastil-korichnevyj-dlya-zabora/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Зеленый",
+              "url": "https://profnastil-list.ru/profnastil-zelenyj-dlya-zabora/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Оцинкованный",
+              "url": "https://profnastil-list.ru/proflist-oczinkovannyij-dlya-zabora/",
+              "icon": "",
+              "options": []
+            }
+          ]
+        },
+        {
+          "name": "Толщина",
+          "url": null,
+          "items": [
+            {
+              "name": "0,4 мм",
+              "url": "https://profnastil-list.ru/proflist-04/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "0,45 мм",
+              "url": "https://profnastil-list.ru/proflist-045/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "0,5 мм",
+              "url": "https://profnastil-list.ru/proflist-05/",
+              "icon": "",
+              "options": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Профлист для кровли",
+      "url": "https://profnastil-list.ru/proflist-dlya-krovli/",
+      "icon": "/assets/template/img/menu/v4/proflist/2e43916969d35836df1f5eacd02ad656e1de3693.png",
+      "options": [
+        {
+          "name": "Профиль",
+          "url": null,
+          "items": [
+            {
+              "name": "МП 20",
+              "url": "https://profnastil-list.ru/profilirovanniy-list-mp-20/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "С20",
+              "url": "https://profnastil-list.ru/proflist-s20-dlya-krovli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "С 21",
+              "url": "https://profnastil-list.ru/proflist-s-21/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "С 44",
+              "url": "https://profnastil-list.ru/proflist-s-44/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "НС 35",
+              "url": "https://profnastil-list.ru/proflist-ns-35/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "НС 38",
+              "url": "https://profnastil-list.ru/proflist-n38-dlya-krovli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Н57",
+              "url": "https://profnastil-list.ru/proflist-n57-dlya-krovli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "МП 10",
+              "url": "https://profnastil-list.ru/proflist-mp-10-dlya-krovli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "МП 18",
+              "url": "https://profnastil-list.ru/proflist-mp-18-dlya-krovli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "МП 35",
+              "url": "https://profnastil-list.ru/proflist-mp-35-dlya-krovli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Н 60",
+              "url": "https://profnastil-list.ru/proflist-n-60-dlya-krovli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Н75",
+              "url": "https://profnastil-list.ru/proflist-n-75-dlya-krovli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Н90",
+              "url": "https://profnastil-list.ru/proflist-n90-dlya-krovli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Н114",
+              "url": "https://profnastil-list.ru/proflist-n-114-dlya-krovli/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Все категории",
+              "url": "https://profnastil-list.ru/proflist-dlya-krovli/",
+              "icon": "",
+              "options": []
+            }
+          ]
+        },
+        {
+          "name": "Цвет",
+          "url": null,
+          "items": [
+            {
+              "name": "Коричневый",
+              "url": "https://profnastil-list.ru/proflist-korichnevyij/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Серый",
+              "url": "https://profnastil-list.ru/proflist-seryij/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Зеленый",
+              "url": "https://profnastil-list.ru/proflist-zelenyij/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Красный",
+              "url": "https://profnastil-list.ru/proflist-krasnyij/",
+              "icon": "",
+              "options": []
+            }
+          ]
+        },
+        {
+          "name": "Толщина",
+          "url": null,
+          "items": [
+            {
+              "name": "0,4 мм",
+              "url": "https://profnastil-list.ru/proflist-dlya-krovli/?item_thickness=0.4",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "0,45 мм",
+              "url": "https://profnastil-list.ru/proflist-dlya-krovli/?item_thickness=0.45",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "0,5 мм",
+              "url": "https://profnastil-list.ru/proflist-dlya-krovli/?item_thickness=0.5",
+              "icon": "",
+              "options": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Профлист несущий",
+      "url": "https://profnastil-list.ru/proflist-nesushhij/",
+      "icon": "/assets/template/img/menu/v4/proflist/f2d54c1af7ea1b65d6f45ebf22191e79ad366537.png",
+      "options": [
+        {
+          "name": "Профиль",
+          "url": null,
+          "items": [
+            {
+              "name": "НС 35",
+              "url": "https://profnastil-list.ru/proflist-nesushhij/?profil=HC35",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "НС 38",
+              "url": "https://profnastil-list.ru/proflist-nesushhij/?profil=HC38",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Н 57",
+              "url": "https://profnastil-list.ru/proflist-n57-nesushij/",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Н 60",
+              "url": "https://profnastil-list.ru/proflist-nesushhij/?profil=%D0%9D60",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Н75",
+              "url": "https://profnastil-list.ru/proflist-nesushhij/?profil=%D0%9D75",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Н90",
+              "url": "https://profnastil-list.ru/proflist-dlya-krovli/?profil=%D0%9D90",
+              "icon": "",
+              "options": []
+            },
+            {
+              "name": "Н114",
+              "url": "https://profnastil-list.ru/proflist-nesushhij/?profil=%D0%9D114",
+              "icon": "",
+              "options": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

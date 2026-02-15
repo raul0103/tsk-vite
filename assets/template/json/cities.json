@@ -1,0 +1,4444 @@
+{
+  "main": [{
+      "name": "Санкт-Петербург",
+      "key": "default"
+    },
+    {
+      "name": "Москва",
+      "key": "msk"
+    }
+  ],
+  "other": [{
+      "name": "Абаза",
+      "key": "default"
+    },
+    {
+      "name": "Абакан",
+      "key": "default"
+    },
+    {
+      "name": "Абдулино",
+      "key": "default"
+    },
+    {
+      "name": "Абинск",
+      "key": "default"
+    },
+    {
+      "name": "Агидель",
+      "key": "default"
+    },
+    {
+      "name": "Агрыз",
+      "key": "default"
+    },
+    {
+      "name": "Адыгейск",
+      "key": "default"
+    },
+    {
+      "name": "Азнакаево",
+      "key": "default"
+    },
+    {
+      "name": "Азов",
+      "key": "default"
+    },
+    {
+      "name": "Ак-Довурак",
+      "key": "default"
+    },
+    {
+      "name": "Аксай",
+      "key": "default"
+    },
+    {
+      "name": "Алагир",
+      "key": "default"
+    },
+    {
+      "name": "Алапаевск",
+      "key": "default"
+    },
+    {
+      "name": "Алатырь",
+      "key": "default"
+    },
+    {
+      "name": "Алдан",
+      "key": "default"
+    },
+    {
+      "name": "Алейск",
+      "key": "default"
+    },
+    {
+      "name": "Александров",
+      "key": "default"
+    },
+    {
+      "name": "Александровск",
+      "key": "default"
+    },
+    {
+      "name": "Александровск-Сахалинский",
+      "key": "default"
+    },
+    {
+      "name": "Алексеевка",
+      "key": "default"
+    },
+    {
+      "name": "Алексин",
+      "key": "default"
+    },
+    {
+      "name": "Алзамай",
+      "key": "default"
+    },
+    {
+      "name": "Алушта",
+      "key": "default"
+    },
+    {
+      "name": "Альметьевск",
+      "key": "default"
+    },
+    {
+      "name": "Амурск",
+      "key": "default"
+    },
+    {
+      "name": "Анадырь",
+      "key": "default"
+    },
+    {
+      "name": "Анапа",
+      "key": "default"
+    },
+    {
+      "name": "Ангарск",
+      "key": "default"
+    },
+    {
+      "name": "Андреаполь",
+      "key": "default"
+    },
+    {
+      "name": "Анжеро-Судженск",
+      "key": "default"
+    },
+    {
+      "name": "Анива",
+      "key": "default"
+    },
+    {
+      "name": "Апатиты",
+      "key": "default"
+    },
+    {
+      "name": "Апрелевка",
+      "key": "default"
+    },
+    {
+      "name": "Апшеронск",
+      "key": "default"
+    },
+    {
+      "name": "Арамиль",
+      "key": "default"
+    },
+    {
+      "name": "Аргун",
+      "key": "default"
+    },
+    {
+      "name": "Ардатов",
+      "key": "default"
+    },
+    {
+      "name": "Ардон",
+      "key": "default"
+    },
+    {
+      "name": "Арзамас",
+      "key": "default"
+    },
+    {
+      "name": "Аркадак",
+      "key": "default"
+    },
+    {
+      "name": "Армавир",
+      "key": "default"
+    },
+    {
+      "name": "Армянск",
+      "key": "default"
+    },
+    {
+      "name": "Арсеньев",
+      "key": "default"
+    },
+    {
+      "name": "Арск",
+      "key": "default"
+    },
+    {
+      "name": "Артем",
+      "key": "default"
+    },
+    {
+      "name": "Артемовск",
+      "key": "default"
+    },
+    {
+      "name": "Артемовский",
+      "key": "default"
+    },
+    {
+      "name": "Архангельск",
+      "key": "default"
+    },
+    {
+      "name": "Асбест",
+      "key": "default"
+    },
+    {
+      "name": "Асино",
+      "key": "default"
+    },
+    {
+      "name": "Астрахань",
+      "key": "default"
+    },
+    {
+      "name": "Аткарск",
+      "key": "default"
+    },
+    {
+      "name": "Ахтубинск",
+      "key": "default"
+    },
+    {
+      "name": "Ачинск",
+      "key": "default"
+    },
+    {
+      "name": "Аша",
+      "key": "default"
+    },
+    {
+      "name": "Бабаево",
+      "key": "default"
+    },
+    {
+      "name": "Бабушкин",
+      "key": "default"
+    },
+    {
+      "name": "Бавлы",
+      "key": "default"
+    },
+    {
+      "name": "Багратионовск",
+      "key": "default"
+    },
+    {
+      "name": "Байкальск",
+      "key": "default"
+    },
+    {
+      "name": "Баймак",
+      "key": "default"
+    },
+    {
+      "name": "Бакал",
+      "key": "default"
+    },
+    {
+      "name": "Баксан",
+      "key": "default"
+    },
+    {
+      "name": "Балабаново",
+      "key": "default"
+    },
+    {
+      "name": "Балаково",
+      "key": "default"
+    },
+    {
+      "name": "Балахна",
+      "key": "default"
+    },
+    {
+      "name": "Балашиха",
+      "key": "default"
+    },
+    {
+      "name": "Балашов",
+      "key": "default"
+    },
+    {
+      "name": "Балей",
+      "key": "default"
+    },
+    {
+      "name": "Балтийск",
+      "key": "default"
+    },
+    {
+      "name": "Барабинск",
+      "key": "default"
+    },
+    {
+      "name": "Барнаул",
+      "key": "default"
+    },
+    {
+      "name": "Барыш",
+      "key": "default"
+    },
+    {
+      "name": "Батайск",
+      "key": "default"
+    },
+    {
+      "name": "Бахчисарай",
+      "key": "default"
+    },
+    {
+      "name": "Бежецк",
+      "key": "default"
+    },
+    {
+      "name": "Белая Калитва",
+      "key": "default"
+    },
+    {
+      "name": "Белая Холуница",
+      "key": "default"
+    },
+    {
+      "name": "Белгород",
+      "key": "default"
+    },
+    {
+      "name": "Белебей",
+      "key": "default"
+    },
+    {
+      "name": "Белев",
+      "key": "default"
+    },
+    {
+      "name": "Белинский",
+      "key": "default"
+    },
+    {
+      "name": "Белово",
+      "key": "default"
+    },
+    {
+      "name": "Белогорск",
+      "key": "default"
+    },
+    {
+      "name": "Белогорск",
+      "key": "default"
+    },
+    {
+      "name": "Белозерск",
+      "key": "default"
+    },
+    {
+      "name": "Белокуриха",
+      "key": "default"
+    },
+    {
+      "name": "Беломорск",
+      "key": "default"
+    },
+    {
+      "name": "Белорецк",
+      "key": "default"
+    },
+    {
+      "name": "Белореченск",
+      "key": "default"
+    },
+    {
+      "name": "Белоусово",
+      "key": "default"
+    },
+    {
+      "name": "Белоярский",
+      "key": "default"
+    },
+    {
+      "name": "Белый",
+      "key": "default"
+    },
+    {
+      "name": "Бердск",
+      "key": "default"
+    },
+    {
+      "name": "Березники",
+      "key": "default"
+    },
+    {
+      "name": "Березовский",
+      "key": "default"
+    },
+    {
+      "name": "Березовский",
+      "key": "default"
+    },
+    {
+      "name": "Беслан",
+      "key": "default"
+    },
+    {
+      "name": "Бийск",
+      "key": "default"
+    },
+    {
+      "name": "Бикин",
+      "key": "default"
+    },
+    {
+      "name": "Билибино",
+      "key": "default"
+    },
+    {
+      "name": "Биробиджан",
+      "key": "default"
+    },
+    {
+      "name": "Бирск",
+      "key": "default"
+    },
+    {
+      "name": "Бирюсинск",
+      "key": "default"
+    },
+    {
+      "name": "Бирюч",
+      "key": "default"
+    },
+    {
+      "name": "Благовещенск",
+      "key": "default"
+    },
+    {
+      "name": "Благовещенск",
+      "key": "default"
+    },
+    {
+      "name": "Благодарный",
+      "key": "default"
+    },
+    {
+      "name": "Бобров",
+      "key": "default"
+    },
+    {
+      "name": "Богданович",
+      "key": "default"
+    },
+    {
+      "name": "Богородицк",
+      "key": "default"
+    },
+    {
+      "name": "Богородск",
+      "key": "default"
+    },
+    {
+      "name": "Боготол",
+      "key": "default"
+    },
+    {
+      "name": "Богучар",
+      "key": "default"
+    },
+    {
+      "name": "Бодайбо",
+      "key": "default"
+    },
+    {
+      "name": "Бокситогорск",
+      "key": "default"
+    },
+    {
+      "name": "Болгар",
+      "key": "default"
+    },
+    {
+      "name": "Бологое",
+      "key": "default"
+    },
+    {
+      "name": "Болотное",
+      "key": "default"
+    },
+    {
+      "name": "Болохово",
+      "key": "default"
+    },
+    {
+      "name": "Болхов",
+      "key": "default"
+    },
+    {
+      "name": "Большой Камень",
+      "key": "default"
+    },
+    {
+      "name": "Бор",
+      "key": "default"
+    },
+    {
+      "name": "Борзя",
+      "key": "default"
+    },
+    {
+      "name": "Борисоглебск",
+      "key": "default"
+    },
+    {
+      "name": "Боровичи",
+      "key": "default"
+    },
+    {
+      "name": "Боровск",
+      "key": "default"
+    },
+    {
+      "name": "Бородино",
+      "key": "default"
+    },
+    {
+      "name": "Братск",
+      "key": "default"
+    },
+    {
+      "name": "Бронницы",
+      "key": "default"
+    },
+    {
+      "name": "Брянск",
+      "key": "default"
+    },
+    {
+      "name": "Бугульма",
+      "key": "default"
+    },
+    {
+      "name": "Бугуруслан",
+      "key": "default"
+    },
+    {
+      "name": "Буденновск",
+      "key": "default"
+    },
+    {
+      "name": "Бузулук",
+      "key": "default"
+    },
+    {
+      "name": "Буинск",
+      "key": "default"
+    },
+    {
+      "name": "Буй",
+      "key": "default"
+    },
+    {
+      "name": "Буйнакск",
+      "key": "default"
+    },
+    {
+      "name": "Бутурлиновка",
+      "key": "default"
+    },
+    {
+      "name": "Валдай",
+      "key": "default"
+    },
+    {
+      "name": "Валуйки",
+      "key": "default"
+    },
+    {
+      "name": "Велиж",
+      "key": "default"
+    },
+    {
+      "name": "Великие Луки",
+      "key": "default"
+    },
+    {
+      "name": "Великий Новгород",
+      "key": "default"
+    },
+    {
+      "name": "Великий Устюг",
+      "key": "default"
+    },
+    {
+      "name": "Вельск",
+      "key": "default"
+    },
+    {
+      "name": "Венев",
+      "key": "default"
+    },
+    {
+      "name": "Верещагино",
+      "key": "default"
+    },
+    {
+      "name": "Верея",
+      "key": "default"
+    },
+    {
+      "name": "Верхнеуральск",
+      "key": "default"
+    },
+    {
+      "name": "Верхний Тагил",
+      "key": "default"
+    },
+    {
+      "name": "Верхний Уфалей",
+      "key": "default"
+    },
+    {
+      "name": "Верхняя Пышма",
+      "key": "default"
+    },
+    {
+      "name": "Верхняя Салда",
+      "key": "default"
+    },
+    {
+      "name": "Верхняя Тура",
+      "key": "default"
+    },
+    {
+      "name": "Верхотурье",
+      "key": "default"
+    },
+    {
+      "name": "Верхоянск",
+      "key": "default"
+    },
+    {
+      "name": "Весьегонск",
+      "key": "default"
+    },
+    {
+      "name": "Ветлуга",
+      "key": "default"
+    },
+    {
+      "name": "Видное",
+      "key": "default"
+    },
+    {
+      "name": "Вилюйск",
+      "key": "default"
+    },
+    {
+      "name": "Вилючинск",
+      "key": "default"
+    },
+    {
+      "name": "Вихоревка",
+      "key": "default"
+    },
+    {
+      "name": "Вичуга",
+      "key": "default"
+    },
+    {
+      "name": "Владивосток",
+      "key": "default"
+    },
+    {
+      "name": "Владикавказ",
+      "key": "default"
+    },
+    {
+      "name": "Владимир",
+      "key": "default"
+    },
+    {
+      "name": "Волгоград",
+      "key": "default"
+    },
+    {
+      "name": "Волгодонск",
+      "key": "default"
+    },
+    {
+      "name": "Волгореченск",
+      "key": "default"
+    },
+    {
+      "name": "Волжск",
+      "key": "default"
+    },
+    {
+      "name": "Волжский",
+      "key": "default"
+    },
+    {
+      "name": "Вологда",
+      "key": "default"
+    },
+    {
+      "name": "Володарск",
+      "key": "default"
+    },
+    {
+      "name": "Волоколамск",
+      "key": "default"
+    },
+    {
+      "name": "Волосово",
+      "key": "default"
+    },
+    {
+      "name": "Волхов",
+      "key": "default"
+    },
+    {
+      "name": "Волчанск",
+      "key": "default"
+    },
+    {
+      "name": "Вольск",
+      "key": "default"
+    },
+    {
+      "name": "Воркута",
+      "key": "default"
+    },
+    {
+      "name": "Воронеж",
+      "key": "default"
+    },
+    {
+      "name": "Ворсма",
+      "key": "default"
+    },
+    {
+      "name": "Воскресенск",
+      "key": "default"
+    },
+    {
+      "name": "Воткинск",
+      "key": "default"
+    },
+    {
+      "name": "Всеволожск",
+      "key": "default"
+    },
+    {
+      "name": "Вуктыл",
+      "key": "default"
+    },
+    {
+      "name": "Выборг",
+      "key": "default"
+    },
+    {
+      "name": "Выкса",
+      "key": "default"
+    },
+    {
+      "name": "Высоковск",
+      "key": "default"
+    },
+    {
+      "name": "Высоцк",
+      "key": "default"
+    },
+    {
+      "name": "Вытегра",
+      "key": "default"
+    },
+    {
+      "name": "Вышний Волочек",
+      "key": "default"
+    },
+    {
+      "name": "Вяземский",
+      "key": "default"
+    },
+    {
+      "name": "Вязники",
+      "key": "default"
+    },
+    {
+      "name": "Вязьма",
+      "key": "default"
+    },
+    {
+      "name": "Вятские Поляны",
+      "key": "default"
+    },
+    {
+      "name": "Гаврилов Посад",
+      "key": "default"
+    },
+    {
+      "name": "Гаврилов-Ям",
+      "key": "default"
+    },
+    {
+      "name": "Гагарин",
+      "key": "default"
+    },
+    {
+      "name": "Гаджиево",
+      "key": "default"
+    },
+    {
+      "name": "Гай",
+      "key": "default"
+    },
+    {
+      "name": "Галич",
+      "key": "default"
+    },
+    {
+      "name": "Гатчина",
+      "key": "default"
+    },
+    {
+      "name": "Гвардейск",
+      "key": "default"
+    },
+    {
+      "name": "Гдов",
+      "key": "default"
+    },
+    {
+      "name": "Геленджик",
+      "key": "default"
+    },
+    {
+      "name": "Георгиевск",
+      "key": "default"
+    },
+    {
+      "name": "Глазов",
+      "key": "default"
+    },
+    {
+      "name": "Голицыно",
+      "key": "default"
+    },
+    {
+      "name": "Горбатов",
+      "key": "default"
+    },
+    {
+      "name": "Горно-Алтайск",
+      "key": "default"
+    },
+    {
+      "name": "Горнозаводск",
+      "key": "default"
+    },
+    {
+      "name": "Горняк",
+      "key": "default"
+    },
+    {
+      "name": "Городец",
+      "key": "default"
+    },
+    {
+      "name": "Городище",
+      "key": "default"
+    },
+    {
+      "name": "Городовиковск",
+      "key": "default"
+    },
+    {
+      "name": "Гороховец",
+      "key": "default"
+    },
+    {
+      "name": "Горячий Ключ",
+      "key": "default"
+    },
+    {
+      "name": "Грайворон",
+      "key": "default"
+    },
+    {
+      "name": "Гремячинск",
+      "key": "default"
+    },
+    {
+      "name": "Грозный",
+      "key": "default"
+    },
+    {
+      "name": "Грязи",
+      "key": "default"
+    },
+    {
+      "name": "Грязовец",
+      "key": "default"
+    },
+    {
+      "name": "Губаха",
+      "key": "default"
+    },
+    {
+      "name": "Губкин",
+      "key": "default"
+    },
+    {
+      "name": "Губкинский",
+      "key": "default"
+    },
+    {
+      "name": "Гудермес",
+      "key": "default"
+    },
+    {
+      "name": "Гуково",
+      "key": "default"
+    },
+    {
+      "name": "Гулькевичи",
+      "key": "default"
+    },
+    {
+      "name": "Гурьевск",
+      "key": "default"
+    },
+    {
+      "name": "Гурьевск",
+      "key": "default"
+    },
+    {
+      "name": "Гусев",
+      "key": "default"
+    },
+    {
+      "name": "Гусиноозерск",
+      "key": "default"
+    },
+    {
+      "name": "Гусь-Хрустальный",
+      "key": "default"
+    },
+    {
+      "name": "Давлеканово",
+      "key": "default"
+    },
+    {
+      "name": "Дагестанские Огни",
+      "key": "default"
+    },
+    {
+      "name": "Далматово",
+      "key": "default"
+    },
+    {
+      "name": "Дальнегорск",
+      "key": "default"
+    },
+    {
+      "name": "Дальнереченск",
+      "key": "default"
+    },
+    {
+      "name": "Данилов",
+      "key": "default"
+    },
+    {
+      "name": "Данков",
+      "key": "default"
+    },
+    {
+      "name": "Дегтярск",
+      "key": "default"
+    },
+    {
+      "name": "Дедовск",
+      "key": "default"
+    },
+    {
+      "name": "Демидов",
+      "key": "default"
+    },
+    {
+      "name": "Дербент",
+      "key": "default"
+    },
+    {
+      "name": "Десногорск",
+      "key": "default"
+    },
+    {
+      "name": "Джанкой",
+      "key": "default"
+    },
+    {
+      "name": "Дзержинск",
+      "key": "default"
+    },
+    {
+      "name": "Дзержинский",
+      "key": "default"
+    },
+    {
+      "name": "Дивногорск",
+      "key": "default"
+    },
+    {
+      "name": "Дигора",
+      "key": "default"
+    },
+    {
+      "name": "Димитровград",
+      "key": "default"
+    },
+    {
+      "name": "Дмитриев",
+      "key": "default"
+    },
+    {
+      "name": "Дмитров",
+      "key": "default"
+    },
+    {
+      "name": "Дмитровск",
+      "key": "default"
+    },
+    {
+      "name": "Дно",
+      "key": "default"
+    },
+    {
+      "name": "Добрянка",
+      "key": "default"
+    },
+    {
+      "name": "Долгопрудный",
+      "key": "default"
+    },
+    {
+      "name": "Долинск",
+      "key": "default"
+    },
+    {
+      "name": "Домодедово",
+      "key": "default"
+    },
+    {
+      "name": "Донецк",
+      "key": "default"
+    },
+    {
+      "name": "Донской",
+      "key": "default"
+    },
+    {
+      "name": "Дорогобуж",
+      "key": "default"
+    },
+    {
+      "name": "Дрезна",
+      "key": "default"
+    },
+    {
+      "name": "Дубна",
+      "key": "default"
+    },
+    {
+      "name": "Дубовка",
+      "key": "default"
+    },
+    {
+      "name": "Дудинка",
+      "key": "default"
+    },
+    {
+      "name": "Духовщина",
+      "key": "default"
+    },
+    {
+      "name": "Дюртюли",
+      "key": "default"
+    },
+    {
+      "name": "Дятьково",
+      "key": "default"
+    },
+    {
+      "name": "Евпатория",
+      "key": "default"
+    },
+    {
+      "name": "Егорьевск",
+      "key": "default"
+    },
+    {
+      "name": "Ейск",
+      "key": "default"
+    },
+    {
+      "name": "Екатеринбург",
+      "key": "default"
+    },
+    {
+      "name": "Елабуга",
+      "key": "default"
+    },
+    {
+      "name": "Елец",
+      "key": "default"
+    },
+    {
+      "name": "Елизово",
+      "key": "default"
+    },
+    {
+      "name": "Ельня",
+      "key": "default"
+    },
+    {
+      "name": "Еманжелинск",
+      "key": "default"
+    },
+    {
+      "name": "Емва",
+      "key": "default"
+    },
+    {
+      "name": "Енисейск",
+      "key": "default"
+    },
+    {
+      "name": "Ермолино",
+      "key": "default"
+    },
+    {
+      "name": "Ершов",
+      "key": "default"
+    },
+    {
+      "name": "Ессентуки",
+      "key": "default"
+    },
+    {
+      "name": "Ефремов",
+      "key": "default"
+    },
+    {
+      "name": "Железноводск",
+      "key": "default"
+    },
+    {
+      "name": "Железногорск",
+      "key": "default"
+    },
+    {
+      "name": "Железногорск",
+      "key": "default"
+    },
+    {
+      "name": "Железногорск-Илимский",
+      "key": "default"
+    },
+    {
+      "name": "Жердевка",
+      "key": "default"
+    },
+    {
+      "name": "Жигулевск",
+      "key": "default"
+    },
+    {
+      "name": "Жиздра",
+      "key": "default"
+    },
+    {
+      "name": "Жирновск",
+      "key": "default"
+    },
+    {
+      "name": "Жуков",
+      "key": "default"
+    },
+    {
+      "name": "Жуковка",
+      "key": "default"
+    },
+    {
+      "name": "Жуковский",
+      "key": "default"
+    },
+    {
+      "name": "Завитинск",
+      "key": "default"
+    },
+    {
+      "name": "Заводоуковск",
+      "key": "default"
+    },
+    {
+      "name": "Заволжск",
+      "key": "default"
+    },
+    {
+      "name": "Заволжье",
+      "key": "default"
+    },
+    {
+      "name": "Задонск",
+      "key": "default"
+    },
+    {
+      "name": "Заинск",
+      "key": "default"
+    },
+    {
+      "name": "Закаменск",
+      "key": "default"
+    },
+    {
+      "name": "Заозерный",
+      "key": "default"
+    },
+    {
+      "name": "Заозерск",
+      "key": "default"
+    },
+    {
+      "name": "Западная Двина",
+      "key": "default"
+    },
+    {
+      "name": "Заполярный",
+      "key": "default"
+    },
+    {
+      "name": "Зарайск",
+      "key": "default"
+    },
+    {
+      "name": "Заречный",
+      "key": "default"
+    },
+    {
+      "name": "Заречный",
+      "key": "default"
+    },
+    {
+      "name": "Заринск",
+      "key": "default"
+    },
+    {
+      "name": "Звенигово",
+      "key": "default"
+    },
+    {
+      "name": "Звенигород",
+      "key": "default"
+    },
+    {
+      "name": "Зверево",
+      "key": "default"
+    },
+    {
+      "name": "Зеленогорск",
+      "key": "default"
+    },
+    {
+      "name": "Зеленоградск",
+      "key": "default"
+    },
+    {
+      "name": "Зеленодольск",
+      "key": "default"
+    },
+    {
+      "name": "Зеленокумск",
+      "key": "default"
+    },
+    {
+      "name": "Зерноград",
+      "key": "default"
+    },
+    {
+      "name": "Зея",
+      "key": "default"
+    },
+    {
+      "name": "Зима",
+      "key": "default"
+    },
+    {
+      "name": "Златоуст",
+      "key": "default"
+    },
+    {
+      "name": "Злынка",
+      "key": "default"
+    },
+    {
+      "name": "Змеиногорск",
+      "key": "default"
+    },
+    {
+      "name": "Знаменск",
+      "key": "default"
+    },
+    {
+      "name": "Зубцов",
+      "key": "default"
+    },
+    {
+      "name": "Зуевка",
+      "key": "default"
+    },
+    {
+      "name": "Ивангород",
+      "key": "default"
+    },
+    {
+      "name": "Иваново",
+      "key": "default"
+    },
+    {
+      "name": "Ивантеевка",
+      "key": "default"
+    },
+    {
+      "name": "Ивдель",
+      "key": "default"
+    },
+    {
+      "name": "Игарка",
+      "key": "default"
+    },
+    {
+      "name": "Ижевск",
+      "key": "default"
+    },
+    {
+      "name": "Избербаш",
+      "key": "default"
+    },
+    {
+      "name": "Изобильный",
+      "key": "default"
+    },
+    {
+      "name": "Иланский",
+      "key": "default"
+    },
+    {
+      "name": "Инза",
+      "key": "default"
+    },
+    {
+      "name": "Инкерман",
+      "key": "default"
+    },
+    {
+      "name": "Иннополис",
+      "key": "default"
+    },
+    {
+      "name": "Инсар",
+      "key": "default"
+    },
+    {
+      "name": "Инта",
+      "key": "default"
+    },
+    {
+      "name": "Ипатово",
+      "key": "default"
+    },
+    {
+      "name": "Ирбит",
+      "key": "default"
+    },
+    {
+      "name": "Иркутск",
+      "key": "default"
+    },
+    {
+      "name": "Исилькуль",
+      "key": "default"
+    },
+    {
+      "name": "Искитим",
+      "key": "default"
+    },
+    {
+      "name": "Истра",
+      "key": "default"
+    },
+    {
+      "name": "Ишим",
+      "key": "default"
+    },
+    {
+      "name": "Ишимбай",
+      "key": "default"
+    },
+    {
+      "name": "Йошкар-Ола",
+      "key": "default"
+    },
+    {
+      "name": "Кадников",
+      "key": "default"
+    },
+    {
+      "name": "Казань",
+      "key": "default"
+    },
+    {
+      "name": "Калач",
+      "key": "default"
+    },
+    {
+      "name": "Калачинск",
+      "key": "default"
+    },
+    {
+      "name": "Калач-на-Дону",
+      "key": "default"
+    },
+    {
+      "name": "Калининград",
+      "key": "default"
+    },
+    {
+      "name": "Калининск",
+      "key": "default"
+    },
+    {
+      "name": "Калтан",
+      "key": "default"
+    },
+    {
+      "name": "Калуга",
+      "key": "default"
+    },
+    {
+      "name": "Калязин",
+      "key": "default"
+    },
+    {
+      "name": "Камбарка",
+      "key": "default"
+    },
+    {
+      "name": "Каменка",
+      "key": "default"
+    },
+    {
+      "name": "Каменногорск",
+      "key": "default"
+    },
+    {
+      "name": "Каменск-Уральский",
+      "key": "default"
+    },
+    {
+      "name": "Каменск-Шахтинский",
+      "key": "default"
+    },
+    {
+      "name": "Камень-на-Оби",
+      "key": "default"
+    },
+    {
+      "name": "Камешково",
+      "key": "default"
+    },
+    {
+      "name": "Камызяк",
+      "key": "default"
+    },
+    {
+      "name": "Камышин",
+      "key": "default"
+    },
+    {
+      "name": "Камышлов",
+      "key": "default"
+    },
+    {
+      "name": "Канаш",
+      "key": "default"
+    },
+    {
+      "name": "Кандалакша",
+      "key": "default"
+    },
+    {
+      "name": "Канск",
+      "key": "default"
+    },
+    {
+      "name": "Карабаново",
+      "key": "default"
+    },
+    {
+      "name": "Карабаш",
+      "key": "default"
+    },
+    {
+      "name": "Карабулак",
+      "key": "default"
+    },
+    {
+      "name": "Карасук",
+      "key": "default"
+    },
+    {
+      "name": "Карачаевск",
+      "key": "default"
+    },
+    {
+      "name": "Карачев",
+      "key": "default"
+    },
+    {
+      "name": "Каргат",
+      "key": "default"
+    },
+    {
+      "name": "Каргополь",
+      "key": "default"
+    },
+    {
+      "name": "Карпинск",
+      "key": "default"
+    },
+    {
+      "name": "Карталы",
+      "key": "default"
+    },
+    {
+      "name": "Касимов",
+      "key": "default"
+    },
+    {
+      "name": "Касли",
+      "key": "default"
+    },
+    {
+      "name": "Каспийск",
+      "key": "default"
+    },
+    {
+      "name": "Катав-Ивановск",
+      "key": "default"
+    },
+    {
+      "name": "Катайск",
+      "key": "default"
+    },
+    {
+      "name": "Качканар",
+      "key": "default"
+    },
+    {
+      "name": "Кашин",
+      "key": "default"
+    },
+    {
+      "name": "Кашира",
+      "key": "default"
+    },
+    {
+      "name": "Кедровый",
+      "key": "default"
+    },
+    {
+      "name": "Кемерово",
+      "key": "default"
+    },
+    {
+      "name": "Кемь",
+      "key": "default"
+    },
+    {
+      "name": "Керчь",
+      "key": "default"
+    },
+    {
+      "name": "Кизел",
+      "key": "default"
+    },
+    {
+      "name": "Кизилюрт",
+      "key": "default"
+    },
+    {
+      "name": "Кизляр",
+      "key": "default"
+    },
+    {
+      "name": "Кимовск",
+      "key": "default"
+    },
+    {
+      "name": "Кимры",
+      "key": "default"
+    },
+    {
+      "name": "Кингисепп",
+      "key": "default"
+    },
+    {
+      "name": "Кинель",
+      "key": "default"
+    },
+    {
+      "name": "Кинешма",
+      "key": "default"
+    },
+    {
+      "name": "Киреевск",
+      "key": "default"
+    },
+    {
+      "name": "Киренск",
+      "key": "default"
+    },
+    {
+      "name": "Киржач",
+      "key": "default"
+    },
+    {
+      "name": "Кириллов",
+      "key": "default"
+    },
+    {
+      "name": "Кириши",
+      "key": "default"
+    },
+    {
+      "name": "Киров",
+      "key": "default"
+    },
+    {
+      "name": "Киров",
+      "key": "default"
+    },
+    {
+      "name": "Кировград",
+      "key": "default"
+    },
+    {
+      "name": "Кирово-Чепецк",
+      "key": "default"
+    },
+    {
+      "name": "Кировск",
+      "key": "default"
+    },
+    {
+      "name": "Кировск",
+      "key": "default"
+    },
+    {
+      "name": "Кирс",
+      "key": "default"
+    },
+    {
+      "name": "Кирсанов",
+      "key": "default"
+    },
+    {
+      "name": "Киселевск",
+      "key": "default"
+    },
+    {
+      "name": "Кисловодск",
+      "key": "default"
+    },
+    {
+      "name": "Клин",
+      "key": "default"
+    },
+    {
+      "name": "Клинцы",
+      "key": "default"
+    },
+    {
+      "name": "Княгинино",
+      "key": "default"
+    },
+    {
+      "name": "Ковдор",
+      "key": "default"
+    },
+    {
+      "name": "Ковров",
+      "key": "default"
+    },
+    {
+      "name": "Ковылкино",
+      "key": "default"
+    },
+    {
+      "name": "Когалым",
+      "key": "default"
+    },
+    {
+      "name": "Кодинск",
+      "key": "default"
+    },
+    {
+      "name": "Козельск",
+      "key": "default"
+    },
+    {
+      "name": "Козловка",
+      "key": "default"
+    },
+    {
+      "name": "Козьмодемьянск",
+      "key": "default"
+    },
+    {
+      "name": "Кола",
+      "key": "default"
+    },
+    {
+      "name": "Кологрив",
+      "key": "default"
+    },
+    {
+      "name": "Коломна",
+      "key": "default"
+    },
+    {
+      "name": "Колпашево",
+      "key": "default"
+    },
+    {
+      "name": "Кольчугино",
+      "key": "default"
+    },
+    {
+      "name": "Коммунар",
+      "key": "default"
+    },
+    {
+      "name": "Комсомольск",
+      "key": "default"
+    },
+    {
+      "name": "Комсомольск-на-Амуре",
+      "key": "default"
+    },
+    {
+      "name": "Конаково",
+      "key": "default"
+    },
+    {
+      "name": "Кондопога",
+      "key": "default"
+    },
+    {
+      "name": "Кондрово",
+      "key": "default"
+    },
+    {
+      "name": "Константиновск",
+      "key": "default"
+    },
+    {
+      "name": "Копейск",
+      "key": "default"
+    },
+    {
+      "name": "Кораблино",
+      "key": "default"
+    },
+    {
+      "name": "Кореновск",
+      "key": "default"
+    },
+    {
+      "name": "Коркино",
+      "key": "default"
+    },
+    {
+      "name": "Королев",
+      "key": "default"
+    },
+    {
+      "name": "Короча",
+      "key": "default"
+    },
+    {
+      "name": "Корсаков",
+      "key": "default"
+    },
+    {
+      "name": "Коряжма",
+      "key": "default"
+    },
+    {
+      "name": "Костерево",
+      "key": "default"
+    },
+    {
+      "name": "Костомукша",
+      "key": "default"
+    },
+    {
+      "name": "Кострома",
+      "key": "default"
+    },
+    {
+      "name": "Котельники",
+      "key": "default"
+    },
+    {
+      "name": "Котельниково",
+      "key": "default"
+    },
+    {
+      "name": "Котельнич",
+      "key": "default"
+    },
+    {
+      "name": "Котлас",
+      "key": "default"
+    },
+    {
+      "name": "Котово",
+      "key": "default"
+    },
+    {
+      "name": "Котовск",
+      "key": "default"
+    },
+    {
+      "name": "Кохма",
+      "key": "default"
+    },
+    {
+      "name": "Красавино",
+      "key": "default"
+    },
+    {
+      "name": "Красноармейск",
+      "key": "default"
+    },
+    {
+      "name": "Красноармейск",
+      "key": "default"
+    },
+    {
+      "name": "Красновишерск",
+      "key": "default"
+    },
+    {
+      "name": "Красногорск",
+      "key": "default"
+    },
+    {
+      "name": "Краснодар",
+      "key": "default"
+    },
+    {
+      "name": "Краснозаводск",
+      "key": "default"
+    },
+    {
+      "name": "Краснознаменск",
+      "key": "default"
+    },
+    {
+      "name": "Краснознаменск",
+      "key": "default"
+    },
+    {
+      "name": "Краснокаменск",
+      "key": "default"
+    },
+    {
+      "name": "Краснокамск",
+      "key": "default"
+    },
+    {
+      "name": "Красноперекопск",
+      "key": "default"
+    },
+    {
+      "name": "Краснослободск",
+      "key": "default"
+    },
+    {
+      "name": "Краснослободск",
+      "key": "default"
+    },
+    {
+      "name": "Краснотурьинск",
+      "key": "default"
+    },
+    {
+      "name": "Красноуральск",
+      "key": "default"
+    },
+    {
+      "name": "Красноуфимск",
+      "key": "default"
+    },
+    {
+      "name": "Красноярск",
+      "key": "default"
+    },
+    {
+      "name": "Красный Кут",
+      "key": "default"
+    },
+    {
+      "name": "Красный Сулин",
+      "key": "default"
+    },
+    {
+      "name": "Красный Холм",
+      "key": "default"
+    },
+    {
+      "name": "Кременки",
+      "key": "default"
+    },
+    {
+      "name": "Кропоткин",
+      "key": "default"
+    },
+    {
+      "name": "Крымск",
+      "key": "default"
+    },
+    {
+      "name": "Кстово",
+      "key": "default"
+    },
+    {
+      "name": "Кубинка",
+      "key": "default"
+    },
+    {
+      "name": "Кувандык",
+      "key": "default"
+    },
+    {
+      "name": "Кувшиново",
+      "key": "default"
+    },
+    {
+      "name": "Кудымкар",
+      "key": "default"
+    },
+    {
+      "name": "Кузнецк",
+      "key": "default"
+    },
+    {
+      "name": "Куйбышев",
+      "key": "default"
+    },
+    {
+      "name": "Кулебаки",
+      "key": "default"
+    },
+    {
+      "name": "Кумертау",
+      "key": "default"
+    },
+    {
+      "name": "Кунгур",
+      "key": "default"
+    },
+    {
+      "name": "Купино",
+      "key": "default"
+    },
+    {
+      "name": "Курган",
+      "key": "default"
+    },
+    {
+      "name": "Курганинск",
+      "key": "default"
+    },
+    {
+      "name": "Курильск",
+      "key": "default"
+    },
+    {
+      "name": "Курлово",
+      "key": "default"
+    },
+    {
+      "name": "Куровское",
+      "key": "default"
+    },
+    {
+      "name": "Курск",
+      "key": "default"
+    },
+    {
+      "name": "Куртамыш",
+      "key": "default"
+    },
+    {
+      "name": "Курчатов",
+      "key": "default"
+    },
+    {
+      "name": "Куса",
+      "key": "default"
+    },
+    {
+      "name": "Кушва",
+      "key": "default"
+    },
+    {
+      "name": "Кызыл",
+      "key": "default"
+    },
+    {
+      "name": "Кыштым",
+      "key": "default"
+    },
+    {
+      "name": "Кяхта",
+      "key": "default"
+    },
+    {
+      "name": "Лабинск",
+      "key": "default"
+    },
+    {
+      "name": "Лабытнанги",
+      "key": "default"
+    },
+    {
+      "name": "Лагань",
+      "key": "default"
+    },
+    {
+      "name": "Ладушкин",
+      "key": "default"
+    },
+    {
+      "name": "Лаишево",
+      "key": "default"
+    },
+    {
+      "name": "Лакинск",
+      "key": "default"
+    },
+    {
+      "name": "Лангепас",
+      "key": "default"
+    },
+    {
+      "name": "Лахденпохья",
+      "key": "default"
+    },
+    {
+      "name": "Лебедянь",
+      "key": "default"
+    },
+    {
+      "name": "Лениногорск",
+      "key": "default"
+    },
+    {
+      "name": "Ленинск",
+      "key": "default"
+    },
+    {
+      "name": "Ленинск-Кузнецкий",
+      "key": "default"
+    },
+    {
+      "name": "Ленск",
+      "key": "default"
+    },
+    {
+      "name": "Лермонтов",
+      "key": "default"
+    },
+    {
+      "name": "Лесной",
+      "key": "default"
+    },
+    {
+      "name": "Лесозаводск",
+      "key": "default"
+    },
+    {
+      "name": "Лесосибирск",
+      "key": "default"
+    },
+    {
+      "name": "Ливны",
+      "key": "default"
+    },
+    {
+      "name": "Ликино-Дулево",
+      "key": "default"
+    },
+    {
+      "name": "Липецк",
+      "key": "default"
+    },
+    {
+      "name": "Липки",
+      "key": "default"
+    },
+    {
+      "name": "Лиски",
+      "key": "default"
+    },
+    {
+      "name": "Лихославль",
+      "key": "default"
+    },
+    {
+      "name": "Лобня",
+      "key": "default"
+    },
+    {
+      "name": "Лодейное Поле",
+      "key": "default"
+    },
+    {
+      "name": "Лосино-Петровский",
+      "key": "default"
+    },
+    {
+      "name": "Луга",
+      "key": "default"
+    },
+    {
+      "name": "Луза",
+      "key": "default"
+    },
+    {
+      "name": "Лукоянов",
+      "key": "default"
+    },
+    {
+      "name": "Луховицы",
+      "key": "default"
+    },
+    {
+      "name": "Лысково",
+      "key": "default"
+    },
+    {
+      "name": "Лысьва",
+      "key": "default"
+    },
+    {
+      "name": "Лыткарино",
+      "key": "default"
+    },
+    {
+      "name": "Льгов",
+      "key": "default"
+    },
+    {
+      "name": "Любань",
+      "key": "default"
+    },
+    {
+      "name": "Люберцы",
+      "key": "default"
+    },
+    {
+      "name": "Любим",
+      "key": "default"
+    },
+    {
+      "name": "Людиново",
+      "key": "default"
+    },
+    {
+      "name": "Лянтор",
+      "key": "default"
+    },
+    {
+      "name": "Магадан",
+      "key": "default"
+    },
+    {
+      "name": "Магас",
+      "key": "default"
+    },
+    {
+      "name": "Магнитогорск",
+      "key": "default"
+    },
+    {
+      "name": "Майкоп",
+      "key": "default"
+    },
+    {
+      "name": "Майский",
+      "key": "default"
+    },
+    {
+      "name": "Макаров",
+      "key": "default"
+    },
+    {
+      "name": "Макарьев",
+      "key": "default"
+    },
+    {
+      "name": "Макушино",
+      "key": "default"
+    },
+    {
+      "name": "Малая Вишера",
+      "key": "default"
+    },
+    {
+      "name": "Малгобек",
+      "key": "default"
+    },
+    {
+      "name": "Малмыж",
+      "key": "default"
+    },
+    {
+      "name": "Малоархангельск",
+      "key": "default"
+    },
+    {
+      "name": "Малоярославец",
+      "key": "default"
+    },
+    {
+      "name": "Мамадыш",
+      "key": "default"
+    },
+    {
+      "name": "Мамоново",
+      "key": "default"
+    },
+    {
+      "name": "Мантурово",
+      "key": "default"
+    },
+    {
+      "name": "Мариинск",
+      "key": "default"
+    },
+    {
+      "name": "Мариинский Посад",
+      "key": "default"
+    },
+    {
+      "name": "Маркс",
+      "key": "default"
+    },
+    {
+      "name": "Махачкала",
+      "key": "default"
+    },
+    {
+      "name": "Мглин",
+      "key": "default"
+    },
+    {
+      "name": "Мегион",
+      "key": "default"
+    },
+    {
+      "name": "Медвежьегорск",
+      "key": "default"
+    },
+    {
+      "name": "Медногорск",
+      "key": "default"
+    },
+    {
+      "name": "Медынь",
+      "key": "default"
+    },
+    {
+      "name": "Межгорье",
+      "key": "default"
+    },
+    {
+      "name": "Междуреченск",
+      "key": "default"
+    },
+    {
+      "name": "Мезень",
+      "key": "default"
+    },
+    {
+      "name": "Меленки",
+      "key": "default"
+    },
+    {
+      "name": "Мелеуз",
+      "key": "default"
+    },
+    {
+      "name": "Менделеевск",
+      "key": "default"
+    },
+    {
+      "name": "Мензелинск",
+      "key": "default"
+    },
+    {
+      "name": "Мещовск",
+      "key": "default"
+    },
+    {
+      "name": "Миасс",
+      "key": "default"
+    },
+    {
+      "name": "Микунь",
+      "key": "default"
+    },
+    {
+      "name": "Миллерово",
+      "key": "default"
+    },
+    {
+      "name": "Минеральные Воды",
+      "key": "default"
+    },
+    {
+      "name": "Минусинск",
+      "key": "default"
+    },
+    {
+      "name": "Миньяр",
+      "key": "default"
+    },
+    {
+      "name": "Мирный",
+      "key": "default"
+    },
+    {
+      "name": "Мирный",
+      "key": "default"
+    },
+    {
+      "name": "Михайлов",
+      "key": "default"
+    },
+    {
+      "name": "Михайловка",
+      "key": "default"
+    },
+    {
+      "name": "Михайловск",
+      "key": "default"
+    },
+    {
+      "name": "Михайловск",
+      "key": "default"
+    },
+    {
+      "name": "Мичуринск",
+      "key": "default"
+    },
+    {
+      "name": "Могоча",
+      "key": "default"
+    },
+    {
+      "name": "Можайск",
+      "key": "default"
+    },
+    {
+      "name": "Можга",
+      "key": "default"
+    },
+    {
+      "name": "Моздок",
+      "key": "default"
+    },
+    {
+      "name": "Мончегорск",
+      "key": "default"
+    },
+    {
+      "name": "Морозовск",
+      "key": "default"
+    },
+    {
+      "name": "Моршанск",
+      "key": "default"
+    },
+    {
+      "name": "Мосальск",
+      "key": "default"
+    },
+    {
+      "name": "Муравленко",
+      "key": "default"
+    },
+    {
+      "name": "Мураши",
+      "key": "default"
+    },
+    {
+      "name": "Мурманск",
+      "key": "default"
+    },
+    {
+      "name": "Муром",
+      "key": "default"
+    },
+    {
+      "name": "Мценск",
+      "key": "default"
+    },
+    {
+      "name": "Мыски",
+      "key": "default"
+    },
+    {
+      "name": "Мытищи",
+      "key": "default"
+    },
+    {
+      "name": "Мышкин",
+      "key": "default"
+    },
+    {
+      "name": "Набережные Челны",
+      "key": "default"
+    },
+    {
+      "name": "Навашино",
+      "key": "default"
+    },
+    {
+      "name": "Наволоки",
+      "key": "default"
+    },
+    {
+      "name": "Надым",
+      "key": "default"
+    },
+    {
+      "name": "Назарово",
+      "key": "default"
+    },
+    {
+      "name": "Назрань",
+      "key": "default"
+    },
+    {
+      "name": "Называевск",
+      "key": "default"
+    },
+    {
+      "name": "Нальчик",
+      "key": "default"
+    },
+    {
+      "name": "Нариманов",
+      "key": "default"
+    },
+    {
+      "name": "Наро-Фоминск",
+      "key": "default"
+    },
+    {
+      "name": "Нарткала",
+      "key": "default"
+    },
+    {
+      "name": "Нарьян-Мар",
+      "key": "default"
+    },
+    {
+      "name": "Находка",
+      "key": "default"
+    },
+    {
+      "name": "Невель",
+      "key": "default"
+    },
+    {
+      "name": "Невельск",
+      "key": "default"
+    },
+    {
+      "name": "Невинномысск",
+      "key": "default"
+    },
+    {
+      "name": "Невьянск",
+      "key": "default"
+    },
+    {
+      "name": "Нелидово",
+      "key": "default"
+    },
+    {
+      "name": "Неман",
+      "key": "default"
+    },
+    {
+      "name": "Нерехта",
+      "key": "default"
+    },
+    {
+      "name": "Нерчинск",
+      "key": "default"
+    },
+    {
+      "name": "Нерюнгри",
+      "key": "default"
+    },
+    {
+      "name": "Нестеров",
+      "key": "default"
+    },
+    {
+      "name": "Нефтегорск",
+      "key": "default"
+    },
+    {
+      "name": "Нефтекамск",
+      "key": "default"
+    },
+    {
+      "name": "Нефтекумск",
+      "key": "default"
+    },
+    {
+      "name": "Нефтеюганск",
+      "key": "default"
+    },
+    {
+      "name": "Нея",
+      "key": "default"
+    },
+    {
+      "name": "Нижневартовск",
+      "key": "default"
+    },
+    {
+      "name": "Нижнекамск",
+      "key": "default"
+    },
+    {
+      "name": "Нижнеудинск",
+      "key": "default"
+    },
+    {
+      "name": "Нижние Серги",
+      "key": "default"
+    },
+    {
+      "name": "Нижний Ломов",
+      "key": "default"
+    },
+    {
+      "name": "Нижний Новгород",
+      "key": "default"
+    },
+    {
+      "name": "Нижний Тагил",
+      "key": "default"
+    },
+    {
+      "name": "Нижняя Салда",
+      "key": "default"
+    },
+    {
+      "name": "Нижняя Тура",
+      "key": "default"
+    },
+    {
+      "name": "Николаевск",
+      "key": "default"
+    },
+    {
+      "name": "Николаевск-на-Амуре",
+      "key": "default"
+    },
+    {
+      "name": "Никольск",
+      "key": "default"
+    },
+    {
+      "name": "Никольск",
+      "key": "default"
+    },
+    {
+      "name": "Никольское",
+      "key": "default"
+    },
+    {
+      "name": "Новая Ладога",
+      "key": "default"
+    },
+    {
+      "name": "Новая Ляля",
+      "key": "default"
+    },
+    {
+      "name": "Новоалександровск",
+      "key": "default"
+    },
+    {
+      "name": "Новоалтайск",
+      "key": "default"
+    },
+    {
+      "name": "Новоаннинский",
+      "key": "default"
+    },
+    {
+      "name": "Нововоронеж",
+      "key": "default"
+    },
+    {
+      "name": "Новодвинск",
+      "key": "default"
+    },
+    {
+      "name": "Новозыбков",
+      "key": "default"
+    },
+    {
+      "name": "Новокубанск",
+      "key": "default"
+    },
+    {
+      "name": "Новокузнецк",
+      "key": "default"
+    },
+    {
+      "name": "Новокуйбышевск",
+      "key": "default"
+    },
+    {
+      "name": "Новомичуринск",
+      "key": "default"
+    },
+    {
+      "name": "Новомосковск",
+      "key": "default"
+    },
+    {
+      "name": "Новопавловск",
+      "key": "default"
+    },
+    {
+      "name": "Новоржев",
+      "key": "default"
+    },
+    {
+      "name": "Новороссийск",
+      "key": "default"
+    },
+    {
+      "name": "Новосибирск",
+      "key": "default"
+    },
+    {
+      "name": "Новосиль",
+      "key": "default"
+    },
+    {
+      "name": "Новосокольники",
+      "key": "default"
+    },
+    {
+      "name": "Новотроицк",
+      "key": "default"
+    },
+    {
+      "name": "Новоузенск",
+      "key": "default"
+    },
+    {
+      "name": "Новоульяновск",
+      "key": "default"
+    },
+    {
+      "name": "Новоуральск",
+      "key": "default"
+    },
+    {
+      "name": "Новохоперск",
+      "key": "default"
+    },
+    {
+      "name": "Новочебоксарск",
+      "key": "default"
+    },
+    {
+      "name": "Новочеркасск",
+      "key": "default"
+    },
+    {
+      "name": "Новошахтинск",
+      "key": "default"
+    },
+    {
+      "name": "Новый Оскол",
+      "key": "default"
+    },
+    {
+      "name": "Новый Уренгой",
+      "key": "default"
+    },
+    {
+      "name": "Ногинск",
+      "key": "default"
+    },
+    {
+      "name": "Нолинск",
+      "key": "default"
+    },
+    {
+      "name": "Норильск",
+      "key": "default"
+    },
+    {
+      "name": "Ноябрьск",
+      "key": "default"
+    },
+    {
+      "name": "Нурлат",
+      "key": "default"
+    },
+    {
+      "name": "Нытва",
+      "key": "default"
+    },
+    {
+      "name": "Нюрба",
+      "key": "default"
+    },
+    {
+      "name": "Нягань",
+      "key": "default"
+    },
+    {
+      "name": "Нязепетровск",
+      "key": "default"
+    },
+    {
+      "name": "Няндома",
+      "key": "default"
+    },
+    {
+      "name": "Облучье",
+      "key": "default"
+    },
+    {
+      "name": "Обнинск",
+      "key": "default"
+    },
+    {
+      "name": "Обоянь",
+      "key": "default"
+    },
+    {
+      "name": "Обь",
+      "key": "default"
+    },
+    {
+      "name": "Одинцово",
+      "key": "default"
+    },
+    {
+      "name": "Озерск",
+      "key": "default"
+    },
+    {
+      "name": "Озерск",
+      "key": "default"
+    },
+    {
+      "name": "Озеры",
+      "key": "default"
+    },
+    {
+      "name": "Октябрьск",
+      "key": "default"
+    },
+    {
+      "name": "Октябрьский",
+      "key": "default"
+    },
+    {
+      "name": "Окуловка",
+      "key": "default"
+    },
+    {
+      "name": "Олекминск",
+      "key": "default"
+    },
+    {
+      "name": "Оленегорск",
+      "key": "default"
+    },
+    {
+      "name": "Олонец",
+      "key": "default"
+    },
+    {
+      "name": "Омск",
+      "key": "default"
+    },
+    {
+      "name": "Омутнинск",
+      "key": "default"
+    },
+    {
+      "name": "Онега",
+      "key": "default"
+    },
+    {
+      "name": "Опочка",
+      "key": "default"
+    },
+    {
+      "name": "Орёл",
+      "key": "default"
+    },
+    {
+      "name": "Оренбург",
+      "key": "default"
+    },
+    {
+      "name": "Орехово-Зуево",
+      "key": "default"
+    },
+    {
+      "name": "Орлов",
+      "key": "default"
+    },
+    {
+      "name": "Орск",
+      "key": "default"
+    },
+    {
+      "name": "Оса",
+      "key": "default"
+    },
+    {
+      "name": "Осинники",
+      "key": "default"
+    },
+    {
+      "name": "Осташков",
+      "key": "default"
+    },
+    {
+      "name": "Остров",
+      "key": "default"
+    },
+    {
+      "name": "Островной",
+      "key": "default"
+    },
+    {
+      "name": "Острогожск",
+      "key": "default"
+    },
+    {
+      "name": "Отрадное",
+      "key": "default"
+    },
+    {
+      "name": "Отрадный",
+      "key": "default"
+    },
+    {
+      "name": "Оха",
+      "key": "default"
+    },
+    {
+      "name": "Оханск",
+      "key": "default"
+    },
+    {
+      "name": "Очер",
+      "key": "default"
+    },
+    {
+      "name": "Павлово",
+      "key": "default"
+    },
+    {
+      "name": "Павловск",
+      "key": "default"
+    },
+    {
+      "name": "Павловский Посад",
+      "key": "default"
+    },
+    {
+      "name": "Палласовка",
+      "key": "default"
+    },
+    {
+      "name": "Партизанск",
+      "key": "default"
+    },
+    {
+      "name": "Певек",
+      "key": "default"
+    },
+    {
+      "name": "Пенза",
+      "key": "default"
+    },
+    {
+      "name": "Первомайск",
+      "key": "default"
+    },
+    {
+      "name": "Первоуральск",
+      "key": "default"
+    },
+    {
+      "name": "Перевоз",
+      "key": "default"
+    },
+    {
+      "name": "Пересвет",
+      "key": "default"
+    },
+    {
+      "name": "Переславль-Залесский",
+      "key": "default"
+    },
+    {
+      "name": "Пермь",
+      "key": "default"
+    },
+    {
+      "name": "Пестово",
+      "key": "default"
+    },
+    {
+      "name": "Петров Вал",
+      "key": "default"
+    },
+    {
+      "name": "Петровск",
+      "key": "default"
+    },
+    {
+      "name": "Петровск-Забайкальский",
+      "key": "default"
+    },
+    {
+      "name": "Петрозаводск",
+      "key": "default"
+    },
+    {
+      "name": "Петропавловск-Камчатский",
+      "key": "default"
+    },
+    {
+      "name": "Петухово",
+      "key": "default"
+    },
+    {
+      "name": "Петушки",
+      "key": "default"
+    },
+    {
+      "name": "Печора",
+      "key": "default"
+    },
+    {
+      "name": "Печоры",
+      "key": "default"
+    },
+    {
+      "name": "Пикалево",
+      "key": "default"
+    },
+    {
+      "name": "Пионерский",
+      "key": "default"
+    },
+    {
+      "name": "Питкяранта",
+      "key": "default"
+    },
+    {
+      "name": "Плавск",
+      "key": "default"
+    },
+    {
+      "name": "Пласт",
+      "key": "default"
+    },
+    {
+      "name": "Плес",
+      "key": "default"
+    },
+    {
+      "name": "Поворино",
+      "key": "default"
+    },
+    {
+      "name": "Подольск",
+      "key": "default"
+    },
+    {
+      "name": "Подпорожье",
+      "key": "default"
+    },
+    {
+      "name": "Покачи",
+      "key": "default"
+    },
+    {
+      "name": "Покров",
+      "key": "default"
+    },
+    {
+      "name": "Покровск",
+      "key": "default"
+    },
+    {
+      "name": "Полевской",
+      "key": "default"
+    },
+    {
+      "name": "Полесск",
+      "key": "default"
+    },
+    {
+      "name": "Полысаево",
+      "key": "default"
+    },
+    {
+      "name": "Полярные Зори",
+      "key": "default"
+    },
+    {
+      "name": "Полярный",
+      "key": "default"
+    },
+    {
+      "name": "Поронайск",
+      "key": "default"
+    },
+    {
+      "name": "Порхов",
+      "key": "default"
+    },
+    {
+      "name": "Похвистнево",
+      "key": "default"
+    },
+    {
+      "name": "Почеп",
+      "key": "default"
+    },
+    {
+      "name": "Починок",
+      "key": "default"
+    },
+    {
+      "name": "Пошехонье",
+      "key": "default"
+    },
+    {
+      "name": "Правдинск",
+      "key": "default"
+    },
+    {
+      "name": "Приволжск",
+      "key": "default"
+    },
+    {
+      "name": "Приморск",
+      "key": "default"
+    },
+    {
+      "name": "Приморск",
+      "key": "default"
+    },
+    {
+      "name": "Приморско-Ахтарск",
+      "key": "default"
+    },
+    {
+      "name": "Приозерск",
+      "key": "default"
+    },
+    {
+      "name": "Прокопьевск",
+      "key": "default"
+    },
+    {
+      "name": "Пролетарск",
+      "key": "default"
+    },
+    {
+      "name": "Протвино",
+      "key": "default"
+    },
+    {
+      "name": "Прохладный",
+      "key": "default"
+    },
+    {
+      "name": "Псков",
+      "key": "default"
+    },
+    {
+      "name": "Пугачев",
+      "key": "default"
+    },
+    {
+      "name": "Пудож",
+      "key": "default"
+    },
+    {
+      "name": "Пустошка",
+      "key": "default"
+    },
+    {
+      "name": "Пучеж",
+      "key": "default"
+    },
+    {
+      "name": "Пушкино",
+      "key": "default"
+    },
+    {
+      "name": "Пущино",
+      "key": "default"
+    },
+    {
+      "name": "Пыталово",
+      "key": "default"
+    },
+    {
+      "name": "Пыть-Ях",
+      "key": "default"
+    },
+    {
+      "name": "Пятигорск",
+      "key": "default"
+    },
+    {
+      "name": "Радужный",
+      "key": "default"
+    },
+    {
+      "name": "Радужный",
+      "key": "default"
+    },
+    {
+      "name": "Райчихинск",
+      "key": "default"
+    },
+    {
+      "name": "Раменское",
+      "key": "default"
+    },
+    {
+      "name": "Рассказово",
+      "key": "default"
+    },
+    {
+      "name": "Ревда",
+      "key": "default"
+    },
+    {
+      "name": "Реж",
+      "key": "default"
+    },
+    {
+      "name": "Реутов",
+      "key": "default"
+    },
+    {
+      "name": "Ржев",
+      "key": "default"
+    },
+    {
+      "name": "Родники",
+      "key": "default"
+    },
+    {
+      "name": "Рославль",
+      "key": "default"
+    },
+    {
+      "name": "Россошь",
+      "key": "default"
+    },
+    {
+      "name": "Ростов",
+      "key": "default"
+    },
+    {
+      "name": "Ростов-на-Дону",
+      "key": "default"
+    },
+    {
+      "name": "Рошаль",
+      "key": "default"
+    },
+    {
+      "name": "Ртищево",
+      "key": "default"
+    },
+    {
+      "name": "Рубцовск",
+      "key": "default"
+    },
+    {
+      "name": "Рудня",
+      "key": "default"
+    },
+    {
+      "name": "Руза",
+      "key": "default"
+    },
+    {
+      "name": "Рузаевка",
+      "key": "default"
+    },
+    {
+      "name": "Рыбинск",
+      "key": "default"
+    },
+    {
+      "name": "Рыбное",
+      "key": "default"
+    },
+    {
+      "name": "Рыльск",
+      "key": "default"
+    },
+    {
+      "name": "Ряжск",
+      "key": "default"
+    },
+    {
+      "name": "Рязань",
+      "key": "default"
+    },
+    {
+      "name": "Саки",
+      "key": "default"
+    },
+    {
+      "name": "Салават",
+      "key": "default"
+    },
+    {
+      "name": "Салаир",
+      "key": "default"
+    },
+    {
+      "name": "Салехард",
+      "key": "default"
+    },
+    {
+      "name": "Сальск",
+      "key": "default"
+    },
+    {
+      "name": "Самара",
+      "key": "default"
+    },
+    {
+      "name": "Саранск",
+      "key": "default"
+    },
+    {
+      "name": "Сарапул",
+      "key": "default"
+    },
+    {
+      "name": "Саратов",
+      "key": "default"
+    },
+    {
+      "name": "Саров",
+      "key": "default"
+    },
+    {
+      "name": "Сасово",
+      "key": "default"
+    },
+    {
+      "name": "Сатка",
+      "key": "default"
+    },
+    {
+      "name": "Сафоново",
+      "key": "default"
+    },
+    {
+      "name": "Саяногорск",
+      "key": "default"
+    },
+    {
+      "name": "Саянск",
+      "key": "default"
+    },
+    {
+      "name": "Светлогорск",
+      "key": "default"
+    },
+    {
+      "name": "Светлоград",
+      "key": "default"
+    },
+    {
+      "name": "Светлый",
+      "key": "default"
+    },
+    {
+      "name": "Светогорск",
+      "key": "default"
+    },
+    {
+      "name": "Свирск",
+      "key": "default"
+    },
+    {
+      "name": "Свободный",
+      "key": "default"
+    },
+    {
+      "name": "Себеж",
+      "key": "default"
+    },
+    {
+      "name": "Северобайкальск",
+      "key": "default"
+    },
+    {
+      "name": "Северодвинск",
+      "key": "default"
+    },
+    {
+      "name": "Северо-Курильск",
+      "key": "default"
+    },
+    {
+      "name": "Североморск",
+      "key": "default"
+    },
+    {
+      "name": "Североуральск",
+      "key": "default"
+    },
+    {
+      "name": "Северск",
+      "key": "default"
+    },
+    {
+      "name": "Севск",
+      "key": "default"
+    },
+    {
+      "name": "Сегежа",
+      "key": "default"
+    },
+    {
+      "name": "Сельцо",
+      "key": "default"
+    },
+    {
+      "name": "Семенов",
+      "key": "default"
+    },
+    {
+      "name": "Семикаракорск",
+      "key": "default"
+    },
+    {
+      "name": "Семилуки",
+      "key": "default"
+    },
+    {
+      "name": "Сенгилей",
+      "key": "default"
+    },
+    {
+      "name": "Серафимович",
+      "key": "default"
+    },
+    {
+      "name": "Сергач",
+      "key": "default"
+    },
+    {
+      "name": "Сергиев Посад",
+      "key": "default"
+    },
+    {
+      "name": "Сердобск",
+      "key": "default"
+    },
+    {
+      "name": "Серов",
+      "key": "default"
+    },
+    {
+      "name": "Серпухов",
+      "key": "default"
+    },
+    {
+      "name": "Сертолово",
+      "key": "default"
+    },
+    {
+      "name": "Сибай",
+      "key": "default"
+    },
+    {
+      "name": "Сим",
+      "key": "default"
+    },
+    {
+      "name": "Симферополь",
+      "key": "default"
+    },
+    {
+      "name": "Сковородино",
+      "key": "default"
+    },
+    {
+      "name": "Скопин",
+      "key": "default"
+    },
+    {
+      "name": "Славгород",
+      "key": "default"
+    },
+    {
+      "name": "Славск",
+      "key": "default"
+    },
+    {
+      "name": "Славянск-на-Кубани",
+      "key": "default"
+    },
+    {
+      "name": "Сланцы",
+      "key": "default"
+    },
+    {
+      "name": "Слободской",
+      "key": "default"
+    },
+    {
+      "name": "Слюдянка",
+      "key": "default"
+    },
+    {
+      "name": "Смоленск",
+      "key": "default"
+    },
+    {
+      "name": "Снежинск",
+      "key": "default"
+    },
+    {
+      "name": "Снежногорск",
+      "key": "default"
+    },
+    {
+      "name": "Собинка",
+      "key": "default"
+    },
+    {
+      "name": "Советск",
+      "key": "default"
+    },
+    {
+      "name": "Советск",
+      "key": "default"
+    },
+    {
+      "name": "Советск",
+      "key": "default"
+    },
+    {
+      "name": "Советская Гавань",
+      "key": "default"
+    },
+    {
+      "name": "Советский",
+      "key": "default"
+    },
+    {
+      "name": "Сокол",
+      "key": "default"
+    },
+    {
+      "name": "Солигалич",
+      "key": "default"
+    },
+    {
+      "name": "Соликамск",
+      "key": "default"
+    },
+    {
+      "name": "Солнечногорск",
+      "key": "default"
+    },
+    {
+      "name": "Сольвычегодск",
+      "key": "default"
+    },
+    {
+      "name": "Соль-Илецк",
+      "key": "default"
+    },
+    {
+      "name": "Сольцы",
+      "key": "default"
+    },
+    {
+      "name": "Сорочинск",
+      "key": "default"
+    },
+    {
+      "name": "Сорск",
+      "key": "default"
+    },
+    {
+      "name": "Сортавала",
+      "key": "default"
+    },
+    {
+      "name": "Сосенский",
+      "key": "default"
+    },
+    {
+      "name": "Сосновка",
+      "key": "default"
+    },
+    {
+      "name": "Сосновоборск",
+      "key": "default"
+    },
+    {
+      "name": "Сосновый Бор",
+      "key": "default"
+    },
+    {
+      "name": "Сосногорск",
+      "key": "default"
+    },
+    {
+      "name": "Сочи",
+      "key": "default"
+    },
+    {
+      "name": "Спас-Деменск",
+      "key": "default"
+    },
+    {
+      "name": "Спас-Клепики",
+      "key": "default"
+    },
+    {
+      "name": "Спасск",
+      "key": "default"
+    },
+    {
+      "name": "Спасск-Дальний",
+      "key": "default"
+    },
+    {
+      "name": "Спасск-Рязанский",
+      "key": "default"
+    },
+    {
+      "name": "Среднеколымск",
+      "key": "default"
+    },
+    {
+      "name": "Среднеуральск",
+      "key": "default"
+    },
+    {
+      "name": "Сретенск",
+      "key": "default"
+    },
+    {
+      "name": "Ставрополь",
+      "key": "default"
+    },
+    {
+      "name": "Старая Купавна",
+      "key": "default"
+    },
+    {
+      "name": "Старая Русса",
+      "key": "default"
+    },
+    {
+      "name": "Старица",
+      "key": "default"
+    },
+    {
+      "name": "Стародуб",
+      "key": "default"
+    },
+    {
+      "name": "Старый Крым",
+      "key": "default"
+    },
+    {
+      "name": "Старый Оскол",
+      "key": "default"
+    },
+    {
+      "name": "Стерлитамак",
+      "key": "default"
+    },
+    {
+      "name": "Стрежевой",
+      "key": "default"
+    },
+    {
+      "name": "Строитель",
+      "key": "default"
+    },
+    {
+      "name": "Струнино",
+      "key": "default"
+    },
+    {
+      "name": "Ступино",
+      "key": "default"
+    },
+    {
+      "name": "Суворов",
+      "key": "default"
+    },
+    {
+      "name": "Судак",
+      "key": "default"
+    },
+    {
+      "name": "Суджа",
+      "key": "default"
+    },
+    {
+      "name": "Судогда",
+      "key": "default"
+    },
+    {
+      "name": "Суздаль",
+      "key": "default"
+    },
+    {
+      "name": "Суоярви",
+      "key": "default"
+    },
+    {
+      "name": "Сураж",
+      "key": "default"
+    },
+    {
+      "name": "Сургут",
+      "key": "default"
+    },
+    {
+      "name": "Суровикино",
+      "key": "default"
+    },
+    {
+      "name": "Сурск",
+      "key": "default"
+    },
+    {
+      "name": "Сусуман",
+      "key": "default"
+    },
+    {
+      "name": "Сухиничи",
+      "key": "default"
+    },
+    {
+      "name": "Сухой Лог",
+      "key": "default"
+    },
+    {
+      "name": "Сызрань",
+      "key": "default"
+    },
+    {
+      "name": "Сыктывкар",
+      "key": "default"
+    },
+    {
+      "name": "Сысерть",
+      "key": "default"
+    },
+    {
+      "name": "Сычевка",
+      "key": "default"
+    },
+    {
+      "name": "Сясьстрой",
+      "key": "default"
+    },
+    {
+      "name": "Тавда",
+      "key": "default"
+    },
+    {
+      "name": "Таганрог",
+      "key": "default"
+    },
+    {
+      "name": "Тайга",
+      "key": "default"
+    },
+    {
+      "name": "Тайшет",
+      "key": "default"
+    },
+    {
+      "name": "Талдом",
+      "key": "default"
+    },
+    {
+      "name": "Талица",
+      "key": "default"
+    },
+    {
+      "name": "Тамбов",
+      "key": "default"
+    },
+    {
+      "name": "Тара",
+      "key": "default"
+    },
+    {
+      "name": "Тарко-Сале",
+      "key": "default"
+    },
+    {
+      "name": "Таруса",
+      "key": "default"
+    },
+    {
+      "name": "Татарск",
+      "key": "default"
+    },
+    {
+      "name": "Таштагол",
+      "key": "default"
+    },
+    {
+      "name": "Тверь",
+      "key": "default"
+    },
+    {
+      "name": "Теберда",
+      "key": "default"
+    },
+    {
+      "name": "Тейково",
+      "key": "default"
+    },
+    {
+      "name": "Темников",
+      "key": "default"
+    },
+    {
+      "name": "Темрюк",
+      "key": "default"
+    },
+    {
+      "name": "Терек",
+      "key": "default"
+    },
+    {
+      "name": "Тетюши",
+      "key": "default"
+    },
+    {
+      "name": "Тимашевск",
+      "key": "default"
+    },
+    {
+      "name": "Тихвин",
+      "key": "default"
+    },
+    {
+      "name": "Тихорецк",
+      "key": "default"
+    },
+    {
+      "name": "Тобольск",
+      "key": "default"
+    },
+    {
+      "name": "Тогучин",
+      "key": "default"
+    },
+    {
+      "name": "Тольятти",
+      "key": "default"
+    },
+    {
+      "name": "Томари",
+      "key": "default"
+    },
+    {
+      "name": "Томмот",
+      "key": "default"
+    },
+    {
+      "name": "Томск",
+      "key": "default"
+    },
+    {
+      "name": "Топки",
+      "key": "default"
+    },
+    {
+      "name": "Торжок",
+      "key": "default"
+    },
+    {
+      "name": "Торопец",
+      "key": "default"
+    },
+    {
+      "name": "Тосно",
+      "key": "default"
+    },
+    {
+      "name": "Тотьма",
+      "key": "default"
+    },
+    {
+      "name": "Трехгорный",
+      "key": "default"
+    },
+    {
+      "name": "Троицк",
+      "key": "default"
+    },
+    {
+      "name": "Трубчевск",
+      "key": "default"
+    },
+    {
+      "name": "Туапсе",
+      "key": "default"
+    },
+    {
+      "name": "Туймазы",
+      "key": "default"
+    },
+    {
+      "name": "Тула",
+      "key": "default"
+    },
+    {
+      "name": "Тулун",
+      "key": "default"
+    },
+    {
+      "name": "Туран",
+      "key": "default"
+    },
+    {
+      "name": "Туринск",
+      "key": "default"
+    },
+    {
+      "name": "Тутаев",
+      "key": "default"
+    },
+    {
+      "name": "Тында",
+      "key": "default"
+    },
+    {
+      "name": "Тырныауз",
+      "key": "default"
+    },
+    {
+      "name": "Тюкалинск",
+      "key": "default"
+    },
+    {
+      "name": "Тюмень",
+      "key": "default"
+    },
+    {
+      "name": "Уварово",
+      "key": "default"
+    },
+    {
+      "name": "Углегорск",
+      "key": "default"
+    },
+    {
+      "name": "Углич",
+      "key": "default"
+    },
+    {
+      "name": "Удачный",
+      "key": "default"
+    },
+    {
+      "name": "Удомля",
+      "key": "default"
+    },
+    {
+      "name": "Ужур",
+      "key": "default"
+    },
+    {
+      "name": "Узловая",
+      "key": "default"
+    },
+    {
+      "name": "Улан-Удэ",
+      "key": "default"
+    },
+    {
+      "name": "Ульяновск",
+      "key": "default"
+    },
+    {
+      "name": "Унеча",
+      "key": "default"
+    },
+    {
+      "name": "Урай",
+      "key": "default"
+    },
+    {
+      "name": "Урень",
+      "key": "default"
+    },
+    {
+      "name": "Уржум",
+      "key": "default"
+    },
+    {
+      "name": "Урюпинск",
+      "key": "default"
+    },
+    {
+      "name": "Усинск",
+      "key": "default"
+    },
+    {
+      "name": "Усмань",
+      "key": "default"
+    },
+    {
+      "name": "Усолье",
+      "key": "default"
+    },
+    {
+      "name": "Усолье-Сибирское",
+      "key": "default"
+    },
+    {
+      "name": "Уссурийск",
+      "key": "default"
+    },
+    {
+      "name": "Усть-Джегута",
+      "key": "default"
+    },
+    {
+      "name": "Усть-Илимск",
+      "key": "default"
+    },
+    {
+      "name": "Усть-Катав",
+      "key": "default"
+    },
+    {
+      "name": "Усть-Кут",
+      "key": "default"
+    },
+    {
+      "name": "Усть-Лабинск",
+      "key": "default"
+    },
+    {
+      "name": "Устюжна",
+      "key": "default"
+    },
+    {
+      "name": "Уфа",
+      "key": "default"
+    },
+    {
+      "name": "Ухта",
+      "key": "default"
+    },
+    {
+      "name": "Учалы",
+      "key": "default"
+    },
+    {
+      "name": "Уяр",
+      "key": "default"
+    },
+    {
+      "name": "Фатеж",
+      "key": "default"
+    },
+    {
+      "name": "Феодосия",
+      "key": "default"
+    },
+    {
+      "name": "Фокино",
+      "key": "default"
+    },
+    {
+      "name": "Фокино",
+      "key": "default"
+    },
+    {
+      "name": "Фролово",
+      "key": "default"
+    },
+    {
+      "name": "Фрязино",
+      "key": "default"
+    },
+    {
+      "name": "Фурманов",
+      "key": "default"
+    },
+    {
+      "name": "Хабаровск",
+      "key": "default"
+    },
+    {
+      "name": "Хадыженск",
+      "key": "default"
+    },
+    {
+      "name": "Ханты-Мансийск",
+      "key": "default"
+    },
+    {
+      "name": "Харабали",
+      "key": "default"
+    },
+    {
+      "name": "Харовск",
+      "key": "default"
+    },
+    {
+      "name": "Хасавюрт",
+      "key": "default"
+    },
+    {
+      "name": "Хвалынск",
+      "key": "default"
+    },
+    {
+      "name": "Хилок",
+      "key": "default"
+    },
+    {
+      "name": "Химки",
+      "key": "default"
+    },
+    {
+      "name": "Холм",
+      "key": "default"
+    },
+    {
+      "name": "Холмск",
+      "key": "default"
+    },
+    {
+      "name": "Хотьково",
+      "key": "default"
+    },
+    {
+      "name": "Цивильск",
+      "key": "default"
+    },
+    {
+      "name": "Цимлянск",
+      "key": "default"
+    },
+    {
+      "name": "Циолковский",
+      "key": "default"
+    },
+    {
+      "name": "Чадан",
+      "key": "default"
+    },
+    {
+      "name": "Чайковский",
+      "key": "default"
+    },
+    {
+      "name": "Чапаевск",
+      "key": "default"
+    },
+    {
+      "name": "Чаплыгин",
+      "key": "default"
+    },
+    {
+      "name": "Чебаркуль",
+      "key": "default"
+    },
+    {
+      "name": "Чебоксары",
+      "key": "default"
+    },
+    {
+      "name": "Чегем",
+      "key": "default"
+    },
+    {
+      "name": "Чекалин",
+      "key": "default"
+    },
+    {
+      "name": "Челябинск",
+      "key": "default"
+    },
+    {
+      "name": "Чердынь",
+      "key": "default"
+    },
+    {
+      "name": "Черемхово",
+      "key": "default"
+    },
+    {
+      "name": "Черепаново",
+      "key": "default"
+    },
+    {
+      "name": "Череповец",
+      "key": "default"
+    },
+    {
+      "name": "Черкесск",
+      "key": "default"
+    },
+    {
+      "name": "Чермоз",
+      "key": "default"
+    },
+    {
+      "name": "Черноголовка",
+      "key": "default"
+    },
+    {
+      "name": "Черногорск",
+      "key": "default"
+    },
+    {
+      "name": "Чернушка",
+      "key": "default"
+    },
+    {
+      "name": "Черняховск",
+      "key": "default"
+    },
+    {
+      "name": "Чехов",
+      "key": "default"
+    },
+    {
+      "name": "Чистополь",
+      "key": "default"
+    },
+    {
+      "name": "Чита",
+      "key": "default"
+    },
+    {
+      "name": "Чкаловск",
+      "key": "default"
+    },
+    {
+      "name": "Чудово",
+      "key": "default"
+    },
+    {
+      "name": "Чулым",
+      "key": "default"
+    },
+    {
+      "name": "Чусовой",
+      "key": "default"
+    },
+    {
+      "name": "Чухлома",
+      "key": "default"
+    },
+    {
+      "name": "Шагонар",
+      "key": "default"
+    },
+    {
+      "name": "Шадринск",
+      "key": "default"
+    },
+    {
+      "name": "Шали",
+      "key": "default"
+    },
+    {
+      "name": "Шарыпово",
+      "key": "default"
+    },
+    {
+      "name": "Шарья",
+      "key": "default"
+    },
+    {
+      "name": "Шатура",
+      "key": "default"
+    },
+    {
+      "name": "Шахты",
+      "key": "default"
+    },
+    {
+      "name": "Шахунья",
+      "key": "default"
+    },
+    {
+      "name": "Шацк",
+      "key": "default"
+    },
+    {
+      "name": "Шебекино",
+      "key": "default"
+    },
+    {
+      "name": "Шелехов",
+      "key": "default"
+    },
+    {
+      "name": "Шенкурск",
+      "key": "default"
+    },
+    {
+      "name": "Шилка",
+      "key": "default"
+    },
+    {
+      "name": "Шимановск",
+      "key": "default"
+    },
+    {
+      "name": "Шиханы",
+      "key": "default"
+    },
+    {
+      "name": "Шлиссельбург",
+      "key": "default"
+    },
+    {
+      "name": "Шумерля",
+      "key": "default"
+    },
+    {
+      "name": "Шумиха",
+      "key": "default"
+    },
+    {
+      "name": "Шуя",
+      "key": "default"
+    },
+    {
+      "name": "Щекино",
+      "key": "default"
+    },
+    {
+      "name": "Щелкино",
+      "key": "default"
+    },
+    {
+      "name": "Щелково",
+      "key": "default"
+    },
+    {
+      "name": "Щигры",
+      "key": "default"
+    },
+    {
+      "name": "Щучье",
+      "key": "default"
+    },
+    {
+      "name": "Электрогорск",
+      "key": "default"
+    },
+    {
+      "name": "Электросталь",
+      "key": "default"
+    },
+    {
+      "name": "Электроугли",
+      "key": "default"
+    },
+    {
+      "name": "Элиста",
+      "key": "default"
+    },
+    {
+      "name": "Энгельс",
+      "key": "default"
+    },
+    {
+      "name": "Эртиль",
+      "key": "default"
+    },
+    {
+      "name": "Югорск",
+      "key": "default"
+    },
+    {
+      "name": "Южа",
+      "key": "default"
+    },
+    {
+      "name": "Южно-Сахалинск",
+      "key": "default"
+    },
+    {
+      "name": "Южно-Сухокумск",
+      "key": "default"
+    },
+    {
+      "name": "Южноуральск",
+      "key": "default"
+    },
+    {
+      "name": "Юрга",
+      "key": "default"
+    },
+    {
+      "name": "Юрьевец",
+      "key": "default"
+    },
+    {
+      "name": "Юрьев-Польский",
+      "key": "default"
+    },
+    {
+      "name": "Юрюзань",
+      "key": "default"
+    },
+    {
+      "name": "Юхнов",
+      "key": "default"
+    },
+    {
+      "name": "Ядрин",
+      "key": "default"
+    },
+    {
+      "name": "Якутск",
+      "key": "default"
+    },
+    {
+      "name": "Ялта",
+      "key": "default"
+    },
+    {
+      "name": "Ялта",
+      "key": "default"
+    },
+    {
+      "name": "Ялуторовск",
+      "key": "default"
+    },
+    {
+      "name": "Янаул",
+      "key": "default"
+    },
+    {
+      "name": "Яранск",
+      "key": "default"
+    },
+    {
+      "name": "Яровое",
+      "key": "default"
+    },
+    {
+      "name": "Ярославль",
+      "key": "default"
+    },
+    {
+      "name": "Ярцево",
+      "key": "default"
+    },
+    {
+      "name": "Ясногорск",
+      "key": "default"
+    },
+    {
+      "name": "Ясный",
+      "key": "default"
+    },
+    {
+      "name": "Яхрома",
+      "key": "default"
+    }
+  ]
+}
