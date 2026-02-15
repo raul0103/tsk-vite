@@ -55,7 +55,12 @@ if (empty($resultStocks)) {
     $matchedTemplate = null;
 
     foreach ($stockTemplates as $template) {
-        if (in_array($template['category'], $parentIds)) {
+        $templateCategory = isset($template['category']) ? $template['category'] : null;
+        $isMatched = is_array($templateCategory)
+            ? !empty(array_intersect($parentIds, $templateCategory))
+            : in_array($templateCategory, $parentIds);
+
+        if ($isMatched) {
             $matchedTemplate = $template;
             break;
         }
@@ -66,18 +71,24 @@ if (empty($resultStocks)) {
     }
 
     // Параметры шаблона
-    $limitConstName = "TEMPLATE_{$matchedTemplate['template']}_COUNT_LIMIT_STOCKS";
-    $notConstName   = "TEMPLATE_{$matchedTemplate['template']}_COUNT_NOT_STOCKS";
-    $templateCountLimitStocks = defined($limitConstName) ? (int)constant($limitConstName) : (int)MIN_LIMIT_STOCKS;
-    $templateCountNotStocks   = defined($notConstName)   ? (int)constant($notConstName)   : (int)MIN_STOCKS;
+    $stocksNames = getStocksNamesByContext($context);
+    $distribution = getStockDistributionByTemplate(
+        (int)($matchedTemplate['template'] ?? 0),
+        count($stocksNames)
+    );
+    $templateCountLimitStocks = (int)$distribution['limitStocks'];
+    $templateCountNotStocks = (int)$distribution['notStocks'];
+
+    $templateMinLimit = getStockTemplateRangeValue($matchedTemplate, 'min_limit');
+    $templateMaxLimit = getStockTemplateRangeValue($matchedTemplate, 'max_limit');
 
     $stockTemplateObj = new StockTemplate(
-        STOCKS, 
+        $stocksNames,
         $templateCountLimitStocks, 
         $templateCountNotStocks, 
         $productId, 
-        $matchedTemplate['min_limit'], 
-        $matchedTemplate['max_limit']
+        $templateMinLimit, 
+        $templateMaxLimit
     );
     $resultStocks = $stockTemplateObj->make();
 

@@ -61,6 +61,19 @@
                 </div>
             {/if}
         </div>
+        {if $_modx->context.key == 'rockwool'}
+        <div class="footer__nav-block">
+            <div class="footer__nav-block-title">Категории</div>
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="/light-batts/">Роквул Лайт Баттс</a></li>
+                <li class="footer__nav-item"><a href="/light-batts-scandic/">Роквул Лайт Баттс Скандик</a></li>
+                <li class="footer__nav-item"><a href="/acoustic-batts/">Роквул Акустик Баттс</a></li>
+                <li class="footer__nav-item"><a href="/venti-batts/">Роквул Венти Баттс</a></li>
+                <li class="footer__nav-item"><a href="/fasad-batts/">Роквул Фасад Баттс</a></li>
+                <li class="footer__nav-item"><a href="/wired-mat/">Роквул Wired Mat</a></li>
+            </ul>
+        </div>
+        {/if}
         {if $_modx->getPlaceholder('footer_nav_ids') | length > 1}
         <div class="footer__nav-block">
             {if $_modx->context.key == 'gazobeton'}

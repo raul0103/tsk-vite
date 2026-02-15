@@ -1,7 +1,7 @@
 <div class="bordered-block">
     {switch $header.type}
     {case "stock"}
-    <div class="mb-8 d-flex gap-8 stocks-template--{$header.type}>
+    <div class="mb-8 d-flex gap-8 stocks-template--{$header.type}">
             <svg width=" 16" height="16" class="svg icon-available" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
         <use xlink:href="/assets/template/img/svg-sprite.svg#icon-available"></use>

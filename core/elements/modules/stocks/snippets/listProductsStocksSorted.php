@@ -125,22 +125,24 @@ foreach ($products as $product) {
     $stocksData = $useCache ? $modx->cacheManager->get($cacheKey) : null;
 
     if (empty($stocksData)) {
+        $stocksNames = getStocksNamesByContext($context);
         $tmpl = $getTemplateForProduct($productId, $stockTemplates, $modx, $context);
         if ($tmpl) {
-            $limitConstName = "TEMPLATE_{$tmpl['template']}_COUNT_LIMIT_STOCKS";
-            $notConstName   = "TEMPLATE_{$tmpl['template']}_COUNT_NOT_STOCKS";
-            $tmplCountLimit = defined($limitConstName) ? (int)constant($limitConstName) : (int)MIN_LIMIT_STOCKS;
-            $tmplCountNot   = defined($notConstName)   ? (int)constant($notConstName)   : (int)MIN_STOCKS;
-            $tmplMinLimit   = isset($tmpl['min_limit']) ? (int)$tmpl['min_limit'] : null;
-            $tmplMaxLimit   = isset($tmpl['max_limit']) ? (int)$tmpl['max_limit'] : null;
+            $distribution = getStockDistributionByTemplate(
+                (int)($tmpl['template'] ?? 0),
+                count($stocksNames)
+            );
+            $tmplCountLimit = (int)$distribution['limitStocks'];
+            $tmplCountNot   = (int)$distribution['notStocks'];
+            $tmplMinLimit   = getStockTemplateRangeValue($tmpl, 'min_limit');
+            $tmplMaxLimit   = getStockTemplateRangeValue($tmpl, 'max_limit');
         } else {
-            $tmplCountLimit = (int)MIN_LIMIT_STOCKS;
-            $tmplCountNot   = (int)MIN_STOCKS;
+            $distribution = getStockDistributionByTemplate(0, count($stocksNames));
+            $tmplCountLimit = (int)$distribution['limitStocks'];
+            $tmplCountNot   = (int)$distribution['notStocks'];
             $tmplMinLimit   = null;
             $tmplMaxLimit   = null;
         }
-
-        $stocksNames = getStocksNamesByContext($context);
 
         $stockTemplateObj = new StockTemplate(
             $stocksNames,

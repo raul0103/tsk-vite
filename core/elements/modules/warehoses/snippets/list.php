@@ -128,12 +128,14 @@ if (!function_exists("warehousesList")) {
                     return null;
                 }
 
-                $limitConstName = "TEMPLATE_{$tmpl['template']}_COUNT_LIMIT_STOCKS";
-                $notConstName = "TEMPLATE_{$tmpl['template']}_COUNT_NOT_STOCKS";
-                $tmplCountLimit = defined($limitConstName) ? (int)constant($limitConstName) : (int)MIN_LIMIT_STOCKS;
-                $tmplCountNot = defined($notConstName) ? (int)constant($notConstName) : (int)MIN_STOCKS;
-                $minLimit = isset($tmpl['min_limit']) ? (int)$tmpl['min_limit'] : null;
-                $maxLimit = isset($tmpl['max_limit']) ? (int)$tmpl['max_limit'] : null;
+                $distribution = getStockDistributionByTemplate(
+                    (int)($tmpl['template'] ?? 0),
+                    count($stocksNames)
+                );
+                $tmplCountLimit = (int)$distribution['limitStocks'];
+                $tmplCountNot = (int)$distribution['notStocks'];
+                $minLimit = getStockTemplateRangeValue($tmpl, 'min_limit');
+                $maxLimit = getStockTemplateRangeValue($tmpl, 'max_limit');
 
                 // Генерация в том же формате, что и в карточке товара (stocks.php).
                 $stockTemplateObj = new StockTemplate($stocksNames, $tmplCountLimit, $tmplCountNot, $productId, $minLimit, $maxLimit);

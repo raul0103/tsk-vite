@@ -144,10 +144,14 @@ try {
             continue;
         }
 
-        $templateCountLimitStocks = constant("TEMPLATE_{$stockTemplate['template']}_COUNT_LIMIT_STOCKS");
-        $templateCountNotStocks = constant("TEMPLATE_{$stockTemplate['template']}_COUNT_NOT_STOCKS");
-        $templateMinLimit = isset($stockTemplate['min_limit']) ? (int)$stockTemplate['min_limit'] : null;
-        $templateMaxLimit = isset($stockTemplate['max_limit']) ? (int)$stockTemplate['max_limit'] : null;
+        $distribution = getStockDistributionByTemplate(
+            (int)($stockTemplate['template'] ?? 0),
+            count($stocksNames)
+        );
+        $templateCountLimitStocks = (int)$distribution['limitStocks'];
+        $templateCountNotStocks = (int)$distribution['notStocks'];
+        $templateMinLimit = getStockTemplateRangeValue($stockTemplate, 'min_limit');
+        $templateMaxLimit = getStockTemplateRangeValue($stockTemplate, 'max_limit');
 
         $stockTemplateObj = new StockTemplate(
             $stocksNames,

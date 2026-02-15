@@ -1901,48 +1901,44 @@ switch ($context) {
                     [
                         'products' => [
                             [
-                                'uri' => '/45/',
-                                'title' => 'Пеноплэкс 45',
-                            ],
-                            [
-                                'uri' => '/geo/',
-                                'title' => 'Пеноплэкс ГЕО',
+                                'uri' => '/fundament/',
+                                'title' => 'Пеноплэкс Фундамент',
                             ],
                             [
                                 'uri' => '/komfort/',
                                 'title' => 'Пеноплэкс Комфорт',
                             ],
                             [
-                                'uri' => '/krovlya/',
-                                'title' => 'Пеноплэкс Кровля',
-                            ],
-                            [
                                 'uri' => '/osnova/',
                                 'title' => 'Пеноплэкс Основа',
-                            ],
-                            [
-                                'uri' => '/segmenty/',
-                                'title' => 'Пеноплэкс Сегменты',
                             ],
                             [
                                 'uri' => '/stena/',
                                 'title' => 'Пеноплэкс Стена',
                             ],
                             [
-                                'uri' => '/uklon/',
-                                'title' => 'Пеноплэкс Уклон',
+                                'uri' => '/geo/',
+                                'title' => 'Пеноплэкс ГЕО',
                             ],
                             [
                                 'uri' => '/fasad/',
                                 'title' => 'Пеноплэкс Фасад',
                             ],
                             [
-                                'uri' => '/fundament/',
-                                'title' => 'Пеноплэкс Фундамент',
+                                'uri' => '/krovlya/',
+                                'title' => 'Пеноплэкс Кровля',
                             ],
                             [
                                 'uri' => '/extream/',
                                 'title' => 'Пеноплэкс Экстрим',
+                            ],
+                            [
+                                'uri' => '/segmenty/',
+                                'title' => 'Пеноплэкс Сегменты',
+                            ],
+                            [
+                                'uri' => '/uklon/',
+                                'title' => 'Пеноплэкс Уклон',
                             ],
                             [
                                 'uri' => '/sop-tovary/',
@@ -1960,16 +1956,8 @@ switch ($context) {
                     [
                         'products' => [
                             [
-                                "uri" => "/penoplex-dlya-balkona/",
-                                "title" => "Для балкона/лоджии",
-                            ],
-                            [
                                 "uri" => "/penoplex-dlya-pola/",
                                 "title" => "Для пола",
-                            ],
-                            [
-                                "uri" => "/catalog/?primenenie=%D0%94%D0%BB%D1%8F+%D0%BF%D0%BE%D1%82%D0%BE%D0%BB%D0%BA%D0%B0",
-                                "title" => "Для потолка",
                             ],
                             [
                                 "uri" => "/penoplex-dlya-sten/",
@@ -1978,6 +1966,14 @@ switch ($context) {
                             [
                                 "uri" => "/penoplex-dlya-fundamenta/",
                                 "title" => "Для фундамента/цоколя",
+                            ],
+                            [
+                                "uri" => "/catalog/?primenenie=%D0%94%D0%BB%D1%8F+%D0%BF%D0%BE%D1%82%D0%BE%D0%BB%D0%BA%D0%B0",
+                                "title" => "Для потолка",
+                            ],
+                            [
+                                "uri" => "/penoplex-dlya-balkona/",
+                                "title" => "Для балкона/лоджии",
                             ],
                             [
                                 "uri" => "/catalog/?primenenie=%D0%94%D0%BB%D1%8F+%D0%BF%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%BA",

@@ -1,5 +1,6 @@
 <form method="post" class="sect-delcost__form">
     <input type="text" name="mobilephone" class="fmobilephone">
+    <input type="hidden" name="NAME" value="NONAME">
 
     <label class="sect-delcost__label">
         <input type="text" class="custom-input sect-delcost__input" placeholder="Адрес доставки" name="ADDRESS">

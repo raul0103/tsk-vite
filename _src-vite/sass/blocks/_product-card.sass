@@ -5,6 +5,11 @@
     margin-bottom: 60px
     .swiper-pagination-bullet-active
         +set_colors_1('background')
+    @at-root .rockwool &
+        .swiper-wrapper
+            width: 0
+            @media (max-width: 550px)
+                width: 250px
     &__price-header
         width: 100%
         display: flex

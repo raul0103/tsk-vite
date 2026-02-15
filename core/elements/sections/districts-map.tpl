@@ -20,6 +20,15 @@
                         
                     </script>  
                 {/if}
+
+                {if $_modx->resource.context_key == 'plitaosb' && $_modx->getPlaceholder('localdata')['subdomain_key'] == 'msk'}
+                    <script>
+                        window.district_map_center = [55.7266717272727, 37.6483050909091];
+                        window.district_map_zoom = 9;
+                        window.district_map_districts = '';
+                        window.district_map_stores = 'assets/template/json/district_stores_plitaosb.json';
+                    </script>
+                {/if}
                 
                 <div class="map__container" id="districts_map" data-map-script="districts_map"></div>
         </div>

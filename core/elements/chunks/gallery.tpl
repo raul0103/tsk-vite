@@ -16,6 +16,9 @@ $_modx->resource.template in list [17, 20, 22]}
   {if $_modx->context.key == 'krovlya'}
     <div class="swiper-pagination"></div>
   {/if}
+  {if $_modx->context.key == 'plitaosb'}
+    <div class="swiper-pagination"></div>
+  {/if}
   <div class="swiper-wrapper">
       {foreach $files as $key => $file}
           {if $_modx->resource.imgWithWatermark && $key == 0}

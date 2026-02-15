@@ -88,6 +88,71 @@ if (!function_exists('getStocksNamesByContext')) {
     }
 }
 
+if (!function_exists('getStockDistributionByTemplate')) {
+    function getStockDistributionByTemplate($templateId, $stocksCount)
+    {
+        $templateId = (int)$templateId;
+        $stocksCount = max(0, (int)$stocksCount);
+
+        $limitStocks = 0;
+        $notStocks = 0;
+
+        switch ($templateId) {
+            case 1:
+                $limitStocks = min(2, $stocksCount);
+                $notStocks = 0;
+                break;
+            case 2:
+                $limitStocks = min(2, $stocksCount);
+                $notStocks = max($stocksCount - $limitStocks, 0);
+                break;
+            case 3:
+                $limitStocks = 0;
+                $notStocks = $stocksCount;
+                break;
+            case 4:
+                $limitStocks = 0;
+                $notStocks = 0;
+                break;
+            default:
+                $limitConstName = "TEMPLATE_{$templateId}_COUNT_LIMIT_STOCKS";
+                $notConstName = "TEMPLATE_{$templateId}_COUNT_NOT_STOCKS";
+                $limitStocks = defined($limitConstName) ? (int)constant($limitConstName) : 0;
+                $notStocks = defined($notConstName) ? (int)constant($notConstName) : 0;
+                break;
+        }
+
+        $limitStocks = max(0, min($stocksCount, $limitStocks));
+        $notStocks = max(0, min($stocksCount - $limitStocks, $notStocks));
+
+        return [
+            'limitStocks' => $limitStocks,
+            'notStocks' => $notStocks,
+        ];
+    }
+}
+
+if (!function_exists('getStockTemplateRangeValue')) {
+    function getStockTemplateRangeValue(array $template, $field)
+    {
+        $value = array_key_exists($field, $template) ? $template[$field] : null;
+        $templateId = isset($template['template']) ? (int)$template['template'] : 0;
+
+        if ($value === null) {
+            return null;
+        }
+
+        if (is_string($value)) {
+            $value = trim($value);
+            if ($value === '') {
+                return $templateId === 4 ? null : 0;
+            }
+        }
+
+        return (int)$value;
+    }
+}
+
 const TEMPLATE_1_COUNT_LIMIT_STOCKS = 2; // количество складов с лимитом для шаблона 1
 const TEMPLATE_1_COUNT_NOT_STOCKS = 0; // количество складов без остатков для шаблона 1
 

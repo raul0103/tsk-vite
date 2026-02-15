@@ -77,7 +77,13 @@ class StockTemplate
      */
     protected function generateIndexLimitStocks($stocks, $limitStocks)
     {
-        $indexLimitStocks = $limitStocks > 0 ? (array) array_rand($stocks, $limitStocks) : [];
+        $totalStocks = count($stocks);
+        if ($totalStocks <= 0 || $limitStocks <= 0) {
+            return [];
+        }
+
+        $limitStocks = min((int)$limitStocks, $totalStocks);
+        $indexLimitStocks = (array) array_rand($stocks, $limitStocks);
         return $indexLimitStocks;
     }
 
@@ -104,8 +110,13 @@ class StockTemplate
     protected function generateIndexNotStocks($stocks, $indexLimitStocks, $notStocks)
     {
         $indexNotStocks = array_diff(array_keys($stocks), $indexLimitStocks);
-        $indexNotStocks = $notStocks > 0 ? (array) array_rand($indexNotStocks, $notStocks) : [];
-        return $indexNotStocks;
+        $availableStocks = count($indexNotStocks);
+        if ($availableStocks <= 0 || $notStocks <= 0) {
+            return [];
+        }
+
+        $notStocks = min((int)$notStocks, $availableStocks);
+        return (array) array_rand($indexNotStocks, $notStocks);
     }
 
     /**

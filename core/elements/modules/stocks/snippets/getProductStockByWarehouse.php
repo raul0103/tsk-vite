@@ -54,12 +54,14 @@ if (empty($stocksData)) {
         return '0';
     }
 
-    $limitConstName = "TEMPLATE_{$matchedTemplate['template']}_COUNT_LIMIT_STOCKS";
-    $notConstName = "TEMPLATE_{$matchedTemplate['template']}_COUNT_NOT_STOCKS";
-    $templateCountLimitStocks = defined($limitConstName) ? (int)constant($limitConstName) : (int)MIN_LIMIT_STOCKS;
-    $templateCountNotStocks = defined($notConstName) ? (int)constant($notConstName) : (int)MIN_STOCKS;
-    $templateMinLimit = isset($matchedTemplate['min_limit']) ? (int)$matchedTemplate['min_limit'] : null;
-    $templateMaxLimit = isset($matchedTemplate['max_limit']) ? (int)$matchedTemplate['max_limit'] : null;
+    $distribution = getStockDistributionByTemplate(
+        (int)($matchedTemplate['template'] ?? 0),
+        count($stocksNames)
+    );
+    $templateCountLimitStocks = (int)$distribution['limitStocks'];
+    $templateCountNotStocks = (int)$distribution['notStocks'];
+    $templateMinLimit = getStockTemplateRangeValue($matchedTemplate, 'min_limit');
+    $templateMaxLimit = getStockTemplateRangeValue($matchedTemplate, 'max_limit');
 
     $stockTemplateObj = new StockTemplate(
         $stocksNames,
